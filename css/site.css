@@ -292,16 +292,14 @@ select {
   overflow: hidden;
 
   background:
-    radial-gradient(
-      circle at 75% 45%,
-      rgba(76, 166, 255, 0.10),
-      transparent 30%
-    ),
     linear-gradient(
-      180deg,
-      var(--navy) 0%,
-      #081a2c 100%
-    );
+      90deg,
+      rgba(5, 17, 30, 0.98) 0%,
+      rgba(5, 17, 30, 0.82) 32%,
+      rgba(5, 17, 30, 0.25) 65%,
+      rgba(5, 17, 30, 0.05) 100%
+    ),
+    url("../hero-lunki.png") center center / cover no-repeat;
 }
 
 
