@@ -105,14 +105,12 @@ select {
 }
 
 .brand-logo {
-  display: block;
-
-  width: 145px;
-  height: auto;
-
-  max-height: 58px;
-
-  object-fit: contain;
+  display: block !important;
+  width: 120px !important;
+  height: 42px !important;
+  max-width: 120px !important;
+  max-height: 42px !important;
+  object-fit: contain !important;
 }
 
 /* MAIN NAV */
