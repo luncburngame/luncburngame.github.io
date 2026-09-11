@@ -1463,3 +1463,85 @@ select {
     height: 180px;
   }
 }
+
+/* =========================
+   ENHANCED DUSTER CARDS
+   ========================= */
+
+.duster-card-enhanced {
+  padding: 0;
+}
+
+.duster-card-enhanced .duster-image {
+  height: 230px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+
+.duster-info {
+  padding: 0 28px 28px;
+}
+
+.duster-topline {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.duster-topline > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.duster-topline .duster-icon {
+  margin-bottom: 4px;
+}
+
+.duster-topline h3 {
+  margin: 0;
+}
+
+.duster-level {
+  padding: 8px 16px;
+  border: 1px solid rgba(150,170,195,0.35);
+  border-radius: 30px;
+  color: #aebdd0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.duster-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding-top: 18px;
+}
+
+.duster-role {
+  font-size: 2rem;
+  line-height: 1;
+  color: #dce6f2;
+}
+
+.duster-description p {
+  margin: 0;
+  color: #aebdd0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .duster-card-enhanced .duster-image {
+    height: 210px;
+  }
+
+  .duster-info {
+    padding: 0 28px 28px;
+  }
+}
