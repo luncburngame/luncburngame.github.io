@@ -32,9 +32,20 @@ const translations = {
     dustersTitle: "Not everything wants to be rebuilt.",
     basic: "Basic",
     shield: "Shield",
-    heavy: "Heavy",
+     heavy: "Heavy",
     flyer: "Flyer",
     commander: "Commander",
+
+    level1: "LVL. 1",
+    level2: "LVL. 2",
+    level3: "LVL. 3",
+    level4: "LVL. 4",
+
+    basicDesc: "Standard enemy. Present in large numbers.",
+    shieldDesc: "Protects other DUSTERS and absorbs most attacks.",
+    heavyDesc: "Armored and extremely resistant. Deals massive damage.",
+    flyerDesc: "Fast aerial enemy. Difficult to reach and predict.",
+    commanderDesc: "Leads other DUSTERS. More powerful, more strategic, more dangerous.",
     
     burnsEyebrow: "BURN TRANSPARENCY",
     burnsTitle: "Every burn should be verifiable.",
@@ -98,6 +109,17 @@ const translations = {
     heavy: "Lourd",
     flyer: "Volant",
     commander: "Commandant",
+
+    level1: "NIV. 1",
+    level2: "NIV. 2",
+    level3: "NIV. 3",
+    level4: "NIV. 4",
+
+    basicDesc: "Ennemi standard. Présent en grand nombre.",
+    shieldDesc: "Protège les autres DUSTERS et encaisse la majorité des attaques.",
+    heavyDesc: "Blindé et extrêmement résistant. Inflige des dégâts massifs.",
+    flyerDesc: "Ennemi aérien, rapide et difficile à atteindre.",
+    commanderDesc: "Dirige les autres DUSTERS. Plus puissant, plus stratégique, plus dangereux.", 
     
     burnsEyebrow: "TRANSPARENCE DES BURNS",
     burnsTitle: "Chaque burn doit pouvoir être vérifié.",
