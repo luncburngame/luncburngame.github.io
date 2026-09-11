@@ -1650,3 +1650,8 @@ select {
   }
 
 }
+
+.hero::before,
+.hero::after {
+  display: none;
+}
