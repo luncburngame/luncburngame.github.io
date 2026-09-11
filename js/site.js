@@ -30,7 +30,11 @@ const translations = {
 
     dustersEyebrow: "THE DUSTERS",
     dustersTitle: "Not everything wants to be rebuilt.",
-
+    basic: "Basic",
+    shield: "Shield",
+    heavy: "Heavy",
+    flyer: "Flyer",
+    commander: "Commander",
     burnsEyebrow: "BURN TRANSPARENCY",
     burnsTitle: "Every burn should be verifiable.",
     burned: "LUNC BURNED",
@@ -88,7 +92,11 @@ const translations = {
 
     dustersEyebrow: "LES DUSTERS",
     dustersTitle: "Tout le monde ne veut pas être reconstruit.",
-
+    basic: "Basique",
+    shield: "Bouclier",
+    heavy: "Lourd",
+    flyer: "Volant",
+    commander: "Commandant",
     burnsEyebrow: "TRANSPARENCE DES BURNS",
     burnsTitle: "Chaque burn doit pouvoir être vérifié.",
     burned: "LUNC BRÛLÉS",
