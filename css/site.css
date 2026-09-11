@@ -1562,3 +1562,17 @@ select {
   flex-shrink: 0;
   margin-left: auto;
 }
+.duster-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.duster-name-row h3 {
+  margin: 0;
+}
+
+.duster-name-row .duster-level {
+  flex-shrink: 0;
+}
