@@ -5,6 +5,7 @@ const translations = {
     navBurns: "Burns",
     navRoadmap: "Roadmap",
     navDownload: "Download",
+    comingSoon: "Coming Soon",
 
     heroEyebrow: "A physics-driven adventure",
     heroText: "Explore the ruins of a broken world, master the physics, defeat the DUSTERS and rebuild what was lost.",
