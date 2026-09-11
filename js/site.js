@@ -35,6 +35,7 @@ const translations = {
     heavy: "Heavy",
     flyer: "Flyer",
     commander: "Commander",
+    
     burnsEyebrow: "BURN TRANSPARENCY",
     burnsTitle: "Every burn should be verifiable.",
     burned: "LUNC BURNED",
@@ -97,6 +98,7 @@ const translations = {
     heavy: "Lourd",
     flyer: "Volant",
     commander: "Commandant",
+    
     burnsEyebrow: "TRANSPARENCE DES BURNS",
     burnsTitle: "Chaque burn doit pouvoir être vérifié.",
     burned: "LUNC BRÛLÉS",
