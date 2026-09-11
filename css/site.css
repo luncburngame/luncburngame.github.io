@@ -1576,3 +1576,51 @@ select {
 .duster-name-row .duster-level {
   flex-shrink: 0;
 }
+
+@media (max-width: 700px) {
+
+  .duster-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .duster-card {
+    width: 100%;
+  }
+
+  .duster-image {
+    height: 190px;
+    margin-bottom: 4px;
+  }
+
+  .duster-info {
+    padding: 0 4px 10px;
+  }
+
+  .duster-name-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .duster-name-row h3 {
+    margin: 0;
+  }
+
+  .duster-level {
+    flex-shrink: 0;
+  }
+
+  .duster-description {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .duster-description p {
+    margin: 0;
+  }
+
+}
