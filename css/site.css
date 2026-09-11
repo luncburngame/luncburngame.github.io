@@ -1545,3 +1545,20 @@ select {
     padding: 0 28px 28px;
   }
 }
+
+.duster-topline {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100%;
+}
+
+.duster-topline > div {
+  flex: 1;
+}
+
+.duster-level {
+  flex-shrink: 0;
+  margin-left: auto;
+}
