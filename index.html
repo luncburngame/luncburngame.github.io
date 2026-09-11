@@ -1,63 +1,522 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/site.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LUNC Burn Game — Play. Rebuild. Burn.">
-  <title>LUNC Burn Game — Play. Rebuild. Burn.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUNC Burn Game — PLAY. REBUILD. BURN. A physics-driven adventure.">
+
+  <title>LUNC Burn Game — PLAY. REBUILD. BURN.</title>
+
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body data-theme="explorer">
-<header class="nav">
-  <a class="brand" href="#top"><span class="brand-mark">◐</span><span>LUNC BURN GAME</span></a>
-  <nav>
-    <a href="#game" data-i18n="nav_game">Game</a>
-    <a href="#lunki" data-i18n="nav_lunki">Lunki</a>
-    <a href="#burns" data-i18n="nav_burns">Burns</a>
-    <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
-  </nav>
-  <div class="nav-actions">
-    <select id="language" aria-label="Language">
-      <option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="de">DE</option><option value="pt">PT</option>
-    </select>
-    <button class="outline" data-i18n="download">Download</button>
-  </div>
-</header>
-<main id="top">
-  <section class="hero section-grid">
-    <div class="hero-copy">
-      <p class="eyebrow" data-i18n="eyebrow">AN INDIE GAME WITH A MISSION</p>
-      <h1 data-i18n="hero_title">PLAY.<br>REBUILD.<br><span>BURN.</span></h1>
-      <p class="lead" data-i18n="hero_text">A physics puzzle adventure where every shot moves the story forward.</p>
-      <div class="cta-row"><button class="primary" data-i18n="watch">Watch trailer</button><button class="ghost" data-i18n="discover">Discover the game</button></div>
-      <p class="micro" data-i18n="hero_note">Prototype in development · Android first · Built to stay lean</p>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="site-header">
+    <div class="nav-wrap">
+
+      <a href="#" class="brand">
+        <span class="brand-mark">◒</span>
+        <span class="brand-text">LUNC BURN GAME</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#game" data-i18n="navGame">Game</a>
+        <a href="#lunki" data-i18n="navLunki">Lunki</a>
+        <a href="#burns" data-i18n="navBurns">Burns</a>
+        <a href="#roadmap" data-i18n="navRoadmap">Roadmap</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <select class="language-select" data-lang-select aria-label="Language">
+          <option value="EN">EN</option>
+          <option value="FR">FR</option>
+          <option value="ES">ES</option>
+          <option value="DE">DE</option>
+          <option value="PT">PT</option>
+        </select>
+
+        <a href="#download" class="btn btn-small" data-i18n="navDownload">
+          Download
+        </a>
+
+      </div>
+
     </div>
-    <div class="hero-art">
-      <div class="planet"></div><div class="orb">◐</div><div class="lunki-card"><div class="lunki-face">◐</div><strong>LUNKI</strong><small>THE EXPLORER</small></div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-background">
+        <div class="stars"></div>
+        <div class="planet"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow" data-i18n="heroEyebrow">
+          A physics-driven adventure
+        </p>
+
+        <h1 data-i18n="heroTitle">
+          PLAY. REBUILD. BURN.
+        </h1>
+
+        <p class="hero-description" data-i18n="heroText">
+          Explore the ruins of a broken world, master the physics,
+          defeat the DUSTERS and rebuild what was lost.
+        </p>
+
+        <a href="#game" class="btn btn-primary" data-i18n="heroCta">
+          EXPLORE THE GAME
+        </a>
+
+      </div>
+
+      <!-- Temporary visual until LUNKI artwork is integrated -->
+      <div class="hero-orb">
+        <div class="orb-ring"></div>
+        <div class="orb-core"></div>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MISSION
+    ========================== -->
+
+    <section class="section mission">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="eyebrow" data-i18n="missionEyebrow">
+            THE MISSION
+          </p>
+
+          <h2 data-i18n="missionTitle">
+            A game with a purpose.
+          </h2>
+
+        </div>
+
+        <p class="section-lead" data-i18n="missionText">
+          LUNC Burn Game combines fun, physics and progression with
+          a transparent mission: eligible project revenue is used
+          to support LUNC burns.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GAME
+    ========================== -->
+
+    <section class="section game-section" id="game">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="eyebrow" data-i18n="gameEyebrow">
+            THE GAME
+          </p>
+
+          <h2 data-i18n="gameTitle">
+            Simple to learn. Hard to master.
+          </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+
+            <div class="feature-number">01</div>
+
+            <h3 data-i18n="aimTitle">
+              AIM
+            </h3>
+
+            <p data-i18n="aimText">
+              Choose your trajectory and prepare your shot.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-number">02</div>
+
+            <h3 data-i18n="impactTitle">
+              IMPACT
+            </h3>
+
+            <p data-i18n="impactText">
+              Use physics, timing and the environment to create
+              chain reactions.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-number">03</div>
+
+            <h3 data-i18n="rebuildTitle">
+              REBUILD
+            </h3>
+
+            <p data-i18n="rebuildText">
+              Restore the world level by level and discover
+              what comes next.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LUNKI
+    ========================== -->
+
+    <section class="section lunki-section" id="lunki">
+
+      <div class="section-inner">
+
+        <div class="lunki-layout">
+
+          <div class="lunki-visual">
+
+            <div class="lunki-placeholder">
+
+              <div class="lunki-screen">
+                ◒
+              </div>
+
+              <div class="lunki-body"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="lunki-content">
+
+            <p class="eyebrow" data-i18n="lunkiEyebrow">
+              MEET LUNKI
+            </p>
+
+            <h2 data-i18n="lunkiTitle">
+              The Explorer
+            </h2>
+
+            <p data-i18n="lunkiText">
+              Curious, brave and determined. LUNKI explores the ruins
+              and helps rebuild a new future.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DUSTERS
+    ========================== -->
+
+    <section class="section dusters-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="eyebrow" data-i18n="dustersEyebrow">
+            THE DUSTERS
+          </p>
+
+          <h2 data-i18n="dustersTitle">
+            Not everything wants to be rebuilt.
+          </h2>
+
+        </div>
+
+
+        <div class="duster-grid">
+
+          <article class="duster-card">
+            <span class="duster-icon">01</span>
+            <h3 data-i18n="basic">Basic</h3>
+          </article>
+
+          <article class="duster-card">
+            <span class="duster-icon">02</span>
+            <h3 data-i18n="shield">Shield</h3>
+          </article>
+
+          <article class="duster-card">
+            <span class="duster-icon">03</span>
+            <h3 data-i18n="heavy">Heavy</h3>
+          </article>
+
+          <article class="duster-card">
+            <span class="duster-icon">04</span>
+            <h3 data-i18n="flyer">Flyer</h3>
+          </article>
+
+          <article class="duster-card">
+            <span class="duster-icon">05</span>
+            <h3 data-i18n="commander">Commander</h3>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BURNS
+    ========================== -->
+
+    <section class="section burns-section" id="burns">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="eyebrow" data-i18n="burnsEyebrow">
+            BURN TRANSPARENCY
+          </p>
+
+          <h2 data-i18n="burnsTitle">
+            Every burn should be verifiable.
+          </h2>
+
+        </div>
+
+
+        <div class="burn-stats">
+
+          <div class="burn-stat">
+            <strong>0</strong>
+            <span data-i18n="burned">LUNC BURNED</span>
+          </div>
+
+          <div class="burn-stat">
+            <strong>0</strong>
+            <span data-i18n="tx">VERIFIED TRANSACTIONS</span>
+          </div>
+
+          <div class="burn-stat">
+            <strong>0</strong>
+            <span data-i18n="reserve">BURN RESERVE</span>
+          </div>
+
+        </div>
+
+
+        <a href="#" class="btn btn-secondary" data-i18n="dashboard">
+          PUBLIC BURN DASHBOARD
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ROADMAP
+    ========================== -->
+
+    <section class="section roadmap-section" id="roadmap">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="eyebrow" data-i18n="roadmapEyebrow">
+            ROADMAP
+          </p>
+
+          <h2 data-i18n="roadmapTitle">
+            From first shot to a rebuilt world.
+          </h2>
+
+        </div>
+
+
+        <div class="roadmap">
+
+          <article class="roadmap-item">
+
+            <span class="roadmap-number">01</span>
+
+            <div>
+              <h3 data-i18n="phase1">
+                PHASE 1 — PROTOTYPE
+              </h3>
+
+              <p data-i18n="phase1Text">
+                Core physics, first levels, LUNKI and DUSTERS.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="roadmap-item">
+
+            <span class="roadmap-number">02</span>
+
+            <div>
+              <h3 data-i18n="phase2">
+                PHASE 2 — WORLD 1
+              </h3>
+
+              <p data-i18n="phase2Text">
+                Terra Classic ruins, progression and first bosses.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="roadmap-item">
+
+            <span class="roadmap-number">03</span>
+
+            <div>
+              <h3 data-i18n="phase3">
+                PHASE 3 — POLISH
+              </h3>
+
+              <p data-i18n="phase3Text">
+                Sound, VFX, animations, UI and progression systems.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="roadmap-item">
+
+            <span class="roadmap-number">04</span>
+
+            <div>
+              <h3 data-i18n="phase4">
+                PHASE 4 — LAUNCH
+              </h3>
+
+              <p data-i18n="phase4Text">
+                Release, analytics, advertising and transparent
+                burn reporting.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DOWNLOAD
+    ========================== -->
+
+    <section class="download-section" id="download">
+
+      <div class="download-inner">
+
+        <p class="eyebrow" data-i18n="downloadEyebrow">
+          COMING SOON
+        </p>
+
+        <h2 data-i18n="downloadTitle">
+          Your move.
+        </h2>
+
+        <p data-i18n="downloadText">
+          The game is being built step by step. Follow the project
+          and be ready for launch.
+        </p>
+
+        <a href="#" class="btn btn-primary" data-i18n="downloadCta">
+          COMING SOON
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark">◒</span>
+        <strong>LUNC BURN GAME</strong>
+      </div>
+
+      <p data-i18n="footerMission">
+        A physics-driven adventure built around play,
+        rebuilding and transparent LUNC burns.
+      </p>
+
+      <select class="language-select" data-lang-select aria-label="Language">
+        <option value="EN">EN</option>
+        <option value="FR">FR</option>
+        <option value="ES">ES</option>
+        <option value="DE">DE</option>
+        <option value="PT">PT</option>
+      </select>
+
     </div>
-  </section>
 
-  <section class="mission band">
-    <div><p class="eyebrow" data-i18n="mission_kicker">THE MISSION</p><h2 data-i18n="mission_title">A game first.<br>A transparent burn program second.</h2></div>
-    <p data-i18n="mission_text">Build something people genuinely want to play. Use eligible project revenue for a finite, publicly verifiable LUNC burn program. No price promises. No hidden counters.</p>
-  </section>
+  </footer>
 
-  <section id="game" class="section">
-    <div class="section-head"><div><p class="eyebrow">THE GAME</p><h2 data-i18n="game_title">Simple to learn.<br>Hard to master.</h2></div><span class="pill">WORLD 1 · TERRA CLASSIC</span></div>
-    <div class="feature-grid"><article><b>01</b><h3>Aim</h3><p>Drag, adjust the trajectory and feel the power build.</p></article><article><b>02</b><h3>Impact</h3><p>Physics, rebounds, destruction, reactions and satisfying feedback.</p></article><article><b>03</b><h3>Rebuild</h3><p>Clear the ruins and watch the world become alive again.</p></article></div>
-  </section>
 
-  <section id="lunki" class="section dark-panel"><div class="character"><div class="big-lunki">◐</div><div><p class="eyebrow">OFFICIAL CHARACTER</p><h2>LUNKI — THE EXPLORER</h2><p class="lead">Curious. Brave. Kind. Determined.</p><p>Our small explorer discovers the ruins, finds the LUNC Sphere and takes the first shot. The approved Variant A design is the master reference.</p><button class="outline">Meet Lunki</button></div></div></section>
+  <script src="js/site.js"></script>
 
-  <section class="section"><div class="section-head"><div><p class="eyebrow">THE DUSTERS</p><h2>Five families.<br>One messy world.</h2></div></div><div class="duster-grid"><div class="duster"><span>01</span><strong>BASIC</strong><i></i></div><div class="duster"><span>02</span><strong>SHIELD</strong><i></i></div><div class="duster"><span>03</span><strong>HEAVY</strong><i></i></div><div class="duster"><span>04</span><strong>FLYER</strong><i></i></div><div class="duster boss"><span>05</span><strong>COMMANDER</strong><i></i></div></div></section>
-
-  <section id="burns" class="section burn-section"><div class="section-head"><div><p class="eyebrow">BURN TRANSPARENCY</p><h2 data-i18n="burn_title">Don't trust.<br>Verify.</h2></div><span class="verified">● DEMO DATA</span></div><div class="stats"><div><span>LUNC BURNED</span><strong id="burned">0</strong></div><div><span>BURN TRANSACTIONS</span><strong id="tx">0</strong></div><div><span>PLAYERS</span><strong id="players">0</strong></div><div><span>LAST BURN</span><strong>—</strong></div></div><p class="micro" data-i18n="burn_note">Live values will be connected only after the burn program is operational and independently verifiable on-chain.</p></section>
-
-  <section id="roadmap" class="section"><div class="section-head"><div><p class="eyebrow">ROADMAP</p><h2>From prototype<br>to launch.</h2></div></div><div class="timeline"><div class="done"><span>01</span><h3>Prototype</h3><p>Core physics, LUNKI, DUSTERS and first levels.</p></div><div><span>02</span><h3>Vertical slice</h3><p>Polished World 1 experience and cinematic.</p></div><div><span>03</span><h3>Android launch</h3><p>Public release, ads and transparent reporting.</p></div><div><span>04</span><h3>Scale</h3><p>New worlds, platforms and deeper community features.</p></div></div></section>
-
-  <section class="download-band"><p class="eyebrow">COMING SOON</p><h2>YOUR MOVE.</h2><p>Android first. iOS later if the game earns it.</p><button class="primary" data-i18n="download">Download</button></section>
-</main>
-<footer><div><strong>LUNC BURN GAME</strong><p>PLAY. REBUILD. BURN.</p></div><div><a href="#">Transparency</a><a href="#">FAQ</a><a href="#">Privacy</a><a href="#">Contact</a></div><div><span>Language</span><select id="languageFooter"><option>EN</option><option>FR</option><option>ES</option><option>DE</option><option>PT</option></select></div></footer>
-<script src="js/site.js"></script>
-</body></html>
+</body>
+</html>
