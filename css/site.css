@@ -1655,3 +1655,12 @@ select {
 .hero::after {
   display: none;
 }
+
+/* =========================
+   HERO — REMOVE OLD ELEMENTS
+   ========================= */
+
+.planet,
+.hero-orb {
+  display: none !important;
+}
