@@ -1672,3 +1672,14 @@ select {
 .hero-orb {
   display: none !important;
 }
+
+/* =========================
+   DUSTERS — MOBILE RESET
+   ========================= */
+
+@media (max-width: 700px) {
+  .duster-card:nth-child(4),
+  .duster-card:nth-child(5) {
+    grid-column: auto;
+  }
+}
