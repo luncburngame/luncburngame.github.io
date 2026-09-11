@@ -63,6 +63,7 @@ const translations = {
     navBurns: "Burns",
     navRoadmap: "Roadmap",
     navDownload: "Télécharger",
+    comingSoon: "Bientôt disponible",
 
     heroEyebrow: "Une aventure basée sur la physique",
     heroText: "Explore les ruines d'un monde brisé, maîtrise la physique, affronte les DUSTERS et reconstruis ce qui a été perdu.",
