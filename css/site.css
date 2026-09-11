@@ -1406,3 +1406,36 @@ select {
     padding: 15px 18px;
   }
 }
+/* =========================
+   LUNKI CHARACTER
+   ========================= */
+
+.lunki-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lunki-placeholder {
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+}
+
+.lunki-placeholder img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 24px;
+}
+@media (max-width: 700px) {
+  .lunki-placeholder {
+    max-width: 380px;
+  }
+
+  .lunki-placeholder img {
+    max-height: 400px;
+  }
+}
