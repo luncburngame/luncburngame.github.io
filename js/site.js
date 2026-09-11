@@ -32,7 +32,7 @@ const translations = {
     dustersTitle: "Not everything wants to be rebuilt.",
     basic: "Basic",
     shield: "Shield",
-     heavy: "Heavy",
+    heavy: "Heavy",
     flyer: "Flyer",
     commander: "Commander",
 
