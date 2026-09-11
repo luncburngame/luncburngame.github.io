@@ -1,3 +1,4 @@
+console.log("LUNC BURN GAME JS LOADED");
 const translations = {
   EN: {
     navGame: "Game",
