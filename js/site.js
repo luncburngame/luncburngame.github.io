@@ -2,6 +2,7 @@ const translations = {
   EN: {
     navGame: "Game",
     navLunki: "Lunki",
+    navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roadmap",
     navDownload: "Download",
@@ -76,6 +77,7 @@ const translations = {
   FR: {
     navGame: "Jeu",
     navLunki: "Lunki",
+    navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roadmap",
     navDownload: "Télécharger",
