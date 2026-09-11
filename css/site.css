@@ -82,8 +82,10 @@ a {
 
 .nav-actions {
   display: flex;
-  gap: 10px;
   align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-left: auto;
 }
 
 select {
