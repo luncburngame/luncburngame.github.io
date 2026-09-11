@@ -1624,3 +1624,31 @@ select {
   }
 
 }
+
+@media (max-width: 700px) {
+
+  .duster-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .duster-card {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .duster-info {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .duster-description {
+    width: 100%;
+  }
+
+  .duster-description p {
+    width: auto;
+    max-width: none;
+  }
+
+}
