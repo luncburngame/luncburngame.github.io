@@ -2091,3 +2091,37 @@ select {
   }
 
 }
+
+/* FIX — SOCIAL ICONS FOOTER */
+
+.footer-socials a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.footer-socials svg {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  fill: none !important;
+  stroke: #ffffff !important;
+  stroke-width: 1.8 !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-socials svg path,
+.footer-socials svg rect {
+  fill: none !important;
+  stroke: #ffffff !important;
+}
+
+.footer-socials a:hover {
+  color: var(--gold) !important;
+}
+
+.footer-socials a:hover svg,
+.footer-socials a:hover svg path,
+.footer-socials a:hover svg rect {
+  stroke: var(--gold) !important;
+}
