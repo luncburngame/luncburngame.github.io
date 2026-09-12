@@ -1341,6 +1341,13 @@ select {
     grid-row: 1;
   }
 
+  .brand-logo {
+    width: 125px !important;
+    height: 42px !important;
+    max-width: 125px !important;
+    max-height: 42px !important;
+  }
+
   .brand-text {
     font-size: 14px;
   }
