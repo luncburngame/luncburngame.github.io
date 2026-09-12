@@ -2029,3 +2029,35 @@ select {
   }
 
 }
+
+/* =========================================================
+   FOOTER LOGO — FINAL SIZE
+========================================================= */
+
+.footer-logo {
+  display: block !important;
+
+  width: 220px !important;
+  height: auto !important;
+
+  max-width: 220px !important;
+  max-height: 70px !important;
+
+  object-fit: contain !important;
+
+  flex-shrink: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .footer-logo {
+    width: 170px !important;
+    max-width: 170px !important;
+    max-height: 55px !important;
+    height: auto !important;
+  }
+
+}
