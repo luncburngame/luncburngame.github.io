@@ -1683,3 +1683,107 @@ select {
     grid-column: auto;
   }
 }
+
+/* =========================================================
+   GAME — CINEMATIC VISUAL + FEATURE ICONS
+========================================================= */
+
+/* IMAGE GAME */
+
+.game-visual {
+  width: 100%;
+  height: 260px;
+
+  margin: 0 0 28px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--line);
+  border-radius: 22px;
+
+  background: var(--navy-2);
+}
+
+.game-visual img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* FEATURE ICONS */
+
+.feature-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.feature-icon {
+  flex: 0 0 54px;
+
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 48px;
+  height: 48px;
+
+  fill: none;
+
+  stroke: var(--gold);
+
+  stroke-width: 2.5;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter: drop-shadow(
+    0 0 8px rgba(247, 201, 72, 0.12)
+  );
+}
+
+.feature-icon svg * {
+  fill: none;
+  stroke: inherit;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .game-visual {
+    height: 205px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+  }
+
+  .feature-content {
+    gap: 16px;
+  }
+
+  .feature-icon {
+    flex-basis: 48px;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .feature-icon svg {
+    width: 42px;
+    height: 42px;
+  }
+
+}
