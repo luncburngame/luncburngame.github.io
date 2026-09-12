@@ -1227,3 +1227,175 @@ body {
   }
 
 }
+
+/* =========================================================
+   FINAL MOBILE / SVG FIXES
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   FORM SVG ICONS
+   Force the contact icons to remain small and visible.
+--------------------------------------------------------- */
+
+.contact-form .contact-field-icon,
+.contact-form .contact-message-icon {
+  position: absolute !important;
+
+  width: 20px !important;
+  height: 20px !important;
+
+  min-width: 20px !important;
+  min-height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+
+  left: 20px !important;
+  top: 50% !important;
+
+  display: block !important;
+
+  transform: translateY(-50%) !important;
+
+  fill: none !important;
+  stroke: #f4c84a !important;
+  stroke-width: 1.7 !important;
+
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+
+  overflow: visible !important;
+
+  pointer-events: none !important;
+  z-index: 5 !important;
+}
+
+/* Force every SVG element inside the form to keep the gold outline */
+.contact-form .contact-field-icon path,
+.contact-form .contact-field-icon circle,
+.contact-form .contact-field-icon rect {
+  fill: none !important;
+  stroke: #f4c84a !important;
+  stroke-width: 1.7 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTAREA ICON
+--------------------------------------------------------- */
+
+.contact-form .contact-textarea-wrap .contact-message-icon {
+  top: 27px !important;
+  left: 20px !important;
+
+  transform: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   SOCIAL ICON → TEXT SPACING
+--------------------------------------------------------- */
+
+.contact-social-row {
+  column-gap: 28px !important;
+}
+
+.contact-social-text {
+  padding-top: 5px !important;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL CTA BUTTON
+   More breathing room below the subtitle.
+--------------------------------------------------------- */
+
+.contact-final-content > p:not(.contact-final-eyebrow) {
+  margin-bottom: 0 !important;
+}
+
+.contact-final-content .btn {
+  margin-top: 48px !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* FORM ICONS */
+  .contact-form .contact-field-icon,
+  .contact-form .contact-message-icon {
+    width: 18px !important;
+    height: 18px !important;
+
+    min-width: 18px !important;
+    min-height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+
+    left: 18px !important;
+  }
+
+  .contact-form .contact-textarea-wrap .contact-message-icon {
+    top: 22px !important;
+  }
+
+
+  /* SOCIALS */
+  .contact-social-row {
+    column-gap: 24px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .contact-social-text {
+    padding-top: 4px !important;
+  }
+
+
+  /* VALUES
+     Keep the three cards side by side */
+  .contact-values-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .contact-value-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+
+  /* FINAL CTA */
+  .contact-final-content .btn {
+    margin-top: 48px !important;
+
+    min-width: 175px !important;
+    min-height: 50px !important;
+
+    padding: 0 18px !important;
+
+    font-size: 0.78rem !important;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .contact-social-row {
+    column-gap: 20px !important;
+  }
+
+  .contact-final-content .btn {
+    margin-top: 44px !important;
+    min-width: 165px !important;
+  }
+}
