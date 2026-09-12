@@ -1,4 +1,5 @@
 const translations = {
+
   EN: {
     navGame: "Game",
     navLunki: "Lunki",
@@ -57,15 +58,52 @@ const translations = {
     dashboard: "PUBLIC BURN DASHBOARD",
 
     roadmapEyebrow: "ROADMAP",
-roadmapTitle: "Step by step towards a brighter future.",
-phase1: "FOUNDATION",
-phase1Text: "Brand identity, website launch, community channels and game concept definition.",
-phase2: "PROTOTYPE",
-phase2Text: "Core gameplay, physics, game mechanics, internal testing and the first playable version.",
-phase3: "ALPHA",
-phase3Text: "Worlds and environments, DUSTERS, progression system and community feedback.",
-phase4: "LAUNCH",
-phase4Text: "Mobile release, live game economy, community growth and transparent LUNC burns.",
+    roadmapTitle: "Step by step towards a brighter future.",
+    roadmapLead: "Each milestone brings us closer to our goal: a fun game with a real purpose.",
+
+    phase1: "FOUNDATION",
+    phase1Subtitle: "BUILD THE BASE",
+    phase1Status: "COMPLETED",
+    phase1Tasks: [
+      "Brand identity",
+      "Website launch",
+      "Community channels",
+      "Game concept definition"
+    ],
+
+    phase2: "PROTOTYPE",
+    phase2Subtitle: "BRING THE GAME TO LIFE",
+    phase2Status: "IN PROGRESS",
+    phase2Tasks: [
+      "Core gameplay development",
+      "Physics and game mechanics",
+      "Internal testing",
+      "First playable version"
+    ],
+
+    phase3: "ALPHA",
+    phase3Subtitle: "EXPAND THE UNIVERSE",
+    phase3Status: "COMING SOON",
+    phase3Tasks: [
+      "Worlds and environments",
+      "DUSTERS and gameplay variety",
+      "Progression system",
+      "Community feedback"
+    ],
+
+    phase4: "LAUNCH",
+    phase4Subtitle: "PLAY FOR A REAL IMPACT",
+    phase4Status: "COMING SOON",
+    phase4Tasks: [
+      "Mobile release",
+      "Live game economy",
+      "Community growth",
+      "Transparent LUNC burns"
+    ],
+
+    motto1: "Play.",
+    motto2: "Rebuild.",
+    motto3: "Burn.",
 
     downloadEyebrow: "COMING SOON",
     downloadTitle: "Your move.",
@@ -78,6 +116,7 @@ phase4Text: "Mobile release, live game economy, community growth and transparent
     footerContact: "Contact",
     footerCopyright: "© 2026 LUNC Burn Game. All rights reserved."
   },
+
 
   FR: {
     navGame: "Jeu",
@@ -136,17 +175,54 @@ phase4Text: "Mobile release, live game economy, community growth and transparent
     reserve: "RÉSERVE DE BURN",
     dashboard: "TABLEAU DE BORD PUBLIC",
 
-roadmapEyebrow: "FEUILLE DE ROUTE",
-roadmapTitle: "Étape par étape vers un avenir meilleur.",
-phase1: "FONDATIONS",
-phase1Text: "Identité de marque, lancement du site, création de la communauté et définition du concept du jeu.",
-phase2: "PROTOTYPE",
-phase2Text: "Gameplay, physique, mécaniques de jeu, tests internes et première version jouable.",
-phase3: "ALPHA",
-phase3Text: "Mondes et environnements, DUSTERS, système de progression et retours de la communauté.",
-phase4: "LANCEMENT",
-phase4Text: "Sortie mobile, économie du jeu, développement de la communauté et burns LUNC transparents.",
-    
+    roadmapEyebrow: "FEUILLE DE ROUTE",
+    roadmapTitle: "Étape par étape vers un avenir meilleur.",
+    roadmapLead: "Chaque étape nous rapproche de notre objectif : un jeu amusant avec une vraie mission.",
+
+    phase1: "FONDATIONS",
+    phase1Subtitle: "CONSTRUIRE LA BASE",
+    phase1Status: "TERMINÉ",
+    phase1Tasks: [
+      "Identité de marque",
+      "Lancement du site",
+      "Canaux communautaires",
+      "Définition du concept du jeu"
+    ],
+
+    phase2: "PROTOTYPE",
+    phase2Subtitle: "DONNER VIE AU JEU",
+    phase2Status: "EN COURS",
+    phase2Tasks: [
+      "Développement du gameplay",
+      "Physique et mécaniques de jeu",
+      "Tests internes",
+      "Première version jouable"
+    ],
+
+    phase3: "ALPHA",
+    phase3Subtitle: "DÉVELOPPER L'UNIVERS",
+    phase3Status: "À VENIR",
+    phase3Tasks: [
+      "Mondes et environnements",
+      "DUSTERS et variété de gameplay",
+      "Système de progression",
+      "Retours de la communauté"
+    ],
+
+    phase4: "LANCEMENT",
+    phase4Subtitle: "JOUER POUR UN VRAI IMPACT",
+    phase4Status: "À VENIR",
+    phase4Tasks: [
+      "Sortie mobile",
+      "Économie du jeu",
+      "Développement de la communauté",
+      "Burns LUNC transparents"
+    ],
+
+    motto1: "Jouer.",
+    motto2: "Reconstruire.",
+    motto3: "Burn.",
+
     downloadEyebrow: "BIENTÔT",
     downloadTitle: "À toi de jouer.",
     downloadText: "Le jeu se construit étape par étape. Suis le projet et sois prêt pour le lancement.",
@@ -158,6 +234,7 @@ phase4Text: "Sortie mobile, économie du jeu, développement de la communauté e
     footerContact: "Contact",
     footerCopyright: "© 2026 LUNC Burn Game. Tous droits réservés."
   },
+
 
   ES: {
     navGame: "Juego",
@@ -216,17 +293,54 @@ phase4Text: "Sortie mobile, économie du jeu, développement de la communauté e
     reserve: "RESERVA DE QUEMA",
     dashboard: "PANEL PÚBLICO DE QUEMAS",
 
-roadmapEyebrow: "HOJA DE RUTA",
-roadmapTitle: "Paso a paso hacia un futuro mejor.",
-phase1: "FUNDAMENTOS",
-phase1Text: "Identidad de marca, lanzamiento del sitio web, creación de la comunidad y definición del concepto del juego.",
-phase2: "PROTOTIPO",
-phase2Text: "Jugabilidad, física, mecánicas de juego, pruebas internas y primera versión jugable.",
-phase3: "ALPHA",
-phase3Text: "Mundos y entornos, DUSTERS, sistema de progresión y comentarios de la comunidad.",
-phase4: "LANZAMIENTO",
-phase4Text: "Lanzamiento móvil, economía del juego, crecimiento de la comunidad y burns de LUNC transparentes.",
-    
+    roadmapEyebrow: "HOJA DE RUTA",
+    roadmapTitle: "Paso a paso hacia un futuro mejor.",
+    roadmapLead: "Cada etapa nos acerca a nuestro objetivo: un juego divertido con un propósito real.",
+
+    phase1: "FUNDAMENTOS",
+    phase1Subtitle: "CONSTRUIR LA BASE",
+    phase1Status: "COMPLETADO",
+    phase1Tasks: [
+      "Identidad de marca",
+      "Lanzamiento del sitio web",
+      "Canales de la comunidad",
+      "Definición del concepto del juego"
+    ],
+
+    phase2: "PROTOTIPO",
+    phase2Subtitle: "DAR VIDA AL JUEGO",
+    phase2Status: "EN CURSO",
+    phase2Tasks: [
+      "Desarrollo del gameplay",
+      "Física y mecánicas de juego",
+      "Pruebas internas",
+      "Primera versión jugable"
+    ],
+
+    phase3: "ALPHA",
+    phase3Subtitle: "EXPANDIR EL UNIVERSO",
+    phase3Status: "PRÓXIMAMENTE",
+    phase3Tasks: [
+      "Mundos y entornos",
+      "DUSTERS y variedad de gameplay",
+      "Sistema de progresión",
+      "Comentarios de la comunidad"
+    ],
+
+    phase4: "LANZAMIENTO",
+    phase4Subtitle: "JUGAR PARA UN IMPACTO REAL",
+    phase4Status: "PRÓXIMAMENTE",
+    phase4Tasks: [
+      "Lanzamiento móvil",
+      "Economía del juego",
+      "Crecimiento de la comunidad",
+      "Quemas transparentes de LUNC"
+    ],
+
+    motto1: "Jugar.",
+    motto2: "Reconstruir.",
+    motto3: "Quemar.",
+
     downloadEyebrow: "PRÓXIMAMENTE",
     downloadTitle: "Es tu turno.",
     downloadText: "El juego se está construyendo paso a paso. Sigue el proyecto y prepárate para el lanzamiento.",
@@ -238,6 +352,7 @@ phase4Text: "Lanzamiento móvil, economía del juego, crecimiento de la comunida
     footerContact: "Contacto",
     footerCopyright: "© 2026 LUNC Burn Game. Todos los derechos reservados."
   },
+
 
   DE: {
     navGame: "Spiel",
@@ -296,17 +411,54 @@ phase4Text: "Lanzamiento móvil, economía del juego, crecimiento de la comunida
     reserve: "BURN-RESERVE",
     dashboard: "ÖFFENTLICHES BURN-DASHBOARD",
 
-roadmapEyebrow: "ROADMAP",
-roadmapTitle: "Schritt für Schritt in eine bessere Zukunft.",
-phase1: "GRUNDLAGEN",
-phase1Text: "Markenidentität, Website-Launch, Aufbau der Community und Definition des Spielkonzepts.",
-phase2: "PROTOTYP",
-phase2Text: "Gameplay, Physik, Spielmechaniken, interne Tests und die erste spielbare Version.",
-phase3: "ALPHA",
-phase3Text: "Welten und Umgebungen, DUSTERS, Fortschrittssystem und Feedback der Community.",
-phase4: "LAUNCH",
-phase4Text: "Mobile Veröffentlichung, Spielökonomie, Wachstum der Community und transparente LUNC-Burns.",
-    
+    roadmapEyebrow: "ROADMAP",
+    roadmapTitle: "Schritt für Schritt in eine bessere Zukunft.",
+    roadmapLead: "Jeder Meilenstein bringt uns unserem Ziel näher: ein unterhaltsames Spiel mit einem echten Zweck.",
+
+    phase1: "GRUNDLAGEN",
+    phase1Subtitle: "DIE BASIS SCHAFFEN",
+    phase1Status: "ABGESCHLOSSEN",
+    phase1Tasks: [
+      "Markenidentität",
+      "Website-Launch",
+      "Community-Kanäle",
+      "Definition des Spielkonzepts"
+    ],
+
+    phase2: "PROTOTYP",
+    phase2Subtitle: "DAS SPIEL ZUM LEBEN ERWECKEN",
+    phase2Status: "IN ARBEIT",
+    phase2Tasks: [
+      "Gameplay-Entwicklung",
+      "Physik und Spielmechaniken",
+      "Interne Tests",
+      "Erste spielbare Version"
+    ],
+
+    phase3: "ALPHA",
+    phase3Subtitle: "DAS UNIVERSUM ERWEITERN",
+    phase3Status: "DEMNÄCHST",
+    phase3Tasks: [
+      "Welten und Umgebungen",
+      "DUSTERS und Gameplay-Vielfalt",
+      "Fortschrittssystem",
+      "Feedback der Community"
+    ],
+
+    phase4: "START",
+    phase4Subtitle: "SPIELEN FÜR EINE ECHTE WIRKUNG",
+    phase4Status: "DEMNÄCHST",
+    phase4Tasks: [
+      "Mobile Veröffentlichung",
+      "Spielökonomie",
+      "Wachstum der Community",
+      "Transparente LUNC-Burns"
+    ],
+
+    motto1: "Spielen.",
+    motto2: "Wiederaufbauen.",
+    motto3: "Burn.",
+
     downloadEyebrow: "DEMNÄCHST",
     downloadTitle: "Du bist dran.",
     downloadText: "Das Spiel wird Schritt für Schritt entwickelt. Folge dem Projekt und sei bereit für den Start.",
@@ -318,6 +470,7 @@ phase4Text: "Mobile Veröffentlichung, Spielökonomie, Wachstum der Community un
     footerContact: "Kontakt",
     footerCopyright: "© 2026 LUNC Burn Game. Alle Rechte vorbehalten."
   },
+
 
   PT: {
     navGame: "Jogo",
@@ -376,17 +529,54 @@ phase4Text: "Mobile Veröffentlichung, Spielökonomie, Wachstum der Community un
     reserve: "RESERVA DE BURN",
     dashboard: "PAINEL PÚBLICO DE BURNS",
 
-roadmapEyebrow: "ROADMAP",
-roadmapTitle: "Passo a passo rumo a um futuro melhor.",
-phase1: "FUNDAMENTOS",
-phase1Text: "Identidade da marca, lançamento do site, criação da comunidade e definição do conceito do jogo.",
-phase2: "PROTÓTIPO",
-phase2Text: "Gameplay, física, mecânicas de jogo, testes internos e primeira versão jogável.",
-phase3: "ALPHA",
-phase3Text: "Mundos e ambientes, DUSTERS, sistema de progressão e feedback da comunidade.",
-phase4: "LANÇAMENTO",
-phase4Text: "Lançamento mobile, economia do jogo, crescimento da comunidade e burns de LUNC transparentes.",
-    
+    roadmapEyebrow: "ROTEIRO",
+    roadmapTitle: "Passo a passo rumo a um futuro melhor.",
+    roadmapLead: "Cada etapa aproxima-nos do nosso objetivo: um jogo divertido com um verdadeiro propósito.",
+
+    phase1: "FUNDAMENTOS",
+    phase1Subtitle: "CONSTRUIR A BASE",
+    phase1Status: "CONCLUÍDO",
+    phase1Tasks: [
+      "Identidade da marca",
+      "Lançamento do site",
+      "Canais da comunidade",
+      "Definição do conceito do jogo"
+    ],
+
+    phase2: "PROTÓTIPO",
+    phase2Subtitle: "DAR VIDA AO JOGO",
+    phase2Status: "EM CURSO",
+    phase2Tasks: [
+      "Desenvolvimento do gameplay",
+      "Física e mecânicas de jogo",
+      "Testes internos",
+      "Primeira versão jogável"
+    ],
+
+    phase3: "ALPHA",
+    phase3Subtitle: "EXPANDIR O UNIVERSO",
+    phase3Status: "EM BREVE",
+    phase3Tasks: [
+      "Mundos e ambientes",
+      "DUSTERS e variedade de gameplay",
+      "Sistema de progressão",
+      "Feedback da comunidade"
+    ],
+
+    phase4: "LANÇAMENTO",
+    phase4Subtitle: "JOGAR PARA UM IMPACTO REAL",
+    phase4Status: "EM BREVE",
+    phase4Tasks: [
+      "Lançamento mobile",
+      "Economia do jogo",
+      "Crescimento da comunidade",
+      "Burns transparentes de LUNC"
+    ],
+
+    motto1: "Jogar.",
+    motto2: "Reconstruir.",
+    motto3: "Burn.",
+
     downloadEyebrow: "EM BREVE",
     downloadTitle: "É a tua vez.",
     downloadText: "O jogo está a ser construído passo a passo. Segue o projeto e prepara-te para o lançamento.",
@@ -398,7 +588,83 @@ phase4Text: "Lançamento mobile, economia do jogo, crescimento da comunidade e b
     footerContact: "Contacto",
     footerCopyright: "© 2026 LUNC Burn Game. Todos os direitos reservados."
   }
+
 };
+
+
+function translateRoadmap(language) {
+
+  const t = translations[language];
+
+  if (!t) return;
+
+
+  /* Intro */
+
+  const lead = document.querySelector(".roadmap-lead");
+
+  if (lead) {
+    lead.textContent = t.roadmapLead;
+  }
+
+
+  /* Motto */
+
+  const motto = document.querySelectorAll(".roadmap-motto span");
+
+  if (motto.length >= 3) {
+    motto[0].textContent = t.motto1;
+    motto[1].textContent = t.motto2;
+    motto[2].textContent = t.motto3;
+  }
+
+
+  /* Phases */
+
+  const phases = document.querySelectorAll(".roadmap-phase");
+
+  phases.forEach(function(phase, index) {
+
+    const number = index + 1;
+
+    const title = phase.querySelector("h3");
+    const subtitle = phase.querySelector(".roadmap-subtitle");
+    const status = phase.querySelector(".roadmap-status");
+    const tasks = phase.querySelectorAll(".roadmap-tasks li");
+
+    const phaseKey = "phase" + number;
+    const subtitleKey = phaseKey + "Subtitle";
+    const statusKey = phaseKey + "Status";
+    const tasksKey = phaseKey + "Tasks";
+
+
+    if (title && t[phaseKey]) {
+      title.textContent = t[phaseKey];
+    }
+
+    if (subtitle && t[subtitleKey]) {
+      subtitle.textContent = t[subtitleKey];
+    }
+
+    if (status && t[statusKey]) {
+      status.textContent = t[statusKey];
+    }
+
+    if (tasks.length && t[tasksKey]) {
+
+      tasks.forEach(function(task, taskIndex) {
+
+        if (t[tasksKey][taskIndex]) {
+          task.textContent = t[tasksKey][taskIndex];
+        }
+
+      });
+
+    }
+
+  });
+
+}
 
 
 function setLanguage(language) {
@@ -406,6 +672,9 @@ function setLanguage(language) {
   if (!translations[language]) {
     language = "EN";
   }
+
+
+  /* Standard translations */
 
   document.querySelectorAll("[data-i18n]").forEach(function(element) {
 
@@ -417,13 +686,28 @@ function setLanguage(language) {
 
   });
 
+
+  /* Roadmap translations */
+
+  translateRoadmap(language);
+
+
+  /* Language selectors */
+
   document.querySelectorAll("[data-lang-select]").forEach(function(select) {
     select.value = language;
   });
 
+
+  /* HTML language */
+
   document.documentElement.lang = language.toLowerCase();
 
+
+  /* Remember selected language */
+
   localStorage.setItem("luncburngame-language", language);
+
 }
 
 
@@ -432,12 +716,17 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll("[data-lang-select]").forEach(function(select) {
 
     select.addEventListener("change", function() {
+
       setLanguage(this.value);
+
     });
 
   });
 
-  const savedLanguage = localStorage.getItem("luncburngame-language") || "EN";
+
+  const savedLanguage =
+    localStorage.getItem("luncburngame-language") || "EN";
+
 
   setLanguage(savedLanguage);
 
