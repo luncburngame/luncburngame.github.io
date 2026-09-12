@@ -713,7 +713,7 @@
        FOOTER
   ========================== -->
 
-  <footer class="site-footer">
+<footer class="site-footer">
 
   <div class="footer-inner">
 
@@ -747,15 +747,15 @@
 
     <nav class="footer-links" aria-label="Footer navigation">
 
-      <a href="#privacy">
+      <a href="#privacy" data-i18n="footerPrivacy">
         Privacy
       </a>
 
-      <a href="#terms">
+      <a href="#terms" data-i18n="footerTerms">
         Terms
       </a>
 
-      <a href="#contact">
+      <a href="#contact" data-i18n="footerContact">
         Contact
       </a>
 
@@ -766,39 +766,78 @@
 
     <div class="footer-right">
 
+      <!-- SOCIALS -->
+
       <div class="footer-socials">
 
-        <a href="#" aria-label="X">
-          𝕏
+        <!-- X -->
+
+        <a
+          href="#"
+          aria-label="X"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 4L19 20"></path>
+            <path d="M19 4L5 20"></path>
+          </svg>
+
         </a>
 
-        <a href="#" aria-label="Discord">
-          ◉
-        </a>
 
-        <a href="#" aria-label="YouTube">
-          ▶
-        </a>
+        <!-- YOUTUBE -->
 
-        <a href="#" aria-label="Telegram">
-          ➤
+        <a
+          href="#"
+          aria-label="YouTube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+
+            <rect
+              x="3"
+              y="6"
+              width="18"
+              height="12"
+              rx="3">
+            </rect>
+
+            <path d="M10 9L16 12L10 15Z"></path>
+
+          </svg>
+
         </a>
 
       </div>
+
+
+      <!-- LANGUAGE -->
 
       <select
         class="language-select footer-language"
         data-lang-select
         aria-label="Language"
       >
+
         <option value="EN">EN</option>
         <option value="FR">FR</option>
         <option value="ES">ES</option>
         <option value="DE">DE</option>
         <option value="PT">PT</option>
+
       </select>
 
-      <span class="footer-copyright">
+
+      <!-- COPYRIGHT -->
+
+      <span
+        class="footer-copyright"
+        data-i18n="footerCopyright"
+      >
         © 2026 LUNC Burn Game. All rights reserved.
       </span>
 
@@ -807,7 +846,6 @@
   </div>
 
 </footer>
-
 
 <script src="js/site.js?v=3"></script>
 
