@@ -106,10 +106,10 @@ select {
 
 .brand-logo {
   display: block !important;
-  width: 120px !important;
-  height: 42px !important;
-  max-width: 120px !important;
-  max-height: 42px !important;
+  width: 160px !important;
+  height: 50px !important;
+  max-width: 160px !important;
+  max-height: 50px !important;
   object-fit: contain !important;
 }
 
