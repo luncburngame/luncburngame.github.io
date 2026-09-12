@@ -954,18 +954,12 @@ select {
   line-height: 1.7;
 }
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
 /* =========================================================
    FOOTER
 ========================================================= */
 
 .site-footer {
   background: #050f1b;
-
   border-top: 1px solid var(--line);
 }
 
@@ -978,7 +972,7 @@ select {
 
   display: grid;
 
-  grid-template-columns: 1.4fr auto 1fr;
+  grid-template-columns: 1.5fr auto 1fr;
 
   align-items: center;
 
@@ -986,7 +980,9 @@ select {
 }
 
 
-/* BRAND */
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
 
 .footer-brand {
   display: flex;
@@ -999,13 +995,16 @@ select {
 }
 
 .footer-logo {
-  display: block;
+  display: block !important;
 
-  width: 84px;
+  width: 220px !important;
 
-  height: 84px;
+  height: auto !important;
 
-  object-fit: contain;
+  max-width: 220px !important;
+  max-height: 70px !important;
+
+  object-fit: contain !important;
 
   flex-shrink: 0;
 }
@@ -1019,15 +1018,15 @@ select {
 }
 
 .footer-brand-text strong {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 
   color: var(--gold);
 
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 800;
 
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
 .footer-brand-text span {
@@ -1035,27 +1034,29 @@ select {
 
   color: #dce4ee;
 
-  font-size: 13px;
+  font-size: 12px;
 
   font-weight: 600;
 
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
 }
 
 .footer-brand-text p {
-  margin: 0;
+  max-width: 350px;
 
-  max-width: 360px;
+  margin: 0;
 
   color: var(--muted);
 
-  font-size: 12px;
+  font-size: 11px;
 
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 
-/* LINKS */
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
 
 .footer-links {
   display: flex;
@@ -1064,13 +1065,13 @@ select {
 
   justify-content: center;
 
-  gap: 32px;
+  gap: 30px;
 }
 
 .footer-links a {
   color: var(--muted);
 
-  font-size: 14px;
+  font-size: 13px;
 
   font-weight: 600;
 
@@ -1086,7 +1087,9 @@ select {
 }
 
 
-/* RIGHT */
+/* =========================================================
+   FOOTER RIGHT
+========================================================= */
 
 .footer-right {
   display: flex;
@@ -1095,36 +1098,32 @@ select {
 
   align-items: flex-end;
 
-  gap: 14px;
+  gap: 13px;
 }
 
 
-/* SOCIALS */
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
 
 .footer-socials {
   display: flex;
 
   align-items: center;
 
-  gap: 22px;
+  gap: 18px;
 }
 
 .footer-socials a {
+  width: 30px;
+  height: 30px;
+
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
-  width: 28px;
-
-  height: 28px;
-
   color: var(--white);
-
-  font-size: 21px;
-
-  font-weight: 700;
 
   transition:
     color 0.2s ease,
@@ -1137,8 +1136,25 @@ select {
   transform: translateY(-2px);
 }
 
+.footer-socials svg {
+  width: 21px;
+  height: 21px;
 
-/* LANGUAGE */
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.8;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   FOOTER LANGUAGE
+========================================================= */
 
 .footer-language {
   min-width: 62px;
@@ -1147,12 +1163,14 @@ select {
 }
 
 
-/* COPYRIGHT */
+/* =========================================================
+   FOOTER COPYRIGHT
+========================================================= */
 
 .footer-copyright {
   color: var(--muted);
 
-  font-size: 11px;
+  font-size: 10px;
 
   line-height: 1.4;
 
@@ -1177,7 +1195,7 @@ select {
 
     align-items: stretch;
 
-    gap: 30px;
+    gap: 28px;
   }
 
 
@@ -1190,21 +1208,25 @@ select {
   }
 
   .footer-logo {
-    width: 70px;
+    width: 170px !important;
 
-    height: 70px;
+    max-width: 170px !important;
+
+    max-height: 55px !important;
+
+    height: auto !important;
   }
 
   .footer-brand-text strong {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .footer-brand-text span {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .footer-brand-text p {
-    font-size: 11px;
+    font-size: 10px;
   }
 
 
@@ -1215,11 +1237,9 @@ select {
 
     gap: 24px;
 
-    padding-top: 4px;
+    padding-top: 24px;
 
     border-top: 1px solid var(--line);
-
-    padding-top: 24px;
   }
 
 
@@ -1228,14 +1248,23 @@ select {
   .footer-right {
     align-items: flex-start;
 
+    gap: 17px;
+  }
+
+
+  /* SOCIALS */
+
+  .footer-socials {
     gap: 18px;
   }
 
-
-  .footer-socials {
-    gap: 20px;
+  .footer-socials svg {
+    width: 20px;
+    height: 20px;
   }
 
+
+  /* COPYRIGHT */
 
   .footer-copyright {
     text-align: left;
@@ -1244,6 +1273,7 @@ select {
   }
 
 }
+
 
 
 /* =========================================================
