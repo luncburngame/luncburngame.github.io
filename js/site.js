@@ -1,15 +1,21 @@
 const translations = {
 
+  /* =========================================================
+     ENGLISH
+  ========================================================= */
+
   EN: {
     navGame: "Game",
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roadmap",
-    navDownload: "Download",
+    navDownload: "Coming Soon",
+
     comingSoon: "Coming Soon",
 
     heroEyebrow: "A physics-driven adventure",
+    heroTitle: "PLAY. REBUILD. BURN.",
     heroText: "Explore the ruins of a broken world, master the physics, defeat the DUSTERS and rebuild what was lost.",
     heroCta: "EXPLORE THE GAME",
 
@@ -19,10 +25,13 @@ const translations = {
 
     gameEyebrow: "THE GAME",
     gameTitle: "Simple to learn. Hard to master.",
+
     aimTitle: "AIM",
     aimText: "Choose your trajectory and prepare your shot.",
+
     impactTitle: "IMPACT",
     impactText: "Use physics, timing and the environment to create chain reactions.",
+
     rebuildTitle: "REBUILD",
     rebuildText: "Restore the world level by level and discover what comes next.",
 
@@ -32,6 +41,7 @@ const translations = {
 
     dustersEyebrow: "THE DUSTERS",
     dustersTitle: "Not everything wants to be rebuilt.",
+
     basic: "Basic",
     shield: "Shield",
     heavy: "Heavy",
@@ -61,7 +71,11 @@ const translations = {
     roadmapTitle: "Step by step towards a brighter future.",
     roadmapLead: "Each milestone brings us closer to our goal: a fun game with a real purpose.",
 
-    phase1: "FOUNDATION",
+    motto1: "Play.",
+    motto2: "Rebuild.",
+    motto3: "Burn.",
+
+    phase1Title: "FOUNDATION",
     phase1Subtitle: "BUILD THE BASE",
     phase1Status: "COMPLETED",
     phase1Tasks: [
@@ -71,7 +85,7 @@ const translations = {
       "Game concept definition"
     ],
 
-    phase2: "PROTOTYPE",
+    phase2Title: "PROTOTYPE",
     phase2Subtitle: "BRING THE GAME TO LIFE",
     phase2Status: "IN PROGRESS",
     phase2Tasks: [
@@ -81,7 +95,7 @@ const translations = {
       "First playable version"
     ],
 
-    phase3: "ALPHA",
+    phase3Title: "ALPHA",
     phase3Subtitle: "EXPAND THE UNIVERSE",
     phase3Status: "COMING SOON",
     phase3Tasks: [
@@ -91,7 +105,7 @@ const translations = {
       "Community feedback"
     ],
 
-    phase4: "LAUNCH",
+    phase4Title: "LAUNCH",
     phase4Subtitle: "PLAY FOR A REAL IMPACT",
     phase4Status: "COMING SOON",
     phase4Tasks: [
@@ -100,10 +114,6 @@ const translations = {
       "Community growth",
       "Transparent LUNC burns"
     ],
-
-    motto1: "Play.",
-    motto2: "Rebuild.",
-    motto3: "Burn.",
 
     downloadEyebrow: "COMING SOON",
     downloadTitle: "Your move.",
@@ -118,16 +128,22 @@ const translations = {
   },
 
 
+  /* =========================================================
+     FRANÇAIS
+  ========================================================= */
+
   FR: {
     navGame: "Jeu",
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roadmap",
-    navDownload: "Télécharger",
+    navDownload: "Bientôt disponible",
+
     comingSoon: "Bientôt disponible",
 
     heroEyebrow: "Une aventure basée sur la physique",
+    heroTitle: "JOUER. RECONSTRUIRE. BRÛLER.",
     heroText: "Explore les ruines d'un monde brisé, maîtrise la physique, affronte les DUSTERS et reconstruis ce qui a été perdu.",
     heroCta: "DÉCOUVRIR LE JEU",
 
@@ -137,10 +153,13 @@ const translations = {
 
     gameEyebrow: "LE JEU",
     gameTitle: "Simple à apprendre. Difficile à maîtriser.",
+
     aimTitle: "VISER",
     aimText: "Choisis ta trajectoire et prépare ton tir.",
+
     impactTitle: "IMPACT",
     impactText: "Utilise la physique, le timing et l'environnement pour créer des réactions en chaîne.",
+
     rebuildTitle: "RECONSTRUIRE",
     rebuildText: "Restaure le monde niveau après niveau et découvre la suite.",
 
@@ -150,6 +169,7 @@ const translations = {
 
     dustersEyebrow: "LES DUSTERS",
     dustersTitle: "Tout le monde ne veut pas être reconstruit.",
+
     basic: "Basique",
     shield: "Bouclier",
     heavy: "Lourd",
@@ -175,11 +195,15 @@ const translations = {
     reserve: "RÉSERVE DE BURN",
     dashboard: "TABLEAU DE BORD PUBLIC",
 
-    roadmapEyebrow: "FEUILLE DE ROUTE",
-    roadmapTitle: "Étape par étape vers un avenir meilleur.",
-    roadmapLead: "Chaque étape nous rapproche de notre objectif : un jeu amusant avec une vraie mission.",
+    roadmapEyebrow: "ROADMAP",
+    roadmapTitle: "Étape après étape vers un avenir meilleur.",
+    roadmapLead: "Chaque étape nous rapproche de notre objectif : un jeu amusant avec une véritable mission.",
 
-    phase1: "FONDATIONS",
+    motto1: "Jouer.",
+    motto2: "Reconstruire.",
+    motto3: "Brûler.",
+
+    phase1Title: "FONDATIONS",
     phase1Subtitle: "CONSTRUIRE LA BASE",
     phase1Status: "TERMINÉ",
     phase1Tasks: [
@@ -189,7 +213,7 @@ const translations = {
       "Définition du concept du jeu"
     ],
 
-    phase2: "PROTOTYPE",
+    phase2Title: "PROTOTYPE",
     phase2Subtitle: "DONNER VIE AU JEU",
     phase2Status: "EN COURS",
     phase2Tasks: [
@@ -199,18 +223,18 @@ const translations = {
       "Première version jouable"
     ],
 
-    phase3: "ALPHA",
-    phase3Subtitle: "DÉVELOPPER L'UNIVERS",
+    phase3Title: "ALPHA",
+    phase3Subtitle: "ÉTENDRE L'UNIVERS",
     phase3Status: "À VENIR",
     phase3Tasks: [
       "Mondes et environnements",
-      "DUSTERS et variété de gameplay",
+      "DUSTERS et variété du gameplay",
       "Système de progression",
       "Retours de la communauté"
     ],
 
-    phase4: "LANCEMENT",
-    phase4Subtitle: "JOUER POUR UN VRAI IMPACT",
+    phase4Title: "LANCEMENT",
+    phase4Subtitle: "JOUER POUR UN IMPACT RÉEL",
     phase4Status: "À VENIR",
     phase4Tasks: [
       "Sortie mobile",
@@ -218,10 +242,6 @@ const translations = {
       "Développement de la communauté",
       "Burns LUNC transparents"
     ],
-
-    motto1: "Jouer.",
-    motto2: "Reconstruire.",
-    motto3: "Burn.",
 
     downloadEyebrow: "BIENTÔT",
     downloadTitle: "À toi de jouer.",
@@ -236,16 +256,22 @@ const translations = {
   },
 
 
+  /* =========================================================
+     ESPAÑOL
+  ========================================================= */
+
   ES: {
     navGame: "Juego",
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Hoja de ruta",
-    navDownload: "Descargar",
+    navDownload: "Próximamente",
+
     comingSoon: "Próximamente",
 
     heroEyebrow: "Una aventura basada en la física",
+    heroTitle: "JUGAR. RECONSTRUIR. QUEMAR.",
     heroText: "Explora las ruinas de un mundo destruido, domina la física, derrota a los DUSTERS y reconstruye lo que se perdió.",
     heroCta: "DESCUBRE EL JUEGO",
 
@@ -255,10 +281,13 @@ const translations = {
 
     gameEyebrow: "EL JUEGO",
     gameTitle: "Fácil de aprender. Difícil de dominar.",
+
     aimTitle: "APUNTAR",
     aimText: "Elige tu trayectoria y prepara tu disparo.",
+
     impactTitle: "IMPACTO",
     impactText: "Utiliza la física, el momento y el entorno para crear reacciones en cadena.",
+
     rebuildTitle: "RECONSTRUIR",
     rebuildText: "Restaura el mundo nivel a nivel y descubre qué viene después.",
 
@@ -268,6 +297,7 @@ const translations = {
 
     dustersEyebrow: "LOS DUSTERS",
     dustersTitle: "No todos quieren ser reconstruidos.",
+
     basic: "Básico",
     shield: "Escudo",
     heavy: "Pesado",
@@ -297,17 +327,21 @@ const translations = {
     roadmapTitle: "Paso a paso hacia un futuro mejor.",
     roadmapLead: "Cada etapa nos acerca a nuestro objetivo: un juego divertido con un propósito real.",
 
-    phase1: "FUNDAMENTOS",
+    motto1: "Jugar.",
+    motto2: "Reconstruir.",
+    motto3: "Quemar.",
+
+    phase1Title: "FUNDAMENTOS",
     phase1Subtitle: "CONSTRUIR LA BASE",
     phase1Status: "COMPLETADO",
     phase1Tasks: [
       "Identidad de marca",
       "Lanzamiento del sitio web",
-      "Canales de la comunidad",
+      "Canales de comunidad",
       "Definición del concepto del juego"
     ],
 
-    phase2: "PROTOTIPO",
+    phase2Title: "PROTOTIPO",
     phase2Subtitle: "DAR VIDA AL JUEGO",
     phase2Status: "EN CURSO",
     phase2Tasks: [
@@ -317,8 +351,8 @@ const translations = {
       "Primera versión jugable"
     ],
 
-    phase3: "ALPHA",
-    phase3Subtitle: "EXPANDIR EL UNIVERSO",
+    phase3Title: "ALPHA",
+    phase3Subtitle: "AMPLIAR EL UNIVERSO",
     phase3Status: "PRÓXIMAMENTE",
     phase3Tasks: [
       "Mundos y entornos",
@@ -327,7 +361,7 @@ const translations = {
       "Comentarios de la comunidad"
     ],
 
-    phase4: "LANZAMIENTO",
+    phase4Title: "LANZAMIENTO",
     phase4Subtitle: "JUGAR PARA UN IMPACTO REAL",
     phase4Status: "PRÓXIMAMENTE",
     phase4Tasks: [
@@ -336,10 +370,6 @@ const translations = {
       "Crecimiento de la comunidad",
       "Quemas transparentes de LUNC"
     ],
-
-    motto1: "Jugar.",
-    motto2: "Reconstruir.",
-    motto3: "Quemar.",
 
     downloadEyebrow: "PRÓXIMAMENTE",
     downloadTitle: "Es tu turno.",
@@ -354,16 +384,22 @@ const translations = {
   },
 
 
+  /* =========================================================
+     DEUTSCH
+  ========================================================= */
+
   DE: {
     navGame: "Spiel",
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roadmap",
-    navDownload: "Download",
+    navDownload: "Demnächst",
+
     comingSoon: "Demnächst",
 
     heroEyebrow: "Ein physikbasiertes Abenteuer",
+    heroTitle: "SPIELEN. AUFBAUEN. BURNEN.",
     heroText: "Erkunde die Ruinen einer zerstörten Welt, meistere die Physik, besiege die DUSTERS und baue wieder auf, was verloren ging.",
     heroCta: "DAS SPIEL ENTDECKEN",
 
@@ -373,10 +409,13 @@ const translations = {
 
     gameEyebrow: "DAS SPIEL",
     gameTitle: "Einfach zu lernen. Schwer zu meistern.",
+
     aimTitle: "ZIELEN",
     aimText: "Wähle deine Flugbahn und bereite deinen Schuss vor.",
+
     impactTitle: "IMPACT",
     impactText: "Nutze Physik, Timing und die Umgebung, um Kettenreaktionen auszulösen.",
+
     rebuildTitle: "WIEDERAUFBAU",
     rebuildText: "Stelle die Welt Level für Level wieder her und entdecke, was als Nächstes kommt.",
 
@@ -386,6 +425,7 @@ const translations = {
 
     dustersEyebrow: "DIE DUSTERS",
     dustersTitle: "Nicht jeder will wieder aufgebaut werden.",
+
     basic: "Basis",
     shield: "Schild",
     heavy: "Schwer",
@@ -415,7 +455,11 @@ const translations = {
     roadmapTitle: "Schritt für Schritt in eine bessere Zukunft.",
     roadmapLead: "Jeder Meilenstein bringt uns unserem Ziel näher: ein unterhaltsames Spiel mit einem echten Zweck.",
 
-    phase1: "GRUNDLAGEN",
+    motto1: "Spielen.",
+    motto2: "Aufbauen.",
+    motto3: "Burnen.",
+
+    phase1Title: "GRUNDLAGEN",
     phase1Subtitle: "DIE BASIS SCHAFFEN",
     phase1Status: "ABGESCHLOSSEN",
     phase1Tasks: [
@@ -425,17 +469,17 @@ const translations = {
       "Definition des Spielkonzepts"
     ],
 
-    phase2: "PROTOTYP",
+    phase2Title: "PROTOTYP",
     phase2Subtitle: "DAS SPIEL ZUM LEBEN ERWECKEN",
     phase2Status: "IN ARBEIT",
     phase2Tasks: [
-      "Gameplay-Entwicklung",
+      "Entwicklung des Gameplays",
       "Physik und Spielmechaniken",
       "Interne Tests",
       "Erste spielbare Version"
     ],
 
-    phase3: "ALPHA",
+    phase3Title: "ALPHA",
     phase3Subtitle: "DAS UNIVERSUM ERWEITERN",
     phase3Status: "DEMNÄCHST",
     phase3Tasks: [
@@ -445,7 +489,7 @@ const translations = {
       "Feedback der Community"
     ],
 
-    phase4: "START",
+    phase4Title: "START",
     phase4Subtitle: "SPIELEN FÜR EINE ECHTE WIRKUNG",
     phase4Status: "DEMNÄCHST",
     phase4Tasks: [
@@ -454,10 +498,6 @@ const translations = {
       "Wachstum der Community",
       "Transparente LUNC-Burns"
     ],
-
-    motto1: "Spielen.",
-    motto2: "Wiederaufbauen.",
-    motto3: "Burn.",
 
     downloadEyebrow: "DEMNÄCHST",
     downloadTitle: "Du bist dran.",
@@ -472,16 +512,22 @@ const translations = {
   },
 
 
+  /* =========================================================
+     PORTUGUÊS
+  ========================================================= */
+
   PT: {
     navGame: "Jogo",
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roteiro",
-    navDownload: "Descarregar",
+    navDownload: "Em breve",
+
     comingSoon: "Em breve",
 
     heroEyebrow: "Uma aventura baseada na física",
+    heroTitle: "JOGAR. RECONSTRUIR. QUEIMAR.",
     heroText: "Explora as ruínas de um mundo destruído, domina a física, derrota os DUSTERS e reconstrói o que foi perdido.",
     heroCta: "DESCOBRE O JOGO",
 
@@ -491,10 +537,13 @@ const translations = {
 
     gameEyebrow: "O JOGO",
     gameTitle: "Fácil de aprender. Difícil de dominar.",
+
     aimTitle: "APONTAR",
     aimText: "Escolhe a tua trajetória e prepara o teu disparo.",
+
     impactTitle: "IMPACTO",
     impactText: "Usa a física, o timing e o ambiente para criar reações em cadeia.",
+
     rebuildTitle: "RECONSTRUIR",
     rebuildText: "Restaura o mundo nível a nível e descobre o que vem a seguir.",
 
@@ -504,6 +553,7 @@ const translations = {
 
     dustersEyebrow: "OS DUSTERS",
     dustersTitle: "Nem todos querem ser reconstruídos.",
+
     basic: "Básico",
     shield: "Escudo",
     heavy: "Pesado",
@@ -531,9 +581,13 @@ const translations = {
 
     roadmapEyebrow: "ROTEIRO",
     roadmapTitle: "Passo a passo rumo a um futuro melhor.",
-    roadmapLead: "Cada etapa aproxima-nos do nosso objetivo: um jogo divertido com um verdadeiro propósito.",
+    roadmapLead: "Cada etapa aproxima-nos do nosso objetivo: um jogo divertido com um propósito real.",
 
-    phase1: "FUNDAMENTOS",
+    motto1: "Jogar.",
+    motto2: "Reconstruir.",
+    motto3: "Queimar.",
+
+    phase1Title: "FUNDAÇÕES",
     phase1Subtitle: "CONSTRUIR A BASE",
     phase1Status: "CONCLUÍDO",
     phase1Tasks: [
@@ -543,7 +597,7 @@ const translations = {
       "Definição do conceito do jogo"
     ],
 
-    phase2: "PROTÓTIPO",
+    phase2Title: "PROTÓTIPO",
     phase2Subtitle: "DAR VIDA AO JOGO",
     phase2Status: "EM CURSO",
     phase2Tasks: [
@@ -553,7 +607,7 @@ const translations = {
       "Primeira versão jogável"
     ],
 
-    phase3: "ALPHA",
+    phase3Title: "ALPHA",
     phase3Subtitle: "EXPANDIR O UNIVERSO",
     phase3Status: "EM BREVE",
     phase3Tasks: [
@@ -563,19 +617,15 @@ const translations = {
       "Feedback da comunidade"
     ],
 
-    phase4: "LANÇAMENTO",
+    phase4Title: "LANÇAMENTO",
     phase4Subtitle: "JOGAR PARA UM IMPACTO REAL",
     phase4Status: "EM BREVE",
     phase4Tasks: [
       "Lançamento mobile",
       "Economia do jogo",
       "Crescimento da comunidade",
-      "Burns transparentes de LUNC"
+      "Burns LUNC transparentes"
     ],
-
-    motto1: "Jogar.",
-    motto2: "Reconstruir.",
-    motto3: "Burn.",
 
     downloadEyebrow: "EM BREVE",
     downloadTitle: "É a tua vez.",
@@ -592,18 +642,46 @@ const translations = {
 };
 
 
+/* =========================================================
+   STANDARD TRANSLATION
+========================================================= */
+
+function translateStandardElements(language) {
+
+  document.querySelectorAll("[data-i18n]").forEach(function(element) {
+
+    const key = element.getAttribute("data-i18n");
+
+    if (
+      translations[language] &&
+      translations[language][key] &&
+      typeof translations[language][key] === "string"
+    ) {
+      element.textContent = translations[language][key];
+    }
+
+  });
+
+}
+
+
+/* =========================================================
+   ROADMAP TRANSLATION
+========================================================= */
+
 function translateRoadmap(language) {
 
   const t = translations[language];
 
-  if (!t) return;
+  if (!t) {
+    return;
+  }
 
-
-  /* Intro */
+  /* Lead */
 
   const lead = document.querySelector(".roadmap-lead");
 
-  if (lead) {
+  if (lead && t.roadmapLead) {
     lead.textContent = t.roadmapLead;
   }
 
@@ -613,9 +691,11 @@ function translateRoadmap(language) {
   const motto = document.querySelectorAll(".roadmap-motto span");
 
   if (motto.length >= 3) {
+
     motto[0].textContent = t.motto1;
     motto[1].textContent = t.motto2;
     motto[2].textContent = t.motto3;
+
   }
 
 
@@ -625,21 +705,20 @@ function translateRoadmap(language) {
 
   phases.forEach(function(phase, index) {
 
-    const number = index + 1;
+    const phaseNumber = index + 1;
 
-    const title = phase.querySelector("h3");
+    const title = phase.querySelector(".roadmap-card-top h3");
     const subtitle = phase.querySelector(".roadmap-subtitle");
     const status = phase.querySelector(".roadmap-status");
     const tasks = phase.querySelectorAll(".roadmap-tasks li");
 
-    const phaseKey = "phase" + number;
-    const subtitleKey = phaseKey + "Subtitle";
-    const statusKey = phaseKey + "Status";
-    const tasksKey = phaseKey + "Tasks";
+    const titleKey = "phase" + phaseNumber + "Title";
+    const subtitleKey = "phase" + phaseNumber + "Subtitle";
+    const statusKey = "phase" + phaseNumber + "Status";
+    const tasksKey = "phase" + phaseNumber + "Tasks";
 
-
-    if (title && t[phaseKey]) {
-      title.textContent = t[phaseKey];
+    if (title && t[titleKey]) {
+      title.textContent = t[titleKey];
     }
 
     if (subtitle && t[subtitleKey]) {
@@ -650,7 +729,7 @@ function translateRoadmap(language) {
       status.textContent = t[statusKey];
     }
 
-    if (tasks.length && t[tasksKey]) {
+    if (t[tasksKey]) {
 
       tasks.forEach(function(task, taskIndex) {
 
@@ -667,49 +746,34 @@ function translateRoadmap(language) {
 }
 
 
+/* =========================================================
+   MAIN LANGUAGE FUNCTION
+========================================================= */
+
 function setLanguage(language) {
 
   if (!translations[language]) {
     language = "EN";
   }
 
-
-  /* Standard translations */
-
-  document.querySelectorAll("[data-i18n]").forEach(function(element) {
-
-    const key = element.getAttribute("data-i18n");
-
-    if (translations[language][key]) {
-      element.textContent = translations[language][key];
-    }
-
-  });
-
-
-  /* Roadmap translations */
+  translateStandardElements(language);
 
   translateRoadmap(language);
-
-
-  /* Language selectors */
 
   document.querySelectorAll("[data-lang-select]").forEach(function(select) {
     select.value = language;
   });
 
-
-  /* HTML language */
-
   document.documentElement.lang = language.toLowerCase();
-
-
-  /* Remember selected language */
 
   localStorage.setItem("luncburngame-language", language);
 
 }
 
+
+/* =========================================================
+   INITIALIZATION
+========================================================= */
 
 document.addEventListener("DOMContentLoaded", function() {
 
