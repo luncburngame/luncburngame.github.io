@@ -1399,3 +1399,23 @@ body {
     min-width: 165px !important;
   }
 }
+
+/* =========================================================
+   MOBILE — CONTACT TITLE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .contact-social-title {
+    display: block !important;
+  }
+
+  .contact-social-title .contact-eyebrow {
+    display: block !important;
+    margin-bottom: 10px !important;
+  }
+
+  .contact-social-title h2 {
+    display: block !important;
+    margin-top: 0 !important;
+  }
+}
