@@ -1037,7 +1037,39 @@ function translateRoadmap(language) {
     return;
   }
 
+translateContact(language);
+function translateContact(language) {
+  const t = translations[language];
 
+  if (!t) {
+    return;
+  }
+
+  document.querySelectorAll("[data-i18n]").forEach(function(element) {
+    const key = element.getAttribute("data-i18n");
+
+    if (
+      key &&
+      t[key] &&
+      typeof t[key] === "string"
+    ) {
+      element.textContent = t[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(function(element) {
+    const key = element.getAttribute("data-i18n-placeholder");
+
+    if (
+      key &&
+      t[key] &&
+      typeof t[key] === "string"
+    ) {
+      element.setAttribute("placeholder", t[key]);
+    }
+  });
+}   
+   
   /* =======================================================
      ROADMAP LEAD
      ======================================================= */
