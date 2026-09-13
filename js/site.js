@@ -39,76 +39,48 @@ const translations = {
     gameEyebrow: "THE GAME",
     gameTitle: "Simple to learn. Hard to master.",
 
-    aimTitle: "AIM",
-    aimText:
-      "Choose your trajectory and prepare your shot.",
-
-    impactTitle: "IMPACT",
-    impactText:
-      "Use physics, timing and the environment to create chain reactions.",
-
-    rebuildTitle: "REBUILD",
-    rebuildText:
-      "Restore the world level by level and discover what comes next.",
-
     lunkiEyebrow: "MEET LUNKI",
-    lunkiTitle: "The Explorer",
+    lunkiTitle: "THE EXPLORER",
     lunkiText:
-      "Curious, brave and determined. LUNKI explores the ruins and helps rebuild a new future.",
+      "Lunki is the heart of the adventure. Curious, agile and determined, he explores a broken world and searches for what can still be rebuilt.",
 
     dustersEyebrow: "THE DUSTERS",
-    dustersTitle: "Not everything wants to be rebuilt.",
+    dustersTitle: "THE THREAT",
+    dustersText:
+      "The DUSTERS are machines built to destroy what remains. Each type brings a different challenge to the battlefield.",
 
-    basic: "Basic",
-    shield: "Shield",
-    heavy: "Heavy",
-    flyer: "Flyer",
-    commander: "Commander",
+    dusterBasicName: "DUSTER BASIC",
+    dusterBasicText: "Fast, simple and relentless.",
 
-    level1: "LVL. 1",
-    level2: "LVL. 2",
-    level3: "LVL. 3",
-    level4: "LVL. 4",
-    level5: "LVL. 5",
+    dusterShieldName: "DUSTER SHIELD",
+    dusterShieldText: "Protected and built to withstand impacts.",
 
-    basicDesc:
-      "Standard enemy. Present in large numbers.",
+    dusterHeavyName: "DUSTER HEAVY",
+    dusterHeavyText: "Slow but extremely powerful.",
 
-    shieldDesc:
-      "Protects other DUSTERS and absorbs most attacks.",
+    dusterFlyerName: "DUSTER FLYER",
+    dusterFlyerText: "An airborne threat that changes the battlefield.",
 
-    heavyDesc:
-      "Armored and extremely resistant. Deals massive damage.",
-
-    flyerDesc:
-      "Fast aerial enemy. Difficult to reach and predict.",
-
-    commanderDesc:
-      "Leads other DUSTERS. More powerful, more strategic, more dangerous.",
+    dusterCommanderName: "DUSTER COMMANDER",
+    dusterCommanderText: "A tactical unit capable of coordinating other DUSTERS.",
 
     burnsEyebrow: "BURN TRANSPARENCY",
-    burnsTitle: "Every burn should be verifiable.",
-
-    burned: "LUNC BURNED",
-    tx: "VERIFIED TRANSACTIONS",
-    reserve: "BURN RESERVE",
-    dashboard: "PUBLIC BURN DASHBOARD",
+    burnsTitle: "PLAY WITH A PURPOSE.",
+    burnsText:
+      "The project is designed around transparency. Eligible project revenue can be used to support LUNC burns, with burn activity documented and made publicly verifiable.",
 
     roadmapEyebrow: "ROADMAP",
-    roadmapTitle:
-      "Step by step towards a brighter future.",
-
+    roadmapTitle: "Step by step towards a brighter future.",
     roadmapLead:
-      "Each milestone brings us closer to our goal: a fun game with a real purpose.",
+      "Each stage brings us closer to our goal: a fun game with a real purpose.",
 
     motto1: "Play.",
     motto2: "Rebuild.",
     motto3: "Burn.",
 
     phase1Title: "FOUNDATION",
-    phase1Subtitle: "BUILD THE BASE",
+    phase1Subtitle: "BUILD THE FOUNDATION",
     phase1Status: "COMPLETED",
-
     phase1Tasks: [
       "Brand identity",
       "Website launch",
@@ -119,9 +91,8 @@ const translations = {
     phase2Title: "PROTOTYPE",
     phase2Subtitle: "BRING THE GAME TO LIFE",
     phase2Status: "IN PROGRESS",
-
     phase2Tasks: [
-      "Core gameplay development",
+      "Gameplay development",
       "Physics and game mechanics",
       "Internal testing",
       "First playable version"
@@ -130,42 +101,104 @@ const translations = {
     phase3Title: "ALPHA",
     phase3Subtitle: "EXPAND THE UNIVERSE",
     phase3Status: "COMING SOON",
-
     phase3Tasks: [
-      "Worlds and environments",
-      "DUSTERS and gameplay variety",
+      "Playable content",
+      "World building",
       "Progression system",
-      "Community feedback"
+      "Community testing"
     ],
 
     phase4Title: "LAUNCH",
-    phase4Subtitle: "PLAY FOR A REAL IMPACT",
+    phase4Subtitle: "OPEN THE WORLD",
     phase4Status: "COMING SOON",
-
     phase4Tasks: [
-      "Mobile release",
-      "Live game economy",
-      "Community growth",
-      "Transparent LUNC burns"
+      "Final optimisation",
+      "Release preparation",
+      "Public launch",
+      "LUNC burn programme"
     ],
 
-    downloadEyebrow: "COMING SOON",
-    downloadTitle: "Your move.",
-
+    downloadEyebrow: "DOWNLOAD",
+    downloadTitle: "THE ADVENTURE IS COMING.",
     downloadText:
       "The game is being built step by step. Follow the project and be ready for launch.",
-
     downloadCta: "COMING SOON",
 
     footerMission:
       "A physics-driven adventure built around play, rebuilding and transparent LUNC burns.",
-
     footerPrivacy: "Privacy",
     footerTerms: "Terms",
     footerContact: "Contact",
-
     footerCopyright:
-      "© 2026 LUNC Burn Game. All rights reserved."
+      "© 2026 LUNC Burn Game. All rights reserved.",
+
+    /* CONTACT PAGE */
+
+    contactHeroEyebrow: "CONTACT",
+    contactHeroTitle: "HAVE SOMETHING TO SAY?",
+    contactHeroSubtitle: "LET'S TALK.",
+    contactHeroText:
+      "Whether you have a question, an idea, feedback or simply want to follow the project, we'd love to hear from you.",
+
+    contactGetInTouch: "GET IN TOUCH",
+    contactLetsTalk: "LET'S TALK.",
+    contactIntro:
+      "LUNC Burn Game is built step by step, with the community in mind. Your feedback can help shape the project.",
+
+    contactXTitle: "FOLLOW US ON X",
+    contactXText:
+      "Follow the project, discover updates and join the conversation.",
+
+    contactYoutubeTitle: "WATCH ON YOUTUBE",
+    contactYoutubeText:
+      "Discover the world of LUNC Burn Game through our videos and development updates.",
+
+    contactClosing:
+      "Let's build something meaningful together.",
+
+    contactYourMessage: "YOUR MESSAGE",
+    contactSendMessageTitle: "SEND A MESSAGE",
+
+    contactNameLabel: "NAME",
+    contactNamePlaceholder: "Your name",
+
+    contactEmailLabel: "EMAIL",
+    contactEmailPlaceholder: "your@email.com",
+
+    contactSubjectLabel: "SUBJECT",
+    contactSubjectPlaceholder:
+      "What would you like to talk about?",
+
+    contactMessageLabel: "MESSAGE",
+    contactMessagePlaceholder:
+      "Write your message here...",
+
+    contactSubmit: "SEND MESSAGE",
+    contactFormNote:
+      "We usually reply as soon as possible.",
+
+    contactCommunityTitle: "COMMUNITY",
+    contactCommunityText:
+      "A project built with people, not just for people.",
+
+    contactImpactTitle: "REAL IMPACT",
+    contactImpactText:
+      "A game designed to connect entertainment with a transparent mission.",
+
+    contactFutureTitle: "A BRIGHTER FUTURE",
+    contactFutureText:
+      "Play, rebuild and help shape what comes next.",
+
+    contactFinalEyebrow: "THE MISSION",
+    contactFinalTitle: "PLAY. REBUILD. BURN.",
+    contactFinalText:
+      "The journey is only beginning. Join the adventure.",
+
+    contactExploreGame: "EXPLORE THE GAME",
+
+    contactSuccessTitle: "MESSAGE SENT",
+    contactSuccessText:
+      "Thank you for reaching out."
   },
 
 
@@ -186,84 +219,54 @@ const translations = {
 
     heroEyebrow: "Une aventure basée sur la physique",
     heroTitle: "JOUER. RECONSTRUIRE. BRÛLER.",
-
     heroText:
-      "Explore les ruines d'un monde brisé, maîtrise la physique, affronte les DUSTERS et reconstruis ce qui a été perdu.",
-
+      "Explorez les ruines d'un monde brisé, maîtrisez la physique, affrontez les DUSTERS et reconstruisez ce qui peut encore l'être.",
     heroCta: "DÉCOUVRIR LE JEU",
 
     missionEyebrow: "LA MISSION",
-    missionTitle: "Un jeu avec une mission.",
-
+    missionTitle: "Un jeu avec un objectif.",
     missionText:
-      "LUNC Burn Game associe plaisir, physique et progression autour d'une mission transparente : les revenus éligibles du projet servent à soutenir les burns de LUNC.",
+      "LUNC Burn Game associe plaisir, physique et progression à une mission transparente : les revenus éligibles du projet sont utilisés pour soutenir des burns de LUNC.",
 
     gameEyebrow: "LE JEU",
     gameTitle: "Simple à apprendre. Difficile à maîtriser.",
 
-    aimTitle: "VISER",
-    aimText:
-      "Choisis ta trajectoire et prépare ton tir.",
-
-    impactTitle: "IMPACT",
-    impactText:
-      "Utilise la physique, le timing et l'environnement pour créer des réactions en chaîne.",
-
-    rebuildTitle: "RECONSTRUIRE",
-    rebuildText:
-      "Restaure le monde niveau après niveau et découvre la suite.",
-
-    lunkiEyebrow: "RENCONTRE LUNKI",
-    lunkiTitle: "L'Explorateur",
-
+    lunkiEyebrow: "DÉCOUVREZ LUNKI",
+    lunkiTitle: "L'EXPLORATEUR",
     lunkiText:
-      "Curieux, courageux et déterminé. LUNKI explore les ruines et participe à la reconstruction d'un nouvel avenir.",
+      "Lunki est au cœur de l'aventure. Curieux, agile et déterminé, il explore un monde brisé et cherche ce qui peut encore être reconstruit.",
 
     dustersEyebrow: "LES DUSTERS",
-    dustersTitle:
-      "Tout le monde ne veut pas être reconstruit.",
+    dustersTitle: "LA MENACE",
+    dustersText:
+      "Les DUSTERS sont des machines conçues pour détruire ce qu'il reste du monde. Chaque type apporte un défi différent.",
 
-    basic: "Basique",
-    shield: "Bouclier",
-    heavy: "Lourd",
-    flyer: "Volant",
-    commander: "Commandant",
+    dusterBasicName: "DUSTER BASIC",
+    dusterBasicText: "Rapide, simple et implacable.",
 
-    level1: "NIV. 1",
-    level2: "NIV. 2",
-    level3: "NIV. 3",
-    level4: "NIV. 4",
-    level5: "NIV. 5",
+    dusterShieldName: "DUSTER SHIELD",
+    dusterShieldText:
+      "Protégé et conçu pour résister aux impacts.",
 
-    basicDesc:
-      "Ennemi standard. Présent en grand nombre.",
+    dusterHeavyName: "DUSTER HEAVY",
+    dusterHeavyText:
+      "Lent mais extrêmement puissant.",
 
-    shieldDesc:
-      "Protège les autres DUSTERS et encaisse la majorité des attaques.",
+    dusterFlyerName: "DUSTER FLYER",
+    dusterFlyerText:
+      "Une menace aérienne qui change le champ de bataille.",
 
-    heavyDesc:
-      "Blindé et extrêmement résistant. Inflige des dégâts massifs.",
-
-    flyerDesc:
-      "Ennemi aérien, rapide et difficile à atteindre.",
-
-    commanderDesc:
-      "Dirige les autres DUSTERS. Plus puissant, plus stratégique, plus dangereux.",
+    dusterCommanderName: "DUSTER COMMANDER",
+    dusterCommanderText:
+      "Une unité tactique capable de coordonner les autres DUSTERS.",
 
     burnsEyebrow: "TRANSPARENCE DES BURNS",
-    burnsTitle:
-      "Chaque burn doit pouvoir être vérifié.",
-
-    burned: "LUNC BRÛLÉS",
-    tx: "TRANSACTIONS VÉRIFIÉES",
-    reserve: "RÉSERVE DE BURN",
-    dashboard: "TABLEAU DE BORD PUBLIC",
+    burnsTitle: "JOUER AVEC UN OBJECTIF.",
+    burnsText:
+      "Le projet repose sur la transparence. Les revenus éligibles du projet peuvent être utilisés pour soutenir des burns de LUNC, avec une activité documentée et vérifiable publiquement.",
 
     roadmapEyebrow: "ROADMAP",
-
-    roadmapTitle:
-      "Étape après étape vers un avenir meilleur.",
-
+    roadmapTitle: "Étape après étape vers un avenir meilleur.",
     roadmapLead:
       "Chaque étape nous rapproche de notre objectif : un jeu amusant avec une véritable mission.",
 
@@ -272,9 +275,8 @@ const translations = {
     motto3: "Brûler.",
 
     phase1Title: "FONDATIONS",
-    phase1Subtitle: "CONSTRUIRE LA BASE",
+    phase1Subtitle: "POSER LES BASES",
     phase1Status: "TERMINÉ",
-
     phase1Tasks: [
       "Identité de marque",
       "Lancement du site",
@@ -285,7 +287,6 @@ const translations = {
     phase2Title: "PROTOTYPE",
     phase2Subtitle: "DONNER VIE AU JEU",
     phase2Status: "EN COURS",
-
     phase2Tasks: [
       "Développement du gameplay",
       "Physique et mécaniques de jeu",
@@ -294,45 +295,106 @@ const translations = {
     ],
 
     phase3Title: "ALPHA",
-    phase3Subtitle: "ÉTENDRE L'UNIVERS",
+    phase3Subtitle: "DÉVELOPPER L'UNIVERS",
     phase3Status: "À VENIR",
-
     phase3Tasks: [
-      "Mondes et environnements",
-      "DUSTERS et variété du gameplay",
+      "Contenu jouable",
+      "Construction des mondes",
       "Système de progression",
-      "Retours de la communauté"
+      "Tests avec la communauté"
     ],
 
     phase4Title: "LANCEMENT",
-    phase4Subtitle:
-      "JOUER POUR UN IMPACT RÉEL",
+    phase4Subtitle: "OUVRIR L'UNIVERS",
     phase4Status: "À VENIR",
-
     phase4Tasks: [
-      "Sortie mobile",
-      "Économie du jeu",
-      "Développement de la communauté",
-      "Burns LUNC transparents"
+      "Optimisation finale",
+      "Préparation de la sortie",
+      "Lancement public",
+      "Programme de burns LUNC"
     ],
 
-    downloadEyebrow: "BIENTÔT",
-    downloadTitle: "À toi de jouer.",
-
+    downloadEyebrow: "TÉLÉCHARGEMENT",
+    downloadTitle: "L'AVENTURE ARRIVE.",
     downloadText:
-      "Le jeu se construit étape par étape. Suis le projet et sois prêt pour le lancement.",
-
+      "Le jeu se construit étape par étape. Suivez le projet et soyez prêts pour le lancement.",
     downloadCta: "BIENTÔT DISPONIBLE",
 
     footerMission:
       "Une aventure basée sur la physique autour du jeu, de la reconstruction et de burns LUNC transparents.",
-
     footerPrivacy: "Confidentialité",
     footerTerms: "Conditions",
     footerContact: "Contact",
-
     footerCopyright:
-      "© 2026 LUNC Burn Game. Tous droits réservés."
+      "© 2026 LUNC Burn Game. Tous droits réservés.",
+
+    /* CONTACT PAGE */
+
+    contactHeroEyebrow: "CONTACT",
+    contactHeroTitle: "UNE QUESTION, UNE IDÉE ?",
+    contactHeroSubtitle: "PARLONS-EN.",
+    contactHeroText:
+      "Une question, une idée, un retour ou simplement envie de suivre le projet ? Nous serons ravis de vous lire.",
+
+    contactGetInTouch: "NOUS CONTACTER",
+    contactLetsTalk: "PARLONS-EN.",
+    contactIntro:
+      "LUNC Burn Game se construit étape après étape, avec la communauté. Vos retours peuvent contribuer à faire évoluer le projet.",
+
+    contactXTitle: "SUIVEZ-NOUS SUR X",
+    contactXText:
+      "Suivez le projet, découvrez les nouveautés et participez à la conversation.",
+
+    contactYoutubeTitle: "REGARDEZ-NOUS SUR YOUTUBE",
+    contactYoutubeText:
+      "Découvrez l'univers de LUNC Burn Game à travers nos vidéos et nos actualités de développement.",
+
+    contactClosing:
+      "Construisons ensemble quelque chose qui a du sens.",
+
+    contactYourMessage: "VOTRE MESSAGE",
+    contactSendMessageTitle: "ENVOYER UN MESSAGE",
+
+    contactNameLabel: "NOM",
+    contactNamePlaceholder: "Votre nom",
+
+    contactEmailLabel: "E-MAIL",
+    contactEmailPlaceholder: "votre@email.com",
+
+    contactSubjectLabel: "SUJET",
+    contactSubjectPlaceholder:
+      "De quoi souhaitez-vous parler ?",
+
+    contactMessageLabel: "MESSAGE",
+    contactMessagePlaceholder:
+      "Écrivez votre message ici...",
+
+    contactSubmit: "ENVOYER LE MESSAGE",
+    contactFormNote:
+      "Nous répondons généralement dès que possible.",
+
+    contactCommunityTitle: "COMMUNAUTÉ",
+    contactCommunityText:
+      "Un projet construit avec les gens, et pas seulement pour eux.",
+
+    contactImpactTitle: "UN IMPACT RÉEL",
+    contactImpactText:
+      "Un jeu conçu pour associer divertissement et mission transparente.",
+
+    contactFutureTitle: "UN AVENIR PLUS LUMINEUX",
+    contactFutureText:
+      "Jouez, reconstruisez et participez à la suite de l'aventure.",
+
+    contactFinalEyebrow: "LA MISSION",
+    contactFinalTitle: "JOUER. RECONSTRUIRE. BRÛLER.",
+    contactFinalText:
+      "L'aventure ne fait que commencer. Rejoignez-nous.",
+
+    contactExploreGame: "DÉCOUVRIR LE JEU",
+
+    contactSuccessTitle: "MESSAGE ENVOYÉ",
+    contactSuccessText:
+      "Merci pour votre message."
   },
 
 
@@ -346,106 +408,61 @@ const translations = {
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
-    navRoadmap: "Hoja de ruta",
+    navRoadmap: "Roadmap",
     navDownload: "Próximamente",
 
     comingSoon: "Próximamente",
 
-    heroEyebrow:
-      "Una aventura basada en la física",
-
-    heroTitle:
-      "JUGAR. RECONSTRUIR. QUEMAR.",
-
+    heroEyebrow: "Una aventura basada en la física",
+    heroTitle: "JUGAR. RECONSTRUIR. QUEMAR.",
     heroText:
-      "Explora las ruinas de un mundo destruido, domina la física, derrota a los DUSTERS y reconstruye lo que se perdió.",
-
+      "Explora las ruinas de un mundo roto, domina la física, derrota a los DUSTERS y reconstruye lo que queda.",
     heroCta: "DESCUBRE EL JUEGO",
 
     missionEyebrow: "LA MISIÓN",
-
-    missionTitle:
-      "Un juego con un propósito.",
-
+    missionTitle: "Un juego con un propósito.",
     missionText:
-      "LUNC Burn Game combina diversión, física y progresión con una misión transparente: los ingresos elegibles del proyecto se utilizan para apoyar las quemas de LUNC.",
+      "LUNC Burn Game combina diversión, física y progresión con una misión transparente: los ingresos elegibles del proyecto se utilizan para apoyar burns de LUNC.",
 
     gameEyebrow: "EL JUEGO",
-
-    gameTitle:
-      "Fácil de aprender. Difícil de dominar.",
-
-    aimTitle: "APUNTAR",
-
-    aimText:
-      "Elige tu trayectoria y prepara tu disparo.",
-
-    impactTitle: "IMPACTO",
-
-    impactText:
-      "Utiliza la física, el momento y el entorno para crear reacciones en cadena.",
-
-    rebuildTitle: "RECONSTRUIR",
-
-    rebuildText:
-      "Restaura el mundo nivel a nivel y descubre qué viene después.",
+    gameTitle: "Fácil de aprender. Difícil de dominar.",
 
     lunkiEyebrow: "CONOCE A LUNKI",
-
-    lunkiTitle: "El Explorador",
-
+    lunkiTitle: "EL EXPLORADOR",
     lunkiText:
-      "Curioso, valiente y decidido. LUNKI explora las ruinas y ayuda a construir un nuevo futuro.",
+      "Lunki es el corazón de la aventura. Curioso, ágil y decidido, explora un mundo roto y busca aquello que todavía puede reconstruirse.",
 
     dustersEyebrow: "LOS DUSTERS",
+    dustersTitle: "LA AMENAZA",
+    dustersText:
+      "Los DUSTERS son máquinas diseñadas para destruir lo que queda. Cada tipo aporta un desafío diferente.",
 
-    dustersTitle:
-      "No todos quieren ser reconstruidos.",
+    dusterBasicName: "DUSTER BASIC",
+    dusterBasicText: "Rápido, sencillo e implacable.",
 
-    basic: "Básico",
-    shield: "Escudo",
-    heavy: "Pesado",
-    flyer: "Volador",
-    commander: "Comandante",
+    dusterShieldName: "DUSTER SHIELD",
+    dusterShieldText:
+      "Protegido y diseñado para resistir impactos.",
 
-    level1: "NIV. 1",
-    level2: "NIV. 2",
-    level3: "NIV. 3",
-    level4: "NIV. 4",
-    level5: "NIV. 5",
+    dusterHeavyName: "DUSTER HEAVY",
+    dusterHeavyText:
+      "Lento pero extremadamente poderoso.",
 
-    basicDesc:
-      "Enemigo estándar. Aparece en grandes cantidades.",
+    dusterFlyerName: "DUSTER FLYER",
+    dusterFlyerText:
+      "Una amenaza aérea que cambia el campo de batalla.",
 
-    shieldDesc:
-      "Protege a otros DUSTERS y absorbe la mayoría de los ataques.",
+    dusterCommanderName: "DUSTER COMMANDER",
+    dusterCommanderText:
+      "Una unidad táctica capaz de coordinar otros DUSTERS.",
 
-    heavyDesc:
-      "Blindado y extremadamente resistente. Inflige un daño enorme.",
+    burnsEyebrow: "TRANSPARENCIA DE LOS BURNS",
+    burnsTitle: "JUGAR CON UN PROPÓSITO.",
+    burnsText:
+      "El proyecto está diseñado en torno a la transparencia. Los ingresos elegibles pueden utilizarse para apoyar burns de LUNC, con una actividad documentada y verificable públicamente.",
 
-    flyerDesc:
-      "Enemigo aéreo rápido. Difícil de alcanzar y predecir.",
-
-    commanderDesc:
-      "Lidera a los demás DUSTERS. Más poderoso, más estratégico y más peligroso.",
-
-    burnsEyebrow:
-      "TRANSPARENCIA DE LAS QUEMAS",
-
-    burnsTitle:
-      "Cada quema debe poder verificarse.",
-
-    burned: "LUNC QUEMADOS",
-    tx: "TRANSACCIONES VERIFICADAS",
-    reserve: "RESERVA DE QUEMA",
-    dashboard:
-      "PANEL PÚBLICO DE QUEMAS",
-
-    roadmapEyebrow: "HOJA DE RUTA",
-
-    roadmapTitle:
-      "Paso a paso hacia un futuro mejor.",
-
+    roadmapEyebrow: "ROADMAP",
+    roadmapTitle: "Paso a paso hacia un futuro mejor.",
     roadmapLead:
       "Cada etapa nos acerca a nuestro objetivo: un juego divertido con un propósito real.",
 
@@ -453,21 +470,19 @@ const translations = {
     motto2: "Reconstruir.",
     motto3: "Quemar.",
 
-    phase1Title: "FUNDAMENTOS",
-    phase1Subtitle: "CONSTRUIR LA BASE",
+    phase1Title: "BASES",
+    phase1Subtitle: "CONSTRUIR LOS CIMIENTOS",
     phase1Status: "COMPLETADO",
-
     phase1Tasks: [
       "Identidad de marca",
       "Lanzamiento del sitio web",
-      "Canales de comunidad",
+      "Canales comunitarios",
       "Definición del concepto del juego"
     ],
 
     phase2Title: "PROTOTIPO",
     phase2Subtitle: "DAR VIDA AL JUEGO",
     phase2Status: "EN CURSO",
-
     phase2Tasks: [
       "Desarrollo del gameplay",
       "Física y mecánicas de juego",
@@ -478,43 +493,104 @@ const translations = {
     phase3Title: "ALPHA",
     phase3Subtitle: "AMPLIAR EL UNIVERSO",
     phase3Status: "PRÓXIMAMENTE",
-
     phase3Tasks: [
-      "Mundos y entornos",
-      "DUSTERS y variedad de gameplay",
+      "Contenido jugable",
+      "Construcción de mundos",
       "Sistema de progresión",
-      "Comentarios de la comunidad"
+      "Pruebas con la comunidad"
     ],
 
     phase4Title: "LANZAMIENTO",
-    phase4Subtitle:
-      "JUGAR PARA UN IMPACTO REAL",
+    phase4Subtitle: "ABRIR EL UNIVERSO",
     phase4Status: "PRÓXIMAMENTE",
-
     phase4Tasks: [
-      "Lanzamiento móvil",
-      "Economía del juego",
-      "Crecimiento de la comunidad",
-      "Quemas transparentes de LUNC"
+      "Optimización final",
+      "Preparación del lanzamiento",
+      "Lanzamiento público",
+      "Programa de burns de LUNC"
     ],
 
-    downloadEyebrow: "PRÓXIMAMENTE",
-    downloadTitle: "Es tu turno.",
-
+    downloadEyebrow: "DESCARGA",
+    downloadTitle: "LA AVENTURA SE ACERCA.",
     downloadText:
       "El juego se está construyendo paso a paso. Sigue el proyecto y prepárate para el lanzamiento.",
-
     downloadCta: "PRÓXIMAMENTE",
 
     footerMission:
-      "Una aventura basada en la física centrada en jugar, reconstruir y realizar quemas transparentes de LUNC.",
-
+      "Una aventura basada en la física centrada en jugar, reconstruir y realizar burns transparentes de LUNC.",
     footerPrivacy: "Privacidad",
     footerTerms: "Términos",
     footerContact: "Contacto",
-
     footerCopyright:
-      "© 2026 LUNC Burn Game. Todos los derechos reservados."
+      "© 2026 LUNC Burn Game. Todos los derechos reservados.",
+
+    /* CONTACT PAGE */
+
+    contactHeroEyebrow: "CONTACTO",
+    contactHeroTitle: "¿TIENES ALGO QUE DECIR?",
+    contactHeroSubtitle: "HABLEMOS.",
+    contactHeroText:
+      "Si tienes una pregunta, una idea, comentarios o simplemente quieres seguir el proyecto, nos encantará escucharte.",
+
+    contactGetInTouch: "PONTE EN CONTACTO",
+    contactLetsTalk: "HABLEMOS.",
+    contactIntro:
+      "LUNC Burn Game se construye paso a paso, pensando en la comunidad. Tus comentarios pueden ayudar a dar forma al proyecto.",
+
+    contactXTitle: "SÍGUENOS EN X",
+    contactXText:
+      "Sigue el proyecto, descubre novedades y participa en la conversación.",
+
+    contactYoutubeTitle: "MÍRANOS EN YOUTUBE",
+    contactYoutubeText:
+      "Descubre el universo de LUNC Burn Game a través de nuestros vídeos y actualizaciones de desarrollo.",
+
+    contactClosing:
+      "Construyamos juntos algo que tenga sentido.",
+
+    contactYourMessage: "TU MENSAJE",
+    contactSendMessageTitle: "ENVIAR UN MENSAJE",
+
+    contactNameLabel: "NOMBRE",
+    contactNamePlaceholder: "Tu nombre",
+
+    contactEmailLabel: "EMAIL",
+    contactEmailPlaceholder: "tu@email.com",
+
+    contactSubjectLabel: "ASUNTO",
+    contactSubjectPlaceholder:
+      "¿Sobre qué te gustaría hablar?",
+
+    contactMessageLabel: "MENSAJE",
+    contactMessagePlaceholder:
+      "Escribe tu mensaje aquí...",
+
+    contactSubmit: "ENVIAR MENSAJE",
+    contactFormNote:
+      "Normalmente respondemos lo antes posible.",
+
+    contactCommunityTitle: "COMUNIDAD",
+    contactCommunityText:
+      "Un proyecto construido con personas, no solo para ellas.",
+
+    contactImpactTitle: "IMPACTO REAL",
+    contactImpactText:
+      "Un juego diseñado para conectar el entretenimiento con una misión transparente.",
+
+    contactFutureTitle: "UN FUTURO MÁS BRILLANTE",
+    contactFutureText:
+      "Juega, reconstruye y ayuda a dar forma a lo que viene.",
+
+    contactFinalEyebrow: "LA MISIÓN",
+    contactFinalTitle: "JUGAR. RECONSTRUIR. QUEMAR.",
+    contactFinalText:
+      "La aventura no ha hecho más que empezar. Únete a ella.",
+
+    contactExploreGame: "DESCUBRE EL JUEGO",
+
+    contactSuccessTitle: "MENSAJE ENVIADO",
+    contactSuccessText:
+      "Gracias por escribirnos."
   },
 
 
@@ -529,127 +605,70 @@ const translations = {
     navDusters: "Dusters",
     navBurns: "Burns",
     navRoadmap: "Roadmap",
-    navDownload: "Demnächst",
+    navDownload: "Demnächst verfügbar",
 
-    comingSoon: "Demnächst",
+    comingSoon: "Demnächst verfügbar",
 
-    heroEyebrow:
-      "Ein physikbasiertes Abenteuer",
-
-    heroTitle:
-      "SPIELEN. AUFBAUEN. BURNEN.",
-
+    heroEyebrow: "Ein physikbasiertes Abenteuer",
+    heroTitle: "SPIELEN. AUFBAUEN. BURNEN.",
     heroText:
-      "Erkunde die Ruinen einer zerstörten Welt, meistere die Physik, besiege die DUSTERS und baue wieder auf, was verloren ging.",
+      "Erkunde die Ruinen einer zerbrochenen Welt, beherrsche die Physik, besiege die DUSTERS und baue wieder auf, was verloren ging.",
+    heroCta: "DAS SPIEL ENTDECKEN",
 
-    heroCta:
-      "DAS SPIEL ENTDECKEN",
-
-    missionEyebrow:
-      "DIE MISSION",
-
-    missionTitle:
-      "Ein Spiel mit einem Ziel.",
-
+    missionEyebrow: "DIE MISSION",
+    missionTitle: "Ein Spiel mit einem Ziel.",
     missionText:
-      "LUNC Burn Game verbindet Spielspaß, Physik und Fortschritt mit einer transparenten Mission: Geeignete Projekterlöse werden zur Unterstützung von LUNC-Burns verwendet.",
+      "LUNC Burn Game verbindet Spielspaß, Physik und Fortschritt mit einer transparenten Mission: Geeignete Projekterlöse werden verwendet, um LUNC-Burns zu unterstützen.",
 
     gameEyebrow: "DAS SPIEL",
+    gameTitle: "Einfach zu lernen. Schwer zu meistern.",
 
-    gameTitle:
-      "Einfach zu lernen. Schwer zu meistern.",
-
-    aimTitle: "ZIELEN",
-
-    aimText:
-      "Wähle deine Flugbahn und bereite deinen Schuss vor.",
-
-    impactTitle: "IMPACT",
-
-    impactText:
-      "Nutze Physik, Timing und die Umgebung, um Kettenreaktionen auszulösen.",
-
-    rebuildTitle: "WIEDERAUFBAU",
-
-    rebuildText:
-      "Stelle die Welt Level für Level wieder her und entdecke, was als Nächstes kommt.",
-
-    lunkiEyebrow:
-      "LERNE LUNKI KENNEN",
-
-    lunkiTitle:
-      "Der Entdecker",
-
+    lunkiEyebrow: "LERNE LUNKI KENNEN",
+    lunkiTitle: "DER EXPLORER",
     lunkiText:
-      "Neugierig, mutig und entschlossen. LUNKI erkundet die Ruinen und hilft dabei, eine neue Zukunft aufzubauen.",
+      "Lunki steht im Mittelpunkt des Abenteuers. Neugierig, agil und entschlossen erkundet er eine zerbrochene Welt und sucht nach dem, was noch wiederaufgebaut werden kann.",
 
-    dustersEyebrow:
-      "DIE DUSTERS",
+    dustersEyebrow: "DIE DUSTERS",
+    dustersTitle: "DIE BEDROHUNG",
+    dustersText:
+      "Die DUSTERS sind Maschinen, die dafür gebaut wurden, alles Verbliebene zu zerstören. Jeder Typ bringt eine andere Herausforderung.",
 
-    dustersTitle:
-      "Nicht jeder will wieder aufgebaut werden.",
+    dusterBasicName: "DUSTER BASIC",
+    dusterBasicText: "Schnell, einfach und unerbittlich.",
 
-    basic: "Basis",
-    shield: "Schild",
-    heavy: "Schwer",
-    flyer: "Flieger",
-    commander: "Kommandant",
+    dusterShieldName: "DUSTER SHIELD",
+    dusterShieldText:
+      "Geschützt und dafür gebaut, Einschläge auszuhalten.",
 
-    level1: "STUFE 1",
-    level2: "STUFE 2",
-    level3: "STUFE 3",
-    level4: "STUFE 4",
-    level5: "STUFE 5",
+    dusterHeavyName: "DUSTER HEAVY",
+    dusterHeavyText:
+      "Langsam, aber extrem mächtig.",
 
-    basicDesc:
-      "Standardgegner. Tritt in großer Zahl auf.",
+    dusterFlyerName: "DUSTER FLYER",
+    dusterFlyerText:
+      "Eine Bedrohung aus der Luft, die das Schlachtfeld verändert.",
 
-    shieldDesc:
-      "Schützt andere DUSTERS und absorbiert die meisten Angriffe.",
+    dusterCommanderName: "DUSTER COMMANDER",
+    dusterCommanderText:
+      "Eine taktische Einheit, die andere DUSTERS koordinieren kann.",
 
-    heavyDesc:
-      "Gepanzert und extrem widerstandsfähig. Verursacht enormen Schaden.",
+    burnsEyebrow: "BURN-TRANSPARENZ",
+    burnsTitle: "SPIELEN MIT EINEM ZIEL.",
+    burnsText:
+      "Das Projekt basiert auf Transparenz. Geeignete Projekterlöse können zur Unterstützung von LUNC-Burns eingesetzt werden, wobei die Burn-Aktivitäten dokumentiert und öffentlich überprüfbar sind.",
 
-    flyerDesc:
-      "Schneller Luftgegner. Schwer zu erreichen und vorherzusagen.",
-
-    commanderDesc:
-      "Führt die anderen DUSTERS an. Mächtiger, strategischer und gefährlicher.",
-
-    burnsEyebrow:
-      "BURN-TRANSPARENZ",
-
-    burnsTitle:
-      "Jeder Burn sollte überprüfbar sein.",
-
-    burned: "LUNC VERBRANNT",
-    tx: "VERIFIZIERTE TRANSAKTIONEN",
-    reserve: "BURN-RESERVE",
-
-    dashboard:
-      "ÖFFENTLICHES BURN-DASHBOARD",
-
-    roadmapEyebrow:
-      "ROADMAP",
-
-    roadmapTitle:
-      "Schritt für Schritt in eine bessere Zukunft.",
-
+    roadmapEyebrow: "ROADMAP",
+    roadmapTitle: "Schritt für Schritt in eine bessere Zukunft.",
     roadmapLead:
-      "Jeder Meilenstein bringt uns unserem Ziel näher: ein unterhaltsames Spiel mit einem echten Zweck.",
+      "Jede Etappe bringt uns unserem Ziel näher: ein unterhaltsames Spiel mit einem echten Zweck.",
 
     motto1: "Spielen.",
     motto2: "Aufbauen.",
     motto3: "Burnen.",
 
     phase1Title: "GRUNDLAGEN",
-
-    phase1Subtitle:
-      "DIE BASIS SCHAFFEN",
-
-    phase1Status:
-      "ABGESCHLOSSEN",
-
+    phase1Subtitle: "DIE BASIS SCHAFFEN",
+    phase1Status: "ABGESCHLOSSEN",
     phase1Tasks: [
       "Markenidentität",
       "Website-Launch",
@@ -658,76 +677,116 @@ const translations = {
     ],
 
     phase2Title: "PROTOTYP",
-
-    phase2Subtitle:
-      "DAS SPIEL ZUM LEBEN ERWECKEN",
-
-    phase2Status:
-      "IN ARBEIT",
-
+    phase2Subtitle: "DAS SPIEL ZUM LEBEN ERWECKEN",
+    phase2Status: "IN ARBEIT",
     phase2Tasks: [
-      "Entwicklung des Gameplays",
+      "Gameplay-Entwicklung",
       "Physik und Spielmechaniken",
       "Interne Tests",
       "Erste spielbare Version"
     ],
 
     phase3Title: "ALPHA",
-
-    phase3Subtitle:
-      "DAS UNIVERSUM ERWEITERN",
-
-    phase3Status:
-      "DEMNÄCHST",
-
+    phase3Subtitle: "DAS UNIVERSUM ERWEITERN",
+    phase3Status: "DEMNÄCHST",
     phase3Tasks: [
-      "Welten und Umgebungen",
-      "DUSTERS und Gameplay-Vielfalt",
+      "Spielbare Inhalte",
+      "Weltenentwicklung",
       "Fortschrittssystem",
-      "Feedback der Community"
+      "Community-Tests"
     ],
 
-    phase4Title: "START",
-
-    phase4Subtitle:
-      "SPIELEN FÜR EINE ECHTE WIRKUNG",
-
-    phase4Status:
-      "DEMNÄCHST",
-
+    phase4Title: "LAUNCH",
+    phase4Subtitle: "DAS UNIVERSUM ÖFFNEN",
+    phase4Status: "DEMNÄCHST",
     phase4Tasks: [
-      "Mobile Veröffentlichung",
-      "Spielökonomie",
-      "Wachstum der Community",
-      "Transparente LUNC-Burns"
+      "Finale Optimierung",
+      "Vorbereitung der Veröffentlichung",
+      "Öffentlicher Launch",
+      "LUNC-Burn-Programm"
     ],
 
-    downloadEyebrow:
-      "DEMNÄCHST",
-
-    downloadTitle:
-      "Du bist dran.",
-
+    downloadEyebrow: "DOWNLOAD",
+    downloadTitle: "DAS ABENTEUER KOMMT.",
     downloadText:
       "Das Spiel wird Schritt für Schritt entwickelt. Folge dem Projekt und sei bereit für den Start.",
-
-    downloadCta:
-      "DEMNÄCHST VERFÜGBAR",
+    downloadCta: "DEMNÄCHST VERFÜGBAR",
 
     footerMission:
       "Ein physikbasiertes Abenteuer rund um Spielen, Wiederaufbau und transparente LUNC-Burns.",
-
-    footerPrivacy:
-      "Datenschutz",
-
-    footerTerms:
-      "Bedingungen",
-
-    footerContact:
-      "Kontakt",
-
+    footerPrivacy: "Datenschutz",
+    footerTerms: "Bedingungen",
+    footerContact: "Kontakt",
     footerCopyright:
-      "© 2026 LUNC Burn Game. Alle Rechte vorbehalten."
+      "© 2026 LUNC Burn Game. Alle Rechte vorbehalten.",
+
+    /* CONTACT PAGE */
+
+    contactHeroEyebrow: "KONTAKT",
+    contactHeroTitle: "DU MÖCHTEST ETWAS SAGEN?",
+    contactHeroSubtitle: "SPRECHEN WIR.",
+    contactHeroText:
+      "Ob Frage, Idee, Feedback oder einfach Interesse am Projekt – wir freuen uns, von dir zu hören.",
+
+    contactGetInTouch: "KONTAKT AUFNEHMEN",
+    contactLetsTalk: "SPRECHEN WIR.",
+    contactIntro:
+      "LUNC Burn Game entsteht Schritt für Schritt und gemeinsam mit der Community. Dein Feedback kann helfen, das Projekt zu gestalten.",
+
+    contactXTitle: "FOLGE UNS AUF X",
+    contactXText:
+      "Folge dem Projekt, entdecke Updates und beteilige dich an der Unterhaltung.",
+
+    contactYoutubeTitle: "AUF YOUTUBE ANSEHEN",
+    contactYoutubeText:
+      "Entdecke die Welt von LUNC Burn Game durch unsere Videos und Entwicklungs-Updates.",
+
+    contactClosing:
+      "Lass uns gemeinsam etwas Sinnvolles aufbauen.",
+
+    contactYourMessage: "DEINE NACHRICHT",
+    contactSendMessageTitle: "NACHRICHT SENDEN",
+
+    contactNameLabel: "NAME",
+    contactNamePlaceholder: "Dein Name",
+
+    contactEmailLabel: "E-MAIL",
+    contactEmailPlaceholder: "deine@email.com",
+
+    contactSubjectLabel: "BETREFF",
+    contactSubjectPlaceholder:
+      "Worüber möchtest du sprechen?",
+
+    contactMessageLabel: "NACHRICHT",
+    contactMessagePlaceholder:
+      "Schreibe deine Nachricht hier...",
+
+    contactSubmit: "NACHRICHT SENDEN",
+    contactFormNote:
+      "Wir antworten in der Regel so schnell wie möglich.",
+
+    contactCommunityTitle: "COMMUNITY",
+    contactCommunityText:
+      "Ein Projekt, das mit Menschen und nicht nur für Menschen entwickelt wird.",
+
+    contactImpactTitle: "ECHTER IMPACT",
+    contactImpactText:
+      "Ein Spiel, das Unterhaltung mit einer transparenten Mission verbindet.",
+
+    contactFutureTitle: "EINE HELLERE ZUKUNFT",
+    contactFutureText:
+      "Spiele, baue wieder auf und gestalte mit, was als Nächstes kommt.",
+
+    contactFinalEyebrow: "DIE MISSION",
+    contactFinalTitle: "SPIELEN. AUFBAUEN. BURNEN.",
+    contactFinalText:
+      "Die Reise hat gerade erst begonnen. Sei dabei.",
+
+    contactExploreGame: "DAS SPIEL ENTDECKEN",
+
+    contactSuccessTitle: "NACHRICHT GESENDET",
+    contactSuccessText:
+      "Danke für deine Nachricht."
   },
 
 
@@ -741,143 +800,71 @@ const translations = {
     navLunki: "Lunki",
     navDusters: "Dusters",
     navBurns: "Burns",
-    navRoadmap: "Roteiro",
+    navRoadmap: "Roadmap",
     navDownload: "Em breve",
 
     comingSoon: "Em breve",
 
-    heroEyebrow:
-      "Uma aventura baseada na física",
-
-    heroTitle:
-      "JOGAR. RECONSTRUIR. QUEIMAR.",
-
+    heroEyebrow: "Uma aventura baseada na física",
+    heroTitle: "JOGAR. RECONSTRUIR. QUEIMAR.",
     heroText:
       "Explora as ruínas de um mundo destruído, domina a física, derrota os DUSTERS e reconstrói o que foi perdido.",
+    heroCta: "DESCOBRE O JOGO",
 
-    heroCta:
-      "DESCOBRE O JOGO",
-
-    missionEyebrow:
-      "A MISSÃO",
-
-    missionTitle:
-      "Um jogo com um propósito.",
-
+    missionEyebrow: "A MISSÃO",
+    missionTitle: "Um jogo com um propósito.",
     missionText:
       "LUNC Burn Game combina diversão, física e progressão com uma missão transparente: as receitas elegíveis do projeto são utilizadas para apoiar burns de LUNC.",
 
-    gameEyebrow:
-      "O JOGO",
+    gameEyebrow: "O JOGO",
+    gameTitle: "Fácil de aprender. Difícil de dominar.",
 
-    gameTitle:
-      "Fácil de aprender. Difícil de dominar.",
-
-    aimTitle:
-      "APONTAR",
-
-    aimText:
-      "Escolhe a tua trajetória e prepara o teu disparo.",
-
-    impactTitle:
-      "IMPACTO",
-
-    impactText:
-      "Usa a física, o timing e o ambiente para criar reações em cadeia.",
-
-    rebuildTitle:
-      "RECONSTRUIR",
-
-    rebuildText:
-      "Restaura o mundo nível a nível e descobre o que vem a seguir.",
-
-    lunkiEyebrow:
-      "CONHECE O LUNKI",
-
-    lunkiTitle:
-      "O Explorador",
-
+    lunkiEyebrow: "CONHECE O LUNKI",
+    lunkiTitle: "O EXPLORADOR",
     lunkiText:
-      "Curioso, corajoso e determinado. LUNKI explora as ruínas e ajuda a construir um novo futuro.",
+      "Lunki é o coração da aventura. Curioso, ágil e determinado, explora um mundo destruído e procura aquilo que ainda pode ser reconstruído.",
 
-    dustersEyebrow:
-      "OS DUSTERS",
+    dustersEyebrow: "OS DUSTERS",
+    dustersTitle: "A AMEAÇA",
+    dustersText:
+      "Os DUSTERS são máquinas criadas para destruir o que resta. Cada tipo traz um desafio diferente.",
 
-    dustersTitle:
-      "Nem todos querem ser reconstruídos.",
+    dusterBasicName: "DUSTER BASIC",
+    dusterBasicText: "Rápido, simples e implacável.",
 
-    basic: "Básico",
-    shield: "Escudo",
-    heavy: "Pesado",
-    flyer: "Voador",
-    commander: "Comandante",
+    dusterShieldName: "DUSTER SHIELD",
+    dusterShieldText:
+      "Protegido e concebido para resistir a impactos.",
 
-    level1: "NÍVEL 1",
-    level2: "NÍVEL 2",
-    level3: "NÍVEL 3",
-    level4: "NÍVEL 4",
-    level5: "NÍVEL 5",
+    dusterHeavyName: "DUSTER HEAVY",
+    dusterHeavyText:
+      "Lento, mas extremamente poderoso.",
 
-    basicDesc:
-      "Inimigo padrão. Surge em grande número.",
+    dusterFlyerName: "DUSTER FLYER",
+    dusterFlyerText:
+      "Uma ameaça aérea que altera o campo de batalha.",
 
-    shieldDesc:
-      "Protege outros DUSTERS e absorve a maioria dos ataques.",
+    dusterCommanderName: "DUSTER COMMANDER",
+    dusterCommanderText:
+      "Uma unidade tática capaz de coordenar outros DUSTERS.",
 
-    heavyDesc:
-      "Blindado e extremamente resistente. Causa danos massivos.",
+    burnsEyebrow: "TRANSPARÊNCIA DOS BURNS",
+    burnsTitle: "JOGAR COM UM PROPÓSITO.",
+    burnsText:
+      "O projeto foi concebido com base na transparência. As receitas elegíveis podem ser utilizadas para apoiar burns de LUNC, com uma atividade documentada e publicamente verificável.",
 
-    flyerDesc:
-      "Inimigo aéreo rápido. Difícil de alcançar e prever.",
-
-    commanderDesc:
-      "Lidera os outros DUSTERS. Mais poderoso, mais estratégico e mais perigoso.",
-
-    burnsEyebrow:
-      "TRANSPARÊNCIA DOS BURNS",
-
-    burnsTitle:
-      "Cada burn deve poder ser verificado.",
-
-    burned:
-      "LUNC QUEIMADOS",
-
-    tx:
-      "TRANSAÇÕES VERIFICADAS",
-
-    reserve:
-      "RESERVA DE BURN",
-
-    dashboard:
-      "PAINEL PÚBLICO DE BURNS",
-
-    roadmapEyebrow:
-      "ROTEIRO",
-
-    roadmapTitle:
-      "Passo a passo rumo a um futuro melhor.",
-
+    roadmapEyebrow: "ROADMAP",
+    roadmapTitle: "Passo a passo rumo a um futuro melhor.",
     roadmapLead:
       "Cada etapa aproxima-nos do nosso objetivo: um jogo divertido com um propósito real.",
 
-    motto1:
-      "Jogar.",
+    motto1: "Jogar.",
+    motto2: "Reconstruir.",
+    motto3: "Queimar.",
 
-    motto2:
-      "Reconstruir.",
-
-    motto3:
-      "Queimar.",
-
-    phase1Title:
-      "FUNDAÇÕES",
-
-    phase1Subtitle:
-      "CONSTRUIR A BASE",
-
-    phase1Status:
-      "CONCLUÍDO",
-
+    phase1Title: "FUNDAÇÕES",
+    phase1Subtitle: "CRIAR AS BASES",
+    phase1Status: "CONCLUÍDO",
     phase1Tasks: [
       "Identidade da marca",
       "Lançamento do site",
@@ -885,15 +872,9 @@ const translations = {
       "Definição do conceito do jogo"
     ],
 
-    phase2Title:
-      "PROTÓTIPO",
-
-    phase2Subtitle:
-      "DAR VIDA AO JOGO",
-
-    phase2Status:
-      "EM CURSO",
-
+    phase2Title: "PROTÓTIPO",
+    phase2Subtitle: "DAR VIDA AO JOGO",
+    phase2Status: "EM CURSO",
     phase2Tasks: [
       "Desenvolvimento do gameplay",
       "Física e mecânicas de jogo",
@@ -901,64 +882,107 @@ const translations = {
       "Primeira versão jogável"
     ],
 
-    phase3Title:
-      "ALPHA",
-
-    phase3Subtitle:
-      "EXPANDIR O UNIVERSO",
-
-    phase3Status:
-      "EM BREVE",
-
+    phase3Title: "ALPHA",
+    phase3Subtitle: "EXPANDIR O UNIVERSO",
+    phase3Status: "EM BREVE",
     phase3Tasks: [
-      "Mundos e ambientes",
-      "DUSTERS e variedade de gameplay",
+      "Conteúdo jogável",
+      "Construção dos mundos",
       "Sistema de progressão",
-      "Feedback da comunidade"
+      "Testes com a comunidade"
     ],
 
-    phase4Title:
-      "LANÇAMENTO",
-
-    phase4Subtitle:
-      "JOGAR PARA UM IMPACTO REAL",
-
-    phase4Status:
-      "EM BREVE",
-
+    phase4Title: "LANÇAMENTO",
+    phase4Subtitle: "ABRIR O UNIVERSO",
+    phase4Status: "EM BREVE",
     phase4Tasks: [
-      "Lançamento mobile",
-      "Economia do jogo",
-      "Crescimento da comunidade",
-      "Burns LUNC transparentes"
+      "Otimização final",
+      "Preparação do lançamento",
+      "Lançamento público",
+      "Programa de burns de LUNC"
     ],
 
-    downloadEyebrow:
-      "EM BREVE",
-
-    downloadTitle:
-      "É a tua vez.",
-
+    downloadEyebrow: "DOWNLOAD",
+    downloadTitle: "A AVENTURA ESTÁ A CHEGAR.",
     downloadText:
       "O jogo está a ser construído passo a passo. Segue o projeto e prepara-te para o lançamento.",
-
-    downloadCta:
-      "EM BREVE",
+    downloadCta: "EM BREVE",
 
     footerMission:
       "Uma aventura baseada na física em torno do jogo, da reconstrução e de burns transparentes de LUNC.",
-
-    footerPrivacy:
-      "Privacidade",
-
-    footerTerms:
-      "Termos",
-
-    footerContact:
-      "Contacto",
-
+    footerPrivacy: "Privacidade",
+    footerTerms: "Termos",
+    footerContact: "Contacto",
     footerCopyright:
-      "© 2026 LUNC Burn Game. Todos os direitos reservados."
+      "© 2026 LUNC Burn Game. Todos os direitos reservados.",
+
+    /* CONTACT PAGE */
+
+    contactHeroEyebrow: "CONTACTO",
+    contactHeroTitle: "TENS ALGO A DIZER?",
+    contactHeroSubtitle: "VAMOS CONVERSAR.",
+    contactHeroText:
+      "Se tens uma pergunta, uma ideia, feedback ou simplesmente queres acompanhar o projeto, teremos todo o gosto em ouvir-te.",
+
+    contactGetInTouch: "ENTRA EM CONTACTO",
+    contactLetsTalk: "VAMOS CONVERSAR.",
+    contactIntro:
+      "LUNC Burn Game é construído passo a passo, com a comunidade em mente. O teu feedback pode ajudar a moldar o projeto.",
+
+    contactXTitle: "SEGUE-NOS NO X",
+    contactXText:
+      "Acompanha o projeto, descobre novidades e participa na conversa.",
+
+    contactYoutubeTitle: "VÊ-NOS NO YOUTUBE",
+    contactYoutubeText:
+      "Descobre o universo de LUNC Burn Game através dos nossos vídeos e atualizações de desenvolvimento.",
+
+    contactClosing:
+      "Vamos construir juntos algo com significado.",
+
+    contactYourMessage: "A TUA MENSAGEM",
+    contactSendMessageTitle: "ENVIAR UMA MENSAGEM",
+
+    contactNameLabel: "NOME",
+    contactNamePlaceholder: "O teu nome",
+
+    contactEmailLabel: "E-MAIL",
+    contactEmailPlaceholder: "o.teu@email.com",
+
+    contactSubjectLabel: "ASSUNTO",
+    contactSubjectPlaceholder:
+      "Sobre o que gostarias de falar?",
+
+    contactMessageLabel: "MENSAGEM",
+    contactMessagePlaceholder:
+      "Escreve a tua mensagem aqui...",
+
+    contactSubmit: "ENVIAR MENSAGEM",
+    contactFormNote:
+      "Normalmente respondemos o mais rapidamente possível.",
+
+    contactCommunityTitle: "COMUNIDADE",
+    contactCommunityText:
+      "Um projeto construído com pessoas, não apenas para pessoas.",
+
+    contactImpactTitle: "IMPACTO REAL",
+    contactImpactText:
+      "Um jogo pensado para ligar entretenimento a uma missão transparente.",
+
+    contactFutureTitle: "UM FUTURO MAIS BRILHANTE",
+    contactFutureText:
+      "Joga, reconstrói e ajuda a definir o que vem a seguir.",
+
+    contactFinalEyebrow: "A MISSÃO",
+    contactFinalTitle: "JOGAR. RECONSTRUIR. QUEIMAR.",
+    contactFinalText:
+      "A aventura está apenas a começar. Junta-te a nós.",
+
+    contactExploreGame: "DESCOBRE O JOGO",
+
+    contactSuccessTitle: "MENSAGEM ENVIADA",
+    contactSuccessText:
+      "Obrigado pela tua mensagem."
   }
 
 };
@@ -970,16 +994,12 @@ const translations = {
 
 function translateStandardElements(language) {
 
-  /* Find every element using data-i18n */
-
   document
     .querySelectorAll("[data-i18n]")
     .forEach(function(element) {
 
       const key =
         element.getAttribute("data-i18n");
-
-      /* Check that the translation exists */
 
       if (
         translations[language] &&
@@ -1031,45 +1051,11 @@ function translateRoadmap(language) {
   const t =
     translations[language];
 
-  /* Safety check */
-
   if (!t) {
     return;
   }
 
-translateContact(language);
-function translateContact(language) {
-  const t = translations[language];
 
-  if (!t) {
-    return;
-  }
-
-  document.querySelectorAll("[data-i18n]").forEach(function(element) {
-    const key = element.getAttribute("data-i18n");
-
-    if (
-      key &&
-      t[key] &&
-      typeof t[key] === "string"
-    ) {
-      element.textContent = t[key];
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(function(element) {
-    const key = element.getAttribute("data-i18n-placeholder");
-
-    if (
-      key &&
-      t[key] &&
-      typeof t[key] === "string"
-    ) {
-      element.setAttribute("placeholder", t[key]);
-    }
-  });
-}   
-   
   /* =======================================================
      ROADMAP LEAD
      ======================================================= */
@@ -1135,8 +1121,6 @@ function translateContact(language) {
       index + 1;
 
 
-    /* Build translation keys */
-
     const titleKey =
       "phase" +
       phaseNumber +
@@ -1157,8 +1141,6 @@ function translateContact(language) {
       phaseNumber +
       "Tasks";
 
-
-    /* Find HTML elements */
 
     const title =
       phase.querySelector(
@@ -1181,8 +1163,6 @@ function translateContact(language) {
       );
 
 
-    /* Translate title */
-
     if (
       title &&
       t[titleKey]
@@ -1193,8 +1173,6 @@ function translateContact(language) {
 
     }
 
-
-    /* Translate subtitle */
 
     if (
       subtitle &&
@@ -1207,8 +1185,6 @@ function translateContact(language) {
     }
 
 
-    /* Translate status */
-
     if (
       status &&
       t[statusKey]
@@ -1219,8 +1195,6 @@ function translateContact(language) {
 
     }
 
-
-    /* Translate tasks */
 
     if (
       t[tasksKey] &&
@@ -1251,16 +1225,84 @@ function translateContact(language) {
 
 
 /* =========================================================
+   CONTACT PAGE TRANSLATION
+   ========================================================= */
+
+function translateContact(language) {
+
+  const t =
+    translations[language];
+
+  if (!t) {
+    return;
+  }
+
+
+  /* =======================================================
+     CONTACT TEXTS
+     ======================================================= */
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(function(element) {
+
+      const key =
+        element.getAttribute("data-i18n");
+
+      if (
+        key &&
+        t[key] &&
+        typeof t[key] === "string"
+      ) {
+
+        element.textContent =
+          t[key];
+
+      }
+
+    });
+
+
+  /* =======================================================
+     CONTACT FORM PLACEHOLDERS
+     ======================================================= */
+
+  document
+    .querySelectorAll("[data-i18n-placeholder]")
+    .forEach(function(element) {
+
+      const key =
+        element.getAttribute(
+          "data-i18n-placeholder"
+        );
+
+      if (
+        key &&
+        t[key] &&
+        typeof t[key] === "string"
+      ) {
+
+        element.setAttribute(
+          "placeholder",
+          t[key]
+        );
+
+      }
+
+    });
+
+}
+
+
+/* =========================================================
    GET TRANSLATION
-   Used by other scripts such as contact.js
+   Used by other scripts
    ========================================================= */
 
 function getTranslation(
   key,
   language
 ) {
-
-  /* Use saved language if none is provided */
 
   if (!language) {
 
@@ -1272,30 +1314,19 @@ function getTranslation(
   }
 
 
-  /* Fallback to English */
+  const lang =
+    language;
+
 
   if (
-    !translations[language]
+    translations[lang] &&
+    translations[lang][key]
   ) {
 
-    language = "EN";
+    return translations[lang][key];
 
   }
 
-
-  /* Return translation */
-
-  if (
-    translations[language] &&
-    translations[language][key]
-  ) {
-
-    return translations[language][key];
-
-  }
-
-
-  /* Fallback to English */
 
   if (
     translations.EN &&
@@ -1306,8 +1337,6 @@ function getTranslation(
 
   }
 
-
-  /* Final fallback */
 
   return key;
 
@@ -1320,13 +1349,12 @@ function getTranslation(
 
 function setLanguage(language) {
 
-  /* Check that language exists */
-
   if (
     !translations[language]
   ) {
 
-    language = "EN";
+    language =
+      "EN";
 
   }
 
@@ -1341,6 +1369,13 @@ function setLanguage(language) {
   /* Translate roadmap */
 
   translateRoadmap(
+    language
+  );
+
+
+  /* Translate Contact page */
+
+  translateContact(
     language
   );
 
@@ -1431,13 +1466,23 @@ document.addEventListener(
       ) || "EN";
 
 
-    /* =====================================================
-       APPLY LANGUAGE
-       ===================================================== */
-
     setLanguage(
       savedLanguage
     );
 
   }
 );
+
+
+/* =========================================================
+   GLOBAL ACCESS
+   ========================================================= */
+
+window.luncTranslations =
+  translations;
+
+window.setLuncLanguage =
+  setLanguage;
+
+window.getLuncTranslation =
+  getTranslation;
