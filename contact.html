@@ -995,14 +995,14 @@
         toast.className =
           "contact-toast";
 
-        toast.innerHTML = `
-          <span class="contact-toast-icon">✓</span>
+toast.innerHTML = `
+  <span class="contact-toast-icon">✓</span>
 
-          <span>
-            <strong>MESSAGE SENT</strong>
-            <small>Thank you for reaching out.</small>
-          </span>
-        `;
+  <span>
+    <strong>${getTranslation("contactSuccessTitle")}</strong>
+    <small>${getTranslation("contactSuccessText")}</small>
+  </span>
+`;
 
         document.body.appendChild(toast);
 
