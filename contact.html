@@ -28,7 +28,6 @@
 
   <!-- =====================================================
        HEADER
-       SAME STRUCTURE AS INDEX.HTML
   ====================================================== -->
 
   <header class="site-header">
@@ -116,19 +115,25 @@
 
       <div class="contact-hero-content">
 
-        <p class="contact-eyebrow">
+        <p
+          class="contact-eyebrow"
+          data-i18n="contactHeroEyebrow"
+        >
           CONTACT
         </p>
 
-        <h1>
+        <h1 data-i18n="contactHeroTitle">
           CONTACT
         </h1>
 
-        <h2>
+        <h2 data-i18n="contactHeroSubtitle">
           HAVE SOMETHING TO SAY?
         </h2>
 
-        <p class="contact-hero-text">
+        <p
+          class="contact-hero-text"
+          data-i18n="contactHeroText"
+        >
           Questions, ideas, feedback or simply want to follow
           the project? We’d love to hear from you.
         </p>
@@ -158,11 +163,14 @@
 
             <div class="contact-card-heading">
 
-              <p class="contact-small-label">
+              <p
+                class="contact-small-label"
+                data-i18n="contactGetInTouch"
+              >
                 GET IN TOUCH
               </p>
 
-              <h2>
+              <h2 data-i18n="contactLetsTalk">
                 LET’S TALK.
               </h2>
 
@@ -171,7 +179,10 @@
             </div>
 
 
-            <p class="contact-intro">
+            <p
+              class="contact-intro"
+              data-i18n="contactIntro"
+            >
               LUNC Burn Game is a community-driven project.
               Your message, suggestion or support helps us
               move forward.
@@ -202,7 +213,7 @@
 
               <div class="contact-social-text">
 
-                <strong>
+                <strong data-i18n="contactXTitle">
                   X (TWITTER)
                 </strong>
 
@@ -210,7 +221,7 @@
                   @LuncBurnGame
                 </span>
 
-                <small>
+                <small data-i18n="contactXText">
                   Follow us for the latest news.
                 </small>
 
@@ -253,7 +264,7 @@
 
               <div class="contact-social-text">
 
-                <strong>
+                <strong data-i18n="contactYoutubeTitle">
                   YOUTUBE
                 </strong>
 
@@ -261,7 +272,7 @@
                   Lunc Burn Game
                 </span>
 
-                <small>
+                <small data-i18n="contactYoutubeText">
                   Gameplay, updates and more.
                 </small>
 
@@ -277,7 +288,7 @@
 
               <span></span>
 
-              <p>
+              <p data-i18n="contactClosing">
                 Together, we can make a real impact.
               </p>
 
@@ -295,11 +306,14 @@
 
             <div class="contact-card-heading">
 
-              <p class="contact-small-label">
+              <p
+                class="contact-small-label"
+                data-i18n="contactYourMessage"
+              >
                 YOUR MESSAGE
               </p>
 
-              <h2>
+              <h2 data-i18n="contactSendMessageTitle">
                 SEND US A MESSAGE
               </h2>
 
@@ -309,22 +323,36 @@
 
 
             <form
-  class="contact-form"
-  action="https://api.web3forms.com/submit"
-  method="POST"
->
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
 
-<input type="hidden" name="access_key" value="632b2d58-e73b-4cb8-b654-95ed39ecdf34">
+              <!-- WEB3FORMS -->
 
-<input type="hidden" name="redirect" value="https://luncburngame.github.io/contact.html?success=true">    
-              
+              <input
+                type="hidden"
+                name="access_key"
+                value="TA_VRAIE_CLE_ICI"
+              >
+
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://luncburngame.github.io/contact.html?success=true"
+              >
+
+
               <!-- =========================
                    NAME
               ========================== -->
 
               <div class="form-group">
 
-                <label for="contact-name">
+                <label
+                  for="contact-name"
+                  data-i18n="contactNameLabel"
+                >
                   NAME
                 </label>
 
@@ -354,6 +382,7 @@
                     id="contact-name"
                     name="name"
                     placeholder="Your name"
+                    data-i18n-placeholder="contactNamePlaceholder"
                     autocomplete="name"
                     required
                   >
@@ -370,7 +399,10 @@
 
               <div class="form-group">
 
-                <label for="contact-email">
+                <label
+                  for="contact-email"
+                  data-i18n="contactEmailLabel"
+                >
                   EMAIL
                 </label>
 
@@ -402,6 +434,7 @@
                     id="contact-email"
                     name="email"
                     placeholder="your@email.com"
+                    data-i18n-placeholder="contactEmailPlaceholder"
                     autocomplete="email"
                     required
                   >
@@ -418,7 +451,10 @@
 
               <div class="form-group">
 
-                <label for="contact-subject">
+                <label
+                  for="contact-subject"
+                  data-i18n="contactSubjectLabel"
+                >
                   SUBJECT
                 </label>
 
@@ -446,6 +482,7 @@
                     id="contact-subject"
                     name="subject"
                     placeholder="What would you like to talk about?"
+                    data-i18n-placeholder="contactSubjectPlaceholder"
                   >
 
                 </div>
@@ -462,7 +499,10 @@
 
                 <div class="form-label-row">
 
-                  <label for="contact-message">
+                  <label
+                    for="contact-message"
+                    data-i18n="contactMessageLabel"
+                  >
                     MESSAGE
                   </label>
 
@@ -502,6 +542,7 @@
                     rows="7"
                     maxlength="500"
                     placeholder="Write your message..."
+                    data-i18n-placeholder="contactMessagePlaceholder"
                     required
                   ></textarea>
 
@@ -518,12 +559,16 @@
               <button
                 type="submit"
                 class="btn btn-primary contact-submit"
+                data-i18n="contactSubmit"
               >
                 SEND MESSAGE
               </button>
 
 
-              <p class="contact-form-note">
+              <p
+                class="contact-form-note"
+                data-i18n="contactFormNote"
+              >
                 Your message will help us build a better project.
               </p>
 
@@ -585,11 +630,11 @@
 
             </div>
 
-            <h3>
+            <h3 data-i18n="contactCommunityTitle">
               COMMUNITY
             </h3>
 
-            <p>
+            <p data-i18n="contactCommunityText">
               A project built with people, not just for people.
             </p>
 
@@ -622,11 +667,11 @@
 
             </div>
 
-            <h3>
+            <h3 data-i18n="contactImpactTitle">
               REAL IMPACT
             </h3>
 
-            <p>
+            <p data-i18n="contactImpactText">
               Transparency and measurable actions behind the mission.
             </p>
 
@@ -659,11 +704,11 @@
 
             </div>
 
-            <h3>
+            <h3 data-i18n="contactFutureTitle">
               A BRIGHTER FUTURE
             </h3>
 
-            <p>
+            <p data-i18n="contactFutureText">
               Small actions today can help build something better tomorrow.
             </p>
 
@@ -688,21 +733,25 @@
 
       <div class="contact-final-content">
 
-        <p class="contact-final-eyebrow">
+        <p
+          class="contact-final-eyebrow"
+          data-i18n="contactFinalEyebrow"
+        >
           THE MISSION CONTINUES
         </p>
 
-        <h2>
+        <h2 data-i18n="contactFinalTitle">
           PLAY. REBUILD. BURN.
         </h2>
 
-        <p>
+        <p data-i18n="contactFinalText">
           A brighter tomorrow is a play away.
         </p>
 
         <a
           href="index.html#game"
           class="btn btn-primary"
+          data-i18n="contactExploreGame"
         >
           EXPLORE THE GAME
         </a>
@@ -718,7 +767,6 @@
 
   <!-- =====================================================
        FOOTER
-       SAME STRUCTURE AS INDEX.HTML
   ====================================================== -->
 
   <footer class="site-footer">
@@ -887,84 +935,103 @@
   ====================================================== -->
 
   <script src="js/site.js?v=43"></script>
-  
-<script>
-
-  const messageField =
-    document.getElementById("contact-message");
-
-  const messageCount =
-    document.getElementById("message-count");
-
-  const contactForm =
-    document.querySelector(".contact-form");
 
 
-  /* MESSAGE CHARACTER COUNTER */
+  <!-- =====================================================
+       CONTACT PAGE SCRIPT
+  ====================================================== -->
 
-  if (messageField && messageCount) {
+  <script>
 
-    messageField.addEventListener(
-      "input",
-      function () {
+    const messageField =
+      document.getElementById("contact-message");
 
-        messageCount.textContent =
-          this.value.length;
+    const messageCount =
+      document.getElementById("message-count");
 
-      }
-    );
-
-  }
+    const contactForm =
+      document.querySelector(".contact-form");
 
 
-  /* SUCCESS MESSAGE */
+    /* MESSAGE CHARACTER COUNTER */
 
-  const params =
-    new URLSearchParams(window.location.search);
+    if (messageField && messageCount) {
 
-  if (params.get("success") === "true") {
+      messageField.addEventListener(
+        "input",
+        function () {
 
-    if (contactForm) {
+          messageCount.textContent =
+            this.value.length;
 
-      contactForm.reset();
-
-      if (messageCount) {
-        messageCount.textContent = "0";
-      }
-
-const toast =
-  document.createElement("div");
-
-toast.className = "contact-toast";
-
-toast.innerHTML = `
-  <span class="contact-toast-icon">✓</span>
-  <span>
-    <strong>MESSAGE SENT</strong>
-    <small>Thank you for reaching out.</small>
-  </span>
-`;
-
-document.body.appendChild(toast);
-
-requestAnimationFrame(() => {
-  toast.classList.add("show");
-});
-
-setTimeout(() => {
-  toast.classList.remove("show");
-
-  setTimeout(() => {
-    toast.remove();
-  }, 400);
-
-}, 4000);
+        }
+      );
 
     }
 
-  }
 
-</script>
+    /* SUCCESS MESSAGE */
+
+    const params =
+      new URLSearchParams(window.location.search);
+
+
+    if (params.get("success") === "true") {
+
+      if (contactForm) {
+
+        contactForm.reset();
+
+        if (messageCount) {
+          messageCount.textContent = "0";
+        }
+
+
+        /* SUCCESS TOAST */
+
+        const toast =
+          document.createElement("div");
+
+        toast.className =
+          "contact-toast";
+
+        toast.innerHTML = `
+          <span class="contact-toast-icon">✓</span>
+
+          <span>
+            <strong>MESSAGE SENT</strong>
+            <small>Thank you for reaching out.</small>
+          </span>
+        `;
+
+        document.body.appendChild(toast);
+
+
+        requestAnimationFrame(() => {
+
+          toast.classList.add("show");
+
+        });
+
+
+        setTimeout(() => {
+
+          toast.classList.remove("show");
+
+          setTimeout(() => {
+
+            toast.remove();
+
+          }, 400);
+
+        }, 4000);
+
+      }
+
+    }
+
+  </script>
+
 
 </body>
 
