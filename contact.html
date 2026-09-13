@@ -885,33 +885,67 @@
   ====================================================== -->
 
   <script src="js/site.js?v=43"></script>
+  
+<script>
+
+  const messageField =
+    document.getElementById("contact-message");
+
+  const messageCount =
+    document.getElementById("message-count");
+
+  const contactForm =
+    document.querySelector(".contact-form");
 
 
-  <script>
+  /* MESSAGE CHARACTER COUNTER */
 
-    const messageField =
-      document.getElementById("contact-message");
+  if (messageField && messageCount) {
 
-    const messageCount =
-      document.getElementById("message-count");
+    messageField.addEventListener(
+      "input",
+      function () {
+
+        messageCount.textContent =
+          this.value.length;
+
+      }
+    );
+
+  }
 
 
-    if (messageField && messageCount) {
+  /* SUCCESS MESSAGE */
 
-      messageField.addEventListener(
-        "input",
-        function () {
+  const params =
+    new URLSearchParams(window.location.search);
 
-          messageCount.textContent =
-            this.value.length;
+  if (params.get("success") === "true") {
 
-        }
-      );
+    if (contactForm) {
+
+      contactForm.reset();
+
+      if (messageCount) {
+        messageCount.textContent = "0";
+      }
+
+      const successMessage =
+        document.createElement("p");
+
+      successMessage.className =
+        "contact-form-success";
+
+      successMessage.textContent =
+        "MESSAGE SENT — THANK YOU.";
+
+      contactForm.appendChild(successMessage);
 
     }
 
-  </script>
+  }
 
+</script>
 
 </body>
 
