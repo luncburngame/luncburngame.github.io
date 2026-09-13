@@ -932,16 +932,33 @@
         messageCount.textContent = "0";
       }
 
-      const successMessage =
-        document.createElement("p");
+const toast =
+  document.createElement("div");
 
-      successMessage.className =
-        "contact-form-success";
+toast.className = "contact-toast";
 
-      successMessage.textContent =
-        "MESSAGE SENT — THANK YOU.";
+toast.innerHTML = `
+  <span class="contact-toast-icon">✓</span>
+  <span>
+    <strong>MESSAGE SENT</strong>
+    <small>Thank you for reaching out.</small>
+  </span>
+`;
 
-      contactForm.appendChild(successMessage);
+document.body.appendChild(toast);
+
+requestAnimationFrame(() => {
+  toast.classList.add("show");
+});
+
+setTimeout(() => {
+  toast.classList.remove("show");
+
+  setTimeout(() => {
+    toast.remove();
+  }, 400);
+
+}, 4000);
 
     }
 
