@@ -62,7 +62,8 @@ const translations = {
     dusterFlyerText: "An airborne threat that changes the battlefield.",
 
     dusterCommanderName: "DUSTER COMMANDER",
-    dusterCommanderText: "A tactical unit capable of coordinating other DUSTERS.",
+    dusterCommanderText:
+      "A tactical unit capable of coordinating other DUSTERS.",
 
     burnsEyebrow: "BURN TRANSPARENCY",
     burnsTitle: "PLAY WITH A PURPOSE.",
@@ -132,7 +133,10 @@ const translations = {
     footerCopyright:
       "© 2026 LUNC Burn Game. All rights reserved.",
 
-    /* CONTACT PAGE */
+
+    /* =======================================================
+       CONTACT PAGE
+    ======================================================= */
 
     contactHeroEyebrow: "CONTACT",
     contactHeroTitle: "HAVE SOMETHING TO SAY?",
@@ -198,7 +202,168 @@ const translations = {
 
     contactSuccessTitle: "MESSAGE SENT",
     contactSuccessText:
-      "Thank you for reaching out."
+      "Thank you for reaching out.",
+
+
+    /* =======================================================
+       GAME PAGE
+    ======================================================= */
+
+    gamePageTitle: "THE GAME",
+    gamePageSubtitle: "PROJECT & GAMEPLAY DOCUMENT",
+    gamePageDescription:
+      "A living document describing the game, its mechanics, progression and mission.",
+    gamePageVersion: "VERSION 1.0 — SEPTEMBER 2026",
+
+    gameCoverSignature1: "A BROKEN WORLD.",
+    gameCoverSignature2: "A BRIGHTER TOMORROW.",
+    gameCoverSignature3: "MORE THAN A GAME.",
+
+    game01Title: "DESIGN PHILOSOPHY",
+    game01Signature: "MORE THAN A GAME.",
+
+    philosophyFunTitle: "FUN FIRST",
+    philosophyFunText:
+      "The game must be enjoyable even without any knowledge of LUNC.",
+
+    philosophyLearnTitle: "EASY TO LEARN",
+    philosophyLearnText:
+      "The first levels teach the core mechanics naturally.",
+
+    philosophyMasterTitle: "HARD TO MASTER",
+    philosophyMasterText:
+      "Advanced players are rewarded for precision, planning and experimentation.",
+
+    philosophyImpactTitle: "A POSITIVE IMPACT",
+    philosophyImpactText:
+      "A game designed for entertainment with a transparent mission supporting LUNC burns.",
+
+
+    game02Title: "THE CORE GAMEPLAY LOOP",
+    game02Signature: "EVERY SHOT MATTERS.",
+
+    loopAim: "AIM",
+    loopShoot: "SHOOT",
+    loopPhysics: "PHYSICS",
+    loopImpact: "IMPACT",
+    loopReward: "REWARD",
+    loopProgression: "PROGRESSION",
+    loopOneMoreLevel: "ONE MORE LEVEL",
+
+    loopStatement:
+      "Every action creates a consequence.",
+
+
+    game03Title: "PHYSICS IS THE GAME",
+    game03Signature: "REAL PHYSICS. REAL POSSIBILITIES.",
+
+    physicsIntroTitle: "NO SCRIPTED SOLUTIONS.",
+    physicsIntroText:
+      "Objects have mass. Materials react differently. Gravity matters. Every impact can change the outcome.",
+
+    mechanicsButton: "DISCOVER THE MECHANICS",
+
+    physicsRow1Title: "Physics",
+    physicsRow1Text: "Gravity · Mass · Speed",
+
+    physicsRow2Title: "Materials",
+    physicsRow2Text: "Friction · Restitution · Resistance",
+
+    physicsRow3Title: "Environment",
+    physicsRow3Text: "Structures · Terrain · Objects",
+
+    physicsRow4Title: "Enemies",
+    physicsRow4Text: "Mass · Health · Movement",
+
+    physicsRow5Title: "Feedback",
+    physicsRow5Text: "Particles · Camera · Sound · Haptics",
+
+
+    game04Title: "LEVEL DESIGN",
+    game04Signature: "SIX WORLDS. A BRIGHTER TOMORROW.",
+
+    levelIntro1:
+      "Explore six unique worlds, each with its own atmosphere, mechanics and objectives.",
+
+    levelIntro2:
+      "From the ruins of a fallen world to a new civilization, each world brings new challenges and introduces new gameplay elements. Progress through the worlds and unlock new areas, tools and possibilities.",
+
+    world01Title: "THE RUINS",
+    world01Text: "Explore. Learn. Simple structures.",
+
+    world02Title: "THE COLLAPSE",
+    world02Text: "Survive. Unstable environments.",
+
+    world03Title: "THE REBUILDERS",
+    world03Text: "Reconstruct. Dynamic mechanisms.",
+
+    world04Title: "COSMOS",
+    world04Text: "Go further. New physics.",
+
+    world05Title: "THE BRIDGE",
+    world05Text: "Connect. Complex structures.",
+
+    world06Title: "THE NEW DAWN",
+    world06Text: "Build a brighter world. Ultimate challenges.",
+
+
+    game05Title: "MASTERY",
+    game05Signature: "THREE WAYS TO COMPLETE A LEVEL.",
+
+    masteryCompleteTitle: "COMPLETE",
+    masteryCompleteText: "Finish the level.",
+
+    masteryMasterTitle: "MASTER",
+    masteryMasterText:
+      "Destroy the DUSTER with one projectile.",
+
+    masteryPerfectTitle: "PERFECT",
+    masteryPerfectText:
+      "Complete bonus objectives (e.g. destroy all crates).",
+
+    masteryQuote:
+      "The best shot isn't always aimed directly at the enemy.",
+
+
+    game06Title: "LUMEN",
+    game06Signature: "PLAY. COLLECT. CUSTOMIZE.",
+
+    lumenTitle: "LUMEN",
+    lumenSubtitle: "PLAY. COLLECT. CUSTOMIZE.",
+    lumenText:
+      "LUMEN are a virtual currency earned through gameplay. They are used to unlock cosmetics, decorations and progression content.",
+
+    lumenCanTitle: "CAN",
+    lumenCanItems: [
+      "Earn through gameplay",
+      "Unlock cosmetics",
+      "Unlock decorations",
+      "Support progression",
+      "Reward engagement"
+    ],
+
+    lumenCannotTitle: "CANNOT",
+    lumenCannotItems: [
+      "Have monetary value",
+      "Be converted to LUNC",
+      "Be withdrawn",
+      "Be transferred",
+      "Create pay-to-win"
+    ],
+
+
+    game07Title: "THE MISSION",
+    game07Signature: "PLAY → REVENUE → BURN → BRIGHTER TOMORROW.",
+
+    missionGameTitle: "A GAME WITH A REAL PURPOSE.",
+    missionGameText:
+      "The game generates revenue through multiple sources (e.g. ads). Eligible project revenue can be allocated to buy LUNC and support burns. Burn transactions are published and publicly verifiable.",
+
+    missionStepPlayers: "PLAYERS",
+    missionStepRevenue: "REVENUE",
+    missionStepBuy: "BUY LUNC",
+    missionStepBurn: "BURN",
+    missionStepProof: "PUBLIC PROOF"
   },
 
 
@@ -328,6 +493,7 @@ const translations = {
     footerCopyright:
       "© 2026 LUNC Burn Game. Tous droits réservés.",
 
+
     /* CONTACT PAGE */
 
     contactHeroEyebrow: "CONTACT",
@@ -394,7 +560,160 @@ const translations = {
 
     contactSuccessTitle: "MESSAGE ENVOYÉ",
     contactSuccessText:
-      "Merci pour votre message."
+      "Merci pour votre message.",
+
+
+    /* GAME PAGE */
+
+    gamePageTitle: "LE JEU",
+    gamePageSubtitle: "DOCUMENT PROJET & GAMEPLAY",
+    gamePageDescription:
+      "Un document vivant présentant le jeu, ses mécaniques, sa progression et sa mission.",
+    gamePageVersion: "VERSION 1.0 — SEPTEMBRE 2026",
+
+    gameCoverSignature1: "UN MONDE BRISÉ.",
+    gameCoverSignature2: "UN AVENIR PLUS LUMINEUX.",
+    gameCoverSignature3: "BIEN PLUS QU'UN JEU.",
+
+    game01Title: "PHILOSOPHIE DE CONCEPTION",
+    game01Signature: "BIEN PLUS QU'UN JEU.",
+
+    philosophyFunTitle: "LE PLAISIR AVANT TOUT",
+    philosophyFunText:
+      "Le jeu doit être amusant même sans aucune connaissance de LUNC.",
+
+    philosophyLearnTitle: "FACILE À APPRENDRE",
+    philosophyLearnText:
+      "Les premiers niveaux enseignent naturellement les mécaniques essentielles.",
+
+    philosophyMasterTitle: "DIFFICILE À MAÎTRISER",
+    philosophyMasterText:
+      "Les joueurs avancés sont récompensés pour leur précision, leur planification et leur expérimentation.",
+
+    philosophyImpactTitle: "UN IMPACT POSITIF",
+    philosophyImpactText:
+      "Un jeu pensé pour le divertissement, avec une mission transparente en soutien des burns de LUNC.",
+
+    game02Title: "LA BOUCLE DE GAMEPLAY",
+    game02Signature: "CHAQUE TIR COMPTE.",
+
+    loopAim: "VISER",
+    loopShoot: "TIRER",
+    loopPhysics: "PHYSIQUE",
+    loopImpact: "IMPACT",
+    loopReward: "RÉCOMPENSE",
+    loopProgression: "PROGRESSION",
+    loopOneMoreLevel: "ENCORE UN NIVEAU",
+
+    loopStatement:
+      "Chaque action crée une conséquence.",
+
+    game03Title: "LA PHYSIQUE EST LE JEU",
+    game03Signature: "UNE PHYSIQUE RÉELLE. DES POSSIBILITÉS RÉELLES.",
+
+    physicsIntroTitle: "AUCUNE SOLUTION PRÉPROGRAMMÉE.",
+    physicsIntroText:
+      "Les objets ont une masse. Les matériaux réagissent différemment. La gravité compte. Chaque impact peut changer l'issue.",
+
+    mechanicsButton: "DÉCOUVRIR LES MÉCANIQUES",
+
+    physicsRow1Title: "Physique",
+    physicsRow1Text: "Gravité · Masse · Vitesse",
+
+    physicsRow2Title: "Matériaux",
+    physicsRow2Text: "Friction · Restitution · Résistance",
+
+    physicsRow3Title: "Environnement",
+    physicsRow3Text: "Structures · Terrain · Objets",
+
+    physicsRow4Title: "Ennemis",
+    physicsRow4Text: "Masse · Santé · Mouvement",
+
+    physicsRow5Title: "Retour",
+    physicsRow5Text: "Particules · Caméra · Son · Haptique",
+
+    game04Title: "CONCEPTION DES NIVEAUX",
+    game04Signature: "SIX MONDES. UN AVENIR PLUS LUMINEUX.",
+
+    levelIntro1:
+      "Explorez six mondes uniques, chacun avec son atmosphère, ses mécaniques et ses objectifs.",
+
+    levelIntro2:
+      "Des ruines d'un monde déchu à une nouvelle civilisation, chaque monde apporte de nouveaux défis et introduit de nouveaux éléments de gameplay. Progressez à travers les mondes et débloquez de nouvelles zones, de nouveaux outils et de nouvelles possibilités.",
+
+    world01Title: "LES RUINES",
+    world01Text: "Explorez. Apprenez. Structures simples.",
+
+    world02Title: "L'EFFONDREMENT",
+    world02Text: "Survivez. Environnements instables.",
+
+    world03Title: "LES RECONSTRUCTEURS",
+    world03Text: "Reconstruisez. Mécanismes dynamiques.",
+
+    world04Title: "COSMOS",
+    world04Text: "Allez plus loin. Nouvelle physique.",
+
+    world05Title: "LE PONT",
+    world05Text: "Connectez. Structures complexes.",
+
+    world06Title: "LA NOUVELLE AUBE",
+    world06Text: "Construisez un monde meilleur. Défis ultimes.",
+
+    game05Title: "MAÎTRISE",
+    game05Signature: "TROIS FAÇONS DE TERMINER UN NIVEAU.",
+
+    masteryCompleteTitle: "COMPLET",
+    masteryCompleteText: "Terminez le niveau.",
+
+    masteryMasterTitle: "MAÎTRE",
+    masteryMasterText:
+      "Détruisez le DUSTER avec un seul projectile.",
+
+    masteryPerfectTitle: "PARFAIT",
+    masteryPerfectText:
+      "Accomplissez les objectifs bonus (par exemple, détruire toutes les caisses).",
+
+    masteryQuote:
+      "Le meilleur tir n'est pas toujours dirigé directement vers l'ennemi.",
+
+    game06Title: "LUMEN",
+    game06Signature: "JOUER. COLLECTER. PERSONNALISER.",
+
+    lumenTitle: "LUMEN",
+    lumenSubtitle: "JOUER. COLLECTER. PERSONNALISER.",
+    lumenText:
+      "Les LUMEN sont une monnaie virtuelle obtenue en jouant. Ils permettent de débloquer des éléments cosmétiques, des décorations et du contenu de progression.",
+
+    lumenCanTitle: "PEUT",
+    lumenCanItems: [
+      "Être gagné en jouant",
+      "Débloquer des éléments cosmétiques",
+      "Débloquer des décorations",
+      "Soutenir la progression",
+      "Récompenser l'engagement"
+    ],
+
+    lumenCannotTitle: "NE PEUT PAS",
+    lumenCannotItems: [
+      "Avoir une valeur monétaire",
+      "Être converti en LUNC",
+      "Être retiré",
+      "Être transféré",
+      "Créer un système pay-to-win"
+    ],
+
+    game07Title: "LA MISSION",
+    game07Signature: "JOUER → REVENUS → BURN → UN AVENIR PLUS LUMINEUX.",
+
+    missionGameTitle: "UN JEU AVEC UN VÉRITABLE OBJECTIF.",
+    missionGameText:
+      "Le jeu génère des revenus grâce à plusieurs sources (par exemple les publicités). Les revenus éligibles du projet peuvent être utilisés pour acheter du LUNC et soutenir des burns. Les transactions de burn sont publiées et vérifiables publiquement.",
+
+    missionStepPlayers: "JOUEURS",
+    missionStepRevenue: "REVENUS",
+    missionStepBuy: "ACHETER DU LUNC",
+    missionStepBurn: "BURN",
+    missionStepProof: "PREUVE PUBLIQUE"
   },
 
 
@@ -524,6 +843,7 @@ const translations = {
     footerCopyright:
       "© 2026 LUNC Burn Game. Todos los derechos reservados.",
 
+
     /* CONTACT PAGE */
 
     contactHeroEyebrow: "CONTACTO",
@@ -590,7 +910,160 @@ const translations = {
 
     contactSuccessTitle: "MENSAJE ENVIADO",
     contactSuccessText:
-      "Gracias por escribirnos."
+      "Gracias por escribirnos.",
+
+
+    /* GAME PAGE */
+
+    gamePageTitle: "EL JUEGO",
+    gamePageSubtitle: "DOCUMENTO DEL PROYECTO Y GAMEPLAY",
+    gamePageDescription:
+      "Un documento vivo que presenta el juego, sus mecánicas, su progresión y su misión.",
+    gamePageVersion: "VERSIÓN 1.0 — SEPTIEMBRE 2026",
+
+    gameCoverSignature1: "UN MUNDO ROTO.",
+    gameCoverSignature2: "UN FUTURO MÁS BRILLANTE.",
+    gameCoverSignature3: "MÁS QUE UN JUEGO.",
+
+    game01Title: "FILOSOFÍA DE DISEÑO",
+    game01Signature: "MÁS QUE UN JUEGO.",
+
+    philosophyFunTitle: "DIVERSIÓN ANTE TODO",
+    philosophyFunText:
+      "El juego debe ser divertido incluso sin ningún conocimiento de LUNC.",
+
+    philosophyLearnTitle: "FÁCIL DE APRENDER",
+    philosophyLearnText:
+      "Los primeros niveles enseñan las mecánicas principales de forma natural.",
+
+    philosophyMasterTitle: "DIFÍCIL DE DOMINAR",
+    philosophyMasterText:
+      "Los jugadores avanzados son recompensados por su precisión, planificación y experimentación.",
+
+    philosophyImpactTitle: "UN IMPACTO POSITIVO",
+    philosophyImpactText:
+      "Un juego diseñado para entretener, con una misión transparente que apoya los burns de LUNC.",
+
+    game02Title: "EL BUCLE PRINCIPAL DE JUEGO",
+    game02Signature: "CADA DISPARO CUENTA.",
+
+    loopAim: "APUNTAR",
+    loopShoot: "DISPARAR",
+    loopPhysics: "FÍSICA",
+    loopImpact: "IMPACTO",
+    loopReward: "RECOMPENSA",
+    loopProgression: "PROGRESIÓN",
+    loopOneMoreLevel: "UN NIVEL MÁS",
+
+    loopStatement:
+      "Cada acción crea una consecuencia.",
+
+    game03Title: "LA FÍSICA ES EL JUEGO",
+    game03Signature: "FÍSICA REAL. POSIBILIDADES REALES.",
+
+    physicsIntroTitle: "SIN SOLUCIONES PREPROGRAMADAS.",
+    physicsIntroText:
+      "Los objetos tienen masa. Los materiales reaccionan de forma diferente. La gravedad importa. Cada impacto puede cambiar el resultado.",
+
+    mechanicsButton: "DESCUBRIR LAS MECÁNICAS",
+
+    physicsRow1Title: "Física",
+    physicsRow1Text: "Gravedad · Masa · Velocidad",
+
+    physicsRow2Title: "Materiales",
+    physicsRow2Text: "Fricción · Restitución · Resistencia",
+
+    physicsRow3Title: "Entorno",
+    physicsRow3Text: "Estructuras · Terreno · Objetos",
+
+    physicsRow4Title: "Enemigos",
+    physicsRow4Text: "Masa · Salud · Movimiento",
+
+    physicsRow5Title: "Respuesta",
+    physicsRow5Text: "Partículas · Cámara · Sonido · Háptica",
+
+    game04Title: "DISEÑO DE NIVELES",
+    game04Signature: "SEIS MUNDOS. UN FUTURO MÁS BRILLANTE.",
+
+    levelIntro1:
+      "Explora seis mundos únicos, cada uno con su propia atmósfera, mecánicas y objetivos.",
+
+    levelIntro2:
+      "Desde las ruinas de un mundo caído hasta una nueva civilización, cada mundo introduce nuevos desafíos y elementos de juego. Avanza por los mundos y desbloquea nuevas zonas, herramientas y posibilidades.",
+
+    world01Title: "LAS RUINAS",
+    world01Text: "Explora. Aprende. Estructuras simples.",
+
+    world02Title: "EL COLAPSO",
+    world02Text: "Sobrevive. Entornos inestables.",
+
+    world03Title: "LOS RECONSTRUCTORES",
+    world03Text: "Reconstruye. Mecanismos dinámicos.",
+
+    world04Title: "COSMOS",
+    world04Text: "Ve más lejos. Nueva física.",
+
+    world05Title: "EL PUENTE",
+    world05Text: "Conecta. Estructuras complejas.",
+
+    world06Title: "EL NUEVO AMANECER",
+    world06Text: "Construye un mundo mejor. Desafíos definitivos.",
+
+    game05Title: "MAESTRÍA",
+    game05Signature: "TRES FORMAS DE COMPLETAR UN NIVEL.",
+
+    masteryCompleteTitle: "COMPLETO",
+    masteryCompleteText: "Termina el nivel.",
+
+    masteryMasterTitle: "MAESTRO",
+    masteryMasterText:
+      "Destruye al DUSTER con un solo proyectil.",
+
+    masteryPerfectTitle: "PERFECTO",
+    masteryPerfectText:
+      "Completa los objetivos extra (por ejemplo, destruye todas las cajas).",
+
+    masteryQuote:
+      "El mejor disparo no siempre apunta directamente al enemigo.",
+
+    game06Title: "LUMEN",
+    game06Signature: "JUGAR. COLECCIONAR. PERSONALIZAR.",
+
+    lumenTitle: "LUMEN",
+    lumenSubtitle: "JUGAR. COLECCIONAR. PERSONALIZAR.",
+    lumenText:
+      "Los LUMEN son una moneda virtual que se obtiene jugando. Se utilizan para desbloquear elementos cosméticos, decoraciones y contenido de progresión.",
+
+    lumenCanTitle: "PUEDE",
+    lumenCanItems: [
+      "Obtenerse jugando",
+      "Desbloquear elementos cosméticos",
+      "Desbloquear decoraciones",
+      "Apoyar la progresión",
+      "Recompensar la participación"
+    ],
+
+    lumenCannotTitle: "NO PUEDE",
+    lumenCannotItems: [
+      "Tener valor monetario",
+      "Convertirse en LUNC",
+      "Retirarse",
+      "Transferirse",
+      "Crear un sistema pay-to-win"
+    ],
+
+    game07Title: "LA MISIÓN",
+    game07Signature: "JUGAR → INGRESOS → BURN → UN FUTURO MÁS BRILLANTE.",
+
+    missionGameTitle: "UN JUEGO CON UN PROPÓSITO REAL.",
+    missionGameText:
+      "El juego genera ingresos a través de varias fuentes (por ejemplo, anuncios). Los ingresos elegibles del proyecto pueden utilizarse para comprar LUNC y apoyar burns. Las transacciones de burn se publican y pueden verificarse públicamente.",
+
+    missionStepPlayers: "JUGADORES",
+    missionStepRevenue: "INGRESOS",
+    missionStepBuy: "COMPRAR LUNC",
+    missionStepBurn: "BURN",
+    missionStepProof: "PRUEBA PÚBLICA"
   },
 
 
@@ -720,6 +1193,7 @@ const translations = {
     footerCopyright:
       "© 2026 LUNC Burn Game. Alle Rechte vorbehalten.",
 
+
     /* CONTACT PAGE */
 
     contactHeroEyebrow: "KONTAKT",
@@ -786,7 +1260,160 @@ const translations = {
 
     contactSuccessTitle: "NACHRICHT GESENDET",
     contactSuccessText:
-      "Danke für deine Nachricht."
+      "Danke für deine Nachricht.",
+
+
+    /* GAME PAGE */
+
+    gamePageTitle: "DAS SPIEL",
+    gamePageSubtitle: "PROJEKT- & GAMEPLAY-DOKUMENT",
+    gamePageDescription:
+      "Ein lebendiges Dokument über das Spiel, seine Mechaniken, seine Entwicklung und seine Mission.",
+    gamePageVersion: "VERSION 1.0 — SEPTEMBER 2026",
+
+    gameCoverSignature1: "EINE ZERBROCHENE WELT.",
+    gameCoverSignature2: "EINE HELLERE ZUKUNFT.",
+    gameCoverSignature3: "MEHR ALS EIN SPIEL.",
+
+    game01Title: "DESIGNPHILOSOPHIE",
+    game01Signature: "MEHR ALS EIN SPIEL.",
+
+    philosophyFunTitle: "SPASS ZUERST",
+    philosophyFunText:
+      "Das Spiel muss auch ohne Kenntnisse über LUNC Spaß machen.",
+
+    philosophyLearnTitle: "EINFACH ZU LERNEN",
+    philosophyLearnText:
+      "Die ersten Level vermitteln die grundlegenden Mechaniken ganz natürlich.",
+
+    philosophyMasterTitle: "SCHWER ZU MEISTERN",
+    philosophyMasterText:
+      "Fortgeschrittene Spieler werden für Präzision, Planung und Experimentierfreude belohnt.",
+
+    philosophyImpactTitle: "EIN POSITIVER IMPACT",
+    philosophyImpactText:
+      "Ein Unterhaltungsspiel mit einer transparenten Mission zur Unterstützung von LUNC-Burns.",
+
+    game02Title: "DER ZENTRALE GAMEPLAY-LOOP",
+    game02Signature: "JEDER SCHUSS ZÄHLT.",
+
+    loopAim: "ZIELEN",
+    loopShoot: "SCHIESSEN",
+    loopPhysics: "PHYSIK",
+    loopImpact: "IMPACT",
+    loopReward: "BELOHNUNG",
+    loopProgression: "FORTSCHRITT",
+    loopOneMoreLevel: "NOCH EIN LEVEL",
+
+    loopStatement:
+      "Jede Aktion erzeugt eine Konsequenz.",
+
+    game03Title: "PHYSIK IST DAS SPIEL",
+    game03Signature: "ECHTE PHYSIK. ECHTE MÖGLICHKEITEN.",
+
+    physicsIntroTitle: "KEINE VORPROGRAMMIERTEN LÖSUNGEN.",
+    physicsIntroText:
+      "Objekte haben Masse. Materialien reagieren unterschiedlich. Die Schwerkraft zählt. Jeder Aufprall kann das Ergebnis verändern.",
+
+    mechanicsButton: "MECHANIKEN ENTDECKEN",
+
+    physicsRow1Title: "Physik",
+    physicsRow1Text: "Schwerkraft · Masse · Geschwindigkeit",
+
+    physicsRow2Title: "Materialien",
+    physicsRow2Text: "Reibung · Rückprall · Widerstand",
+
+    physicsRow3Title: "Umgebung",
+    physicsRow3Text: "Strukturen · Gelände · Objekte",
+
+    physicsRow4Title: "Gegner",
+    physicsRow4Text: "Masse · Gesundheit · Bewegung",
+
+    physicsRow5Title: "Feedback",
+    physicsRow5Text: "Partikel · Kamera · Sound · Haptik",
+
+    game04Title: "LEVEL-DESIGN",
+    game04Signature: "SECHS WELTEN. EINE HELLERE ZUKUNFT.",
+
+    levelIntro1:
+      "Erkunde sechs einzigartige Welten, jede mit ihrer eigenen Atmosphäre, ihren eigenen Mechaniken und Zielen.",
+
+    levelIntro2:
+      "Von den Ruinen einer gefallenen Welt bis zu einer neuen Zivilisation bringt jede Welt neue Herausforderungen und Gameplay-Elemente. Schreite durch die Welten voran und schalte neue Gebiete, Werkzeuge und Möglichkeiten frei.",
+
+    world01Title: "DIE RUINEN",
+    world01Text: "Erkunden. Lernen. Einfache Strukturen.",
+
+    world02Title: "DER ZUSAMMENBRUCH",
+    world02Text: "Überleben. Instabile Umgebungen.",
+
+    world03Title: "DIE WIEDERAUFBAUER",
+    world03Text: "Wiederaufbauen. Dynamische Mechanismen.",
+
+    world04Title: "KOSMOS",
+    world04Text: "Weiter gehen. Neue Physik.",
+
+    world05Title: "DIE BRÜCKE",
+    world05Text: "Verbinden. Komplexe Strukturen.",
+
+    world06Title: "DIE NEUE MORGENRÖTE",
+    world06Text: "Eine bessere Welt bauen. Ultimative Herausforderungen.",
+
+    game05Title: "MEISTERSCHAFT",
+    game05Signature: "DREI MÖGLICHKEITEN, EIN LEVEL ABZUSCHLIESSEN.",
+
+    masteryCompleteTitle: "GESCHAFFT",
+    masteryCompleteText: "Schließe das Level ab.",
+
+    masteryMasterTitle: "MEISTER",
+    masteryMasterText:
+      "Zerstöre den DUSTER mit einem einzigen Projektil.",
+
+    masteryPerfectTitle: "PERFEKT",
+    masteryPerfectText:
+      "Erfülle Bonusziele (z. B. alle Kisten zerstören).",
+
+    masteryQuote:
+      "Der beste Schuss ist nicht immer direkt auf den Gegner gerichtet.",
+
+    game06Title: "LUMEN",
+    game06Signature: "SPIELEN. SAMMELN. INDIVIDUALISIEREN.",
+
+    lumenTitle: "LUMEN",
+    lumenSubtitle: "SPIELEN. SAMMELN. INDIVIDUALISIEREN.",
+    lumenText:
+      "LUMEN sind eine virtuelle Währung, die durch Gameplay verdient wird. Sie werden verwendet, um kosmetische Elemente, Dekorationen und Fortschrittsinhalte freizuschalten.",
+
+    lumenCanTitle: "KANN",
+    lumenCanItems: [
+      "Durch Gameplay verdient werden",
+      "Kosmetische Elemente freischalten",
+      "Dekorationen freischalten",
+      "Fortschritt unterstützen",
+      "Engagement belohnen"
+    ],
+
+    lumenCannotTitle: "KANN NICHT",
+    lumenCannotItems: [
+      "Einen Geldwert besitzen",
+      "In LUNC umgewandelt werden",
+      "Ausgezahlt werden",
+      "Übertragen werden",
+      "Pay-to-win erzeugen"
+    ],
+
+    game07Title: "DIE MISSION",
+    game07Signature: "SPIELEN → EINNAHMEN → BURN → EINE HELLERE ZUKUNFT.",
+
+    missionGameTitle: "EIN SPIEL MIT EINEM ECHTEN ZIEL.",
+    missionGameText:
+      "Das Spiel generiert Einnahmen aus verschiedenen Quellen (z. B. Werbung). Geeignete Projekterlöse können zum Kauf von LUNC und zur Unterstützung von Burns verwendet werden. Burn-Transaktionen werden veröffentlicht und sind öffentlich überprüfbar.",
+
+    missionStepPlayers: "SPIELER",
+    missionStepRevenue: "EINNAHMEN",
+    missionStepBuy: "LUNC KAUFEN",
+    missionStepBurn: "BURN",
+    missionStepProof: "ÖFFENTLICHER NACHWEIS"
   },
 
 
@@ -916,6 +1543,7 @@ const translations = {
     footerCopyright:
       "© 2026 LUNC Burn Game. Todos os direitos reservados.",
 
+
     /* CONTACT PAGE */
 
     contactHeroEyebrow: "CONTACTO",
@@ -982,10 +1610,184 @@ const translations = {
 
     contactSuccessTitle: "MENSAGEM ENVIADA",
     contactSuccessText:
-      "Obrigado pela tua mensagem."
+      "Obrigado pela tua mensagem.",
+
+
+    /* GAME PAGE */
+
+    gamePageTitle: "O JOGO",
+    gamePageSubtitle: "DOCUMENTO DO PROJETO E GAMEPLAY",
+    gamePageDescription:
+      "Um documento vivo que apresenta o jogo, as suas mecânicas, progressão e missão.",
+    gamePageVersion: "VERSÃO 1.0 — SETEMBRO 2026",
+
+    gameCoverSignature1: "UM MUNDO DESTRUÍDO.",
+    gameCoverSignature2: "UM FUTURO MAIS BRILHANTE.",
+    gameCoverSignature3: "MAIS DO QUE UM JOGO.",
+
+    game01Title: "FILOSOFIA DE DESIGN",
+    game01Signature: "MAIS DO QUE UM JOGO.",
+
+    philosophyFunTitle: "DIVERSÃO PRIMEIRO",
+    philosophyFunText:
+      "O jogo deve ser divertido mesmo sem qualquer conhecimento sobre LUNC.",
+
+    philosophyLearnTitle: "FÁCIL DE APRENDER",
+    philosophyLearnText:
+      "Os primeiros níveis ensinam naturalmente as mecânicas essenciais.",
+
+    philosophyMasterTitle: "DIFÍCIL DE DOMINAR",
+    philosophyMasterText:
+      "Os jogadores avançados são recompensados pela precisão, planeamento e experimentação.",
+
+    philosophyImpactTitle: "UM IMPACTO POSITIVO",
+    philosophyImpactText:
+      "Um jogo pensado para o entretenimento, com uma missão transparente de apoio aos burns de LUNC.",
+
+    game02Title: "O CICLO PRINCIPAL DE GAMEPLAY",
+    game02Signature: "CADA DISPARO CONTA.",
+
+    loopAim: "APONTAR",
+    loopShoot: "DISPARAR",
+    loopPhysics: "FÍSICA",
+    loopImpact: "IMPACTO",
+    loopReward: "RECOMPENSA",
+    loopProgression: "PROGRESSÃO",
+    loopOneMoreLevel: "MAIS UM NÍVEL",
+
+    loopStatement:
+      "Cada ação cria uma consequência.",
+
+    game03Title: "A FÍSICA É O JOGO",
+    game03Signature: "FÍSICA REAL. POSSIBILIDADES REAIS.",
+
+    physicsIntroTitle: "SEM SOLUÇÕES PRÉ-PROGRAMADAS.",
+    physicsIntroText:
+      "Os objetos têm massa. Os materiais reagem de forma diferente. A gravidade importa. Cada impacto pode alterar o resultado.",
+
+    mechanicsButton: "DESCOBRIR AS MECÂNICAS",
+
+    physicsRow1Title: "Física",
+    physicsRow1Text: "Gravidade · Massa · Velocidade",
+
+    physicsRow2Title: "Materiais",
+    physicsRow2Text: "Fricção · Restituição · Resistência",
+
+    physicsRow3Title: "Ambiente",
+    physicsRow3Text: "Estruturas · Terreno · Objetos",
+
+    physicsRow4Title: "Inimigos",
+    physicsRow4Text: "Massa · Saúde · Movimento",
+
+    physicsRow5Title: "Feedback",
+    physicsRow5Text: "Partículas · Câmara · Som · Háptica",
+
+    game04Title: "DESIGN DOS NÍVEIS",
+    game04Signature: "SEIS MUNDOS. UM FUTURO MAIS BRILHANTE.",
+
+    levelIntro1:
+      "Explora seis mundos únicos, cada um com a sua própria atmosfera, mecânicas e objetivos.",
+
+    levelIntro2:
+      "Das ruínas de um mundo caído a uma nova civilização, cada mundo traz novos desafios e novos elementos de gameplay. Avança pelos mundos e desbloqueia novas áreas, ferramentas e possibilidades.",
+
+    world01Title: "AS RUÍNAS",
+    world01Text: "Explora. Aprende. Estruturas simples.",
+
+    world02Title: "O COLAPSO",
+    world02Text: "Sobrevive. Ambientes instáveis.",
+
+    world03Title: "OS RECONSTRUTORES",
+    world03Text: "Reconstrói. Mecanismos dinâmicos.",
+
+    world04Title: "COSMOS",
+    world04Text: "Vai mais longe. Nova física.",
+
+    world05Title: "A PONTE",
+    world05Text: "Liga. Estruturas complexas.",
+
+    world06Title: "A NOVA AURORA",
+    world06Text: "Constrói um mundo melhor. Desafios supremos.",
+
+    game05Title: "MAESTRIA",
+    game05Signature: "TRÊS FORMAS DE COMPLETAR UM NÍVEL.",
+
+    masteryCompleteTitle: "COMPLETO",
+    masteryCompleteText: "Termina o nível.",
+
+    masteryMasterTitle: "MESTRE",
+    masteryMasterText:
+      "Destrói o DUSTER com um único projétil.",
+
+    masteryPerfectTitle: "PERFEITO",
+    masteryPerfectText:
+      "Completa objetivos bónus (por exemplo, destrói todas as caixas).",
+
+    masteryQuote:
+      "O melhor disparo nem sempre é apontado diretamente ao inimigo.",
+
+    game06Title: "LUMEN",
+    game06Signature: "JOGAR. COLECIONAR. PERSONALIZAR.",
+
+    lumenTitle: "LUMEN",
+    lumenSubtitle: "JOGAR. COLECIONAR. PERSONALIZAR.",
+    lumenText:
+      "Os LUMEN são uma moeda virtual obtida através do gameplay. São utilizados para desbloquear elementos cosméticos, decorações e conteúdo de progressão.",
+
+    lumenCanTitle: "PODE",
+    lumenCanItems: [
+      "Ser obtido através do gameplay",
+      "Desbloquear elementos cosméticos",
+      "Desbloquear decorações",
+      "Apoiar a progressão",
+      "Recompensar o envolvimento"
+    ],
+
+    lumenCannotTitle: "NÃO PODE",
+    lumenCannotItems: [
+      "Ter valor monetário",
+      "Ser convertido em LUNC",
+      "Ser levantado",
+      "Ser transferido",
+      "Criar um sistema pay-to-win"
+    ],
+
+    game07Title: "A MISSÃO",
+    game07Signature: "JOGAR → RECEITAS → BURN → UM FUTURO MAIS BRILHANTE.",
+
+    missionGameTitle: "UM JOGO COM UM PROPÓSITO REAL.",
+    missionGameText:
+      "O jogo gera receitas através de várias fontes (por exemplo, publicidade). As receitas elegíveis do projeto podem ser utilizadas para comprar LUNC e apoiar burns. As transações de burn são publicadas e podem ser verificadas publicamente.",
+
+    missionStepPlayers: "JOGADORES",
+    missionStepRevenue: "RECEITAS",
+    missionStepBuy: "COMPRAR LUNC",
+    missionStepBurn: "BURN",
+    missionStepProof: "PROVA PÚBLICA"
   }
 
 };
+
+
+/* =========================================================
+   HELPER
+   ========================================================= */
+
+function setGameText(selector, text) {
+
+  const element =
+    document.querySelector(selector);
+
+  if (
+    element &&
+    typeof text === "string"
+  ) {
+
+    element.textContent = text;
+
+  }
+
+}
 
 
 /* =========================================================
@@ -1056,10 +1858,6 @@ function translateRoadmap(language) {
   }
 
 
-  /* =======================================================
-     ROADMAP LEAD
-     ======================================================= */
-
   const lead =
     document.querySelector(".roadmap-lead");
 
@@ -1073,10 +1871,6 @@ function translateRoadmap(language) {
 
   }
 
-
-  /* =======================================================
-     ROADMAP MOTTO
-     ======================================================= */
 
   const motto =
     document.querySelectorAll(
@@ -1103,10 +1897,6 @@ function translateRoadmap(language) {
   }
 
 
-  /* =======================================================
-     ROADMAP PHASES
-     ======================================================= */
-
   const phases =
     document.querySelectorAll(
       ".roadmap-phase"
@@ -1119,7 +1909,6 @@ function translateRoadmap(language) {
 
     const phaseNumber =
       index + 1;
-
 
     const titleKey =
       "phase" +
@@ -1238,10 +2027,6 @@ function translateContact(language) {
   }
 
 
-  /* =======================================================
-     CONTACT TEXTS
-     ======================================================= */
-
   document
     .querySelectorAll("[data-i18n]")
     .forEach(function(element) {
@@ -1262,10 +2047,6 @@ function translateContact(language) {
 
     });
 
-
-  /* =======================================================
-     CONTACT FORM PLACEHOLDERS
-     ======================================================= */
 
   document
     .querySelectorAll("[data-i18n-placeholder]")
@@ -1290,6 +2071,698 @@ function translateContact(language) {
       }
 
     });
+
+}
+
+
+/* =========================================================
+   GAME PAGE TRANSLATION
+   ========================================================= */
+
+function translateGame(language) {
+
+  const t =
+    translations[language];
+
+  if (!t) {
+    return;
+  }
+
+
+  /* =======================================================
+     COVER
+  ======================================================= */
+
+  setGameText(
+    ".game-cover-content h1",
+    t.gamePageTitle
+  );
+
+  setGameText(
+    ".game-cover-subtitle",
+    t.gamePageSubtitle
+  );
+
+  setGameText(
+    ".game-cover-description",
+    t.gamePageDescription
+  );
+
+  setGameText(
+    ".game-version",
+    t.gamePageVersion
+  );
+
+
+  const coverSignature =
+    document.querySelectorAll(
+      ".game-cover-signature span"
+    );
+
+  if (coverSignature.length >= 3) {
+
+    coverSignature[0].textContent =
+      t.gameCoverSignature1;
+
+    coverSignature[1].textContent =
+      t.gameCoverSignature2;
+
+    coverSignature[2].textContent =
+      t.gameCoverSignature3;
+
+  }
+
+
+  /* =======================================================
+     SECTION TITLES
+  ======================================================= */
+
+  const sectionTitles =
+    document.querySelectorAll(
+      ".game-section-title h2"
+    );
+
+  const sectionKeys = [
+    "game01Title",
+    "game02Title",
+    "game03Title",
+    "game04Title",
+    "game05Title",
+    "game06Title",
+    "game07Title"
+  ];
+
+  sectionTitles.forEach(function(
+    element,
+    index
+  ) {
+
+    const key =
+      sectionKeys[index];
+
+    if (
+      key &&
+      t[key]
+    ) {
+
+      element.textContent =
+        t[key];
+
+    }
+
+  });
+
+
+  /* =======================================================
+     SECTION SIGNATURES
+  ======================================================= */
+
+  const signatures =
+    document.querySelectorAll(
+      ".section-signature"
+    );
+
+  const signatureKeys = [
+    "game01Signature",
+    "game02Signature",
+    "game03Signature",
+    "game04Signature",
+    "game05Signature",
+    "game06Signature",
+    "game07Signature"
+  ];
+
+  signatures.forEach(function(
+    element,
+    index
+  ) {
+
+    const key =
+      signatureKeys[index];
+
+    if (
+      key &&
+      t[key]
+    ) {
+
+      element.textContent =
+        t[key];
+
+    }
+
+  });
+
+
+  /* =======================================================
+     DESIGN PHILOSOPHY
+  ======================================================= */
+
+  const philosophyTitles =
+    document.querySelectorAll(
+      ".philosophy-card h3"
+    );
+
+  const philosophyTitleKeys = [
+    "philosophyFunTitle",
+    "philosophyLearnTitle",
+    "philosophyMasterTitle",
+    "philosophyImpactTitle"
+  ];
+
+  philosophyTitles.forEach(function(
+    element,
+    index
+  ) {
+
+    const key =
+      philosophyTitleKeys[index];
+
+    if (
+      key &&
+      t[key]
+    ) {
+
+      element.textContent =
+        t[key];
+
+    }
+
+  });
+
+
+  const philosophyTexts =
+    document.querySelectorAll(
+      ".philosophy-card p"
+    );
+
+  const philosophyTextKeys = [
+    "philosophyFunText",
+    "philosophyLearnText",
+    "philosophyMasterText",
+    "philosophyImpactText"
+  ];
+
+  philosophyTexts.forEach(function(
+    element,
+    index
+  ) {
+
+    const key =
+      philosophyTextKeys[index];
+
+    if (
+      key &&
+      t[key]
+    ) {
+
+      element.textContent =
+        t[key];
+
+    }
+
+  });
+
+
+  /* =======================================================
+     GAMEPLAY LOOP
+  ======================================================= */
+
+  const loopSteps =
+    document.querySelectorAll(
+      ".loop-step > span:last-child"
+    );
+
+  const loopKeys = [
+    "loopAim",
+    "loopShoot",
+    "loopPhysics",
+    "loopImpact",
+    "loopReward",
+    "loopProgression",
+    "loopOneMoreLevel"
+  ];
+
+  loopSteps.forEach(function(
+    element,
+    index
+  ) {
+
+    const key =
+      loopKeys[index];
+
+    if (
+      key &&
+      t[key]
+    ) {
+
+      element.textContent =
+        t[key];
+
+    }
+
+  });
+
+
+  setGameText(
+    ".loop-statement",
+    t.loopStatement
+  );
+
+
+  /* =======================================================
+     PHYSICS
+  ======================================================= */
+
+  setGameText(
+    ".physics-intro h3",
+    t.physicsIntroTitle
+  );
+
+  setGameText(
+    ".physics-intro p",
+    t.physicsIntroText
+  );
+
+
+  const mechanicsButton =
+    document.querySelector(
+      ".mechanics-toggle"
+    );
+
+  if (
+    mechanicsButton &&
+    t.mechanicsButton
+  ) {
+
+    const arrow =
+      mechanicsButton.querySelector(
+        ".toggle-arrow"
+      );
+
+    if (arrow) {
+
+      mechanicsButton.textContent =
+        t.mechanicsButton + " ";
+
+      mechanicsButton.appendChild(
+        arrow
+      );
+
+    } else {
+
+      mechanicsButton.textContent =
+        t.mechanicsButton;
+
+    }
+
+  }
+
+
+  const physicsRows =
+    document.querySelectorAll(
+      ".physics-table tbody tr"
+    );
+
+  const physicsTitleKeys = [
+    "physicsRow1Title",
+    "physicsRow2Title",
+    "physicsRow3Title",
+    "physicsRow4Title",
+    "physicsRow5Title"
+  ];
+
+  const physicsTextKeys = [
+    "physicsRow1Text",
+    "physicsRow2Text",
+    "physicsRow3Text",
+    "physicsRow4Text",
+    "physicsRow5Text"
+  ];
+
+  physicsRows.forEach(function(
+    row,
+    index
+  ) {
+
+    const th =
+      row.querySelector("th");
+
+    const td =
+      row.querySelector("td");
+
+    const titleKey =
+      physicsTitleKeys[index];
+
+    const textKey =
+      physicsTextKeys[index];
+
+    if (
+      th &&
+      titleKey &&
+      t[titleKey]
+    ) {
+
+      th.textContent =
+        t[titleKey];
+
+    }
+
+    if (
+      td &&
+      textKey &&
+      t[textKey]
+    ) {
+
+      td.textContent =
+        t[textKey];
+
+    }
+
+  });
+
+
+  /* =======================================================
+     LEVEL DESIGN
+  ======================================================= */
+
+  const levelParagraphs =
+    document.querySelectorAll(
+      ".level-design-intro p"
+    );
+
+  if (
+    levelParagraphs[0] &&
+    t.levelIntro1
+  ) {
+
+    levelParagraphs[0].textContent =
+      t.levelIntro1;
+
+  }
+
+  if (
+    levelParagraphs[1] &&
+    t.levelIntro2
+  ) {
+
+    levelParagraphs[1].textContent =
+      t.levelIntro2;
+
+  }
+
+
+  const worlds =
+    document.querySelectorAll(
+      ".world-card"
+    );
+
+  const worldTitleKeys = [
+    "world01Title",
+    "world02Title",
+    "world03Title",
+    "world04Title",
+    "world05Title",
+    "world06Title"
+  ];
+
+  const worldTextKeys = [
+    "world01Text",
+    "world02Text",
+    "world03Text",
+    "world04Text",
+    "world05Text",
+    "world06Text"
+  ];
+
+  worlds.forEach(function(
+    world,
+    index
+  ) {
+
+    const title =
+      world.querySelector(
+        ".world-content h3"
+      );
+
+    const text =
+      world.querySelector(
+        ".world-content p"
+      );
+
+    const titleKey =
+      worldTitleKeys[index];
+
+    const textKey =
+      worldTextKeys[index];
+
+    if (
+      title &&
+      titleKey &&
+      t[titleKey]
+    ) {
+
+      title.textContent =
+        t[titleKey];
+
+    }
+
+    if (
+      text &&
+      textKey &&
+      t[textKey]
+    ) {
+
+      text.textContent =
+        t[textKey];
+
+    }
+
+  });
+
+
+  /* =======================================================
+     MASTERY
+  ======================================================= */
+
+  const masteryCards =
+    document.querySelectorAll(
+      ".mastery-card"
+    );
+
+  const masteryTitleKeys = [
+    "masteryCompleteTitle",
+    "masteryMasterTitle",
+    "masteryPerfectTitle"
+  ];
+
+  const masteryTextKeys = [
+    "masteryCompleteText",
+    "masteryMasterText",
+    "masteryPerfectText"
+  ];
+
+  masteryCards.forEach(function(
+    card,
+    index
+  ) {
+
+    const title =
+      card.querySelector("h3");
+
+    const text =
+      card.querySelector("p");
+
+    const titleKey =
+      masteryTitleKeys[index];
+
+    const textKey =
+      masteryTextKeys[index];
+
+    if (
+      title &&
+      titleKey &&
+      t[titleKey]
+    ) {
+
+      title.textContent =
+        t[titleKey];
+
+    }
+
+    if (
+      text &&
+      textKey &&
+      t[textKey]
+    ) {
+
+      text.textContent =
+        t[textKey];
+
+    }
+
+  });
+
+
+  setGameText(
+    ".mastery-quote p",
+    t.masteryQuote
+  );
+
+
+  /* =======================================================
+     LUMEN
+  ======================================================= */
+
+  setGameText(
+    ".lumen-description h3",
+    t.lumenTitle
+  );
+
+  setGameText(
+    ".lumen-description strong",
+    t.lumenSubtitle
+  );
+
+  setGameText(
+    ".lumen-description p",
+    t.lumenText
+  );
+
+
+  const lumenRules =
+    document.querySelectorAll(
+      ".lumen-rule"
+    );
+
+  if (lumenRules[0]) {
+
+    setGameText(
+      ".lumen-can .rule-status",
+      "✓"
+    );
+
+    setGameText(
+      ".lumen-can h3",
+      t.lumenCanTitle
+    );
+
+    const items =
+      lumenRules[0].querySelectorAll("li");
+
+    if (
+      t.lumenCanItems &&
+      Array.isArray(t.lumenCanItems)
+    ) {
+
+      items.forEach(function(
+        item,
+        index
+      ) {
+
+        if (
+          t.lumenCanItems[index]
+        ) {
+
+          item.textContent =
+            t.lumenCanItems[index];
+
+        }
+
+      });
+
+    }
+
+  }
+
+
+  if (lumenRules[1]) {
+
+    setGameText(
+      ".lumen-cannot .rule-status",
+      "×"
+    );
+
+    setGameText(
+      ".lumen-cannot h3",
+      t.lumenCannotTitle
+    );
+
+    const items =
+      lumenRules[1].querySelectorAll("li");
+
+    if (
+      t.lumenCannotItems &&
+      Array.isArray(t.lumenCannotItems)
+    ) {
+
+      items.forEach(function(
+        item,
+        index
+      ) {
+
+        if (
+          t.lumenCannotItems[index]
+        ) {
+
+          item.textContent =
+            t.lumenCannotItems[index];
+
+        }
+
+      });
+
+    }
+
+  }
+
+
+  /* =======================================================
+     GAME MISSION
+  ======================================================= */
+
+  setGameText(
+    ".mission-content h3",
+    t.missionGameTitle
+  );
+
+  setGameText(
+    ".mission-content p",
+    t.missionGameText
+  );
+
+
+  const missionSteps =
+    document.querySelectorAll(
+      ".mission-step span:last-child"
+    );
+
+  const missionKeys = [
+    "missionStepPlayers",
+    "missionStepRevenue",
+    "missionStepBuy",
+    "missionStepBurn",
+    "missionStepProof"
+  ];
+
+  missionSteps.forEach(function(
+    element,
+    index
+  ) {
+
+    const key =
+      missionKeys[index];
+
+    if (
+      key &&
+      t[key]
+    ) {
+
+      element.textContent =
+        t[key];
+
+    }
+
+  });
 
 }
 
@@ -1380,6 +2853,13 @@ function setLanguage(language) {
   );
 
 
+  /* Translate Game page */
+
+  translateGame(
+    language
+  );
+
+
   /* Update every language selector */
 
   document
@@ -1434,7 +2914,7 @@ document.addEventListener(
 
     /* =====================================================
        LANGUAGE SELECTORS
-       ===================================================== */
+    ===================================================== */
 
     document
       .querySelectorAll(
@@ -1458,7 +2938,7 @@ document.addEventListener(
 
     /* =====================================================
        LOAD SAVED LANGUAGE
-       ===================================================== */
+    ===================================================== */
 
     const savedLanguage =
       localStorage.getItem(
