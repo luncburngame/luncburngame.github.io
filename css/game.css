@@ -62,6 +62,18 @@ body {
 }
 
 /* ---------------------------------------------------------
+   01B. GAME SECTION CTA
+--------------------------------------------------------- */
+
+.game-section-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 32px;
+}
+
+/* ---------------------------------------------------------
    02. COVER / HERO
 --------------------------------------------------------- */
 
@@ -1045,6 +1057,12 @@ body {
     padding: 54px 16px 58px;
   }
 
+  /* GAME SECTION CTA */
+
+  .game-section-cta {
+    margin-top: 26px;
+  }
+
   /* COVER */
 
   .game-cover {
@@ -1497,6 +1515,10 @@ body {
   .game-section {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .game-section-cta {
+    margin-top: 26px;
   }
 
   .game-cover {
