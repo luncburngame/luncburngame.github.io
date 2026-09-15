@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
 
   <meta
@@ -10,52 +9,40 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>LUNC Burn Game — The Game</title>
-
   <meta
     name="description"
-    content="Discover the gameplay, worlds and progression of LUNC Burn Game."
+    content="LUNC Burn Game — The Game. Project and Gameplay Document."
   >
 
-  <link
-    rel="stylesheet"
-    href="css/site.css"
-  >
+  <title>LUNC Burn Game — The Game</title>
 
-  <link
-    rel="stylesheet"
-    href="css/game.css"
-  >
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="css/site.css">
 
+  <!-- GAME page styles -->
+  <link rel="stylesheet" href="css/game.css">
 </head>
 
 
 <body>
 
-
-  <!-- =====================================================
-       HEADER
-  ====================================================== -->
+  <!-- =========================================================
+       HEADER — OFFICIAL SITE HEADER
+  ========================================================== -->
 
   <header class="site-header">
 
-    <div class="header-inner">
+    <div class="nav-wrap">
 
-      <a
-        href="index.html"
-        class="brand"
-        aria-label="LUNC Burn Game"
-      >
-
+      <a href="index.html" class="brand">
         <img
           src="lunc-burn-game-logo.png"
           alt="LUNC Burn Game"
+          class="brand-logo"
         >
-
       </a>
 
-
-      <nav class="main-nav" aria-label="Main navigation">
+      <nav class="main-nav">
 
         <a
           href="game.html"
@@ -93,39 +80,31 @@
           Roadmap
         </a>
 
-        <a
-          href="index.html#download"
-          data-i18n="navDownload"
-        >
-          Download
-        </a>
-
       </nav>
 
 
-      <div class="header-actions">
+      <div class="nav-actions">
 
         <select
           class="language-select"
           data-lang-select
           aria-label="Language"
         >
-
           <option value="EN">EN</option>
           <option value="FR">FR</option>
           <option value="ES">ES</option>
           <option value="DE">DE</option>
           <option value="PT">PT</option>
-
         </select>
 
 
         <a
-          href="index.html#download"
-          class="header-download"
+          href="#"
+          class="btn btn-small"
           data-i18n="navDownload"
+          onclick="return false;"
         >
-          Download
+          Coming Soon
         </a>
 
       </div>
@@ -135,49 +114,55 @@
   </header>
 
 
+  <!-- =========================================================
+       MAIN
+  ========================================================== -->
 
-  <!-- =====================================================
-       HERO
-  ====================================================== -->
-
-  <main>
+  <main class="game-page">
 
 
-    <section class="game-hero">
+    <!-- =======================================================
+         COVER
+    ======================================================== -->
 
-      <div class="game-hero-overlay"></div>
+    <section class="game-cover">
 
-      <div class="game-hero-content">
+      <div class="game-cover-image">
 
-        <p
-          class="eyebrow"
-          data-i18n="gamePageEyebrow"
+        <img
+          src="game-cover.png"
+          alt="A broken world and a brighter tomorrow"
         >
+
+      </div>
+
+
+      <div class="game-cover-content">
+
+        <h1>
           THE GAME
-        </p>
-
-
-        <h1 data-i18n="gamePageTitle">
-          Physics creates new possibilities.
         </h1>
 
-
-        <p
-          class="game-hero-subtitle"
-          data-i18n="gamePageSubtitle"
-        >
-          Aim. Impact. Rebuild.
-          A simple concept. A world to restore.
+        <p class="game-cover-subtitle">
+          PROJECT &amp; GAMEPLAY DOCUMENT
         </p>
 
+        <p class="game-cover-description">
+          A living document describing the game, its mechanics,
+          progression and mission.
+        </p>
 
-        <a
-          href="#how-it-works"
-          class="game-primary-button"
-          data-i18n="gamePageCta"
-        >
-          DISCOVER THE GAME
-        </a>
+        <div class="game-version">
+          VERSION 1.0&nbsp;&nbsp;—&nbsp;&nbsp;SEPTEMBER 2026
+        </div>
+
+      </div>
+
+
+      <div class="game-cover-signature">
+
+        <span>A BROKEN WORLD.</span>
+        <span>A BRIGHTER TOMORROW.</span>
 
       </div>
 
@@ -185,143 +170,211 @@
 
 
 
-    <!-- =====================================================
-         HOW IT WORKS
-    ====================================================== -->
+    <!-- =======================================================
+         SECTION 01 — DESIGN PHILOSOPHY
+    ======================================================== -->
 
     <section
-      class="game-section"
-      id="how-it-works"
+      class="game-section philosophy-section"
+      id="philosophy"
     >
 
-      <div class="section-inner">
+      <div class="game-section-header">
 
+        <div class="game-section-title">
 
-        <div class="section-heading game-heading">
+          <span class="section-number">
+            01
+          </span>
 
-          <p
-            class="eyebrow"
-            data-i18n="howEyebrow"
-          >
-            HOW IT WORKS
-          </p>
-
-          <h2 data-i18n="howTitle">
-            Three steps to change the world.
+          <h2>
+            DESIGN PHILOSOPHY
           </h2>
 
         </div>
 
+        <span class="section-signature">
+          MORE THAN A GAME.
+        </span>
+
+      </div>
 
 
-        <div class="game-loop">
+      <div class="philosophy-grid">
 
 
-          <!-- AIM -->
+        <!-- FUN FIRST -->
 
-          <article class="game-step">
+        <article class="philosophy-card">
 
-            <div class="game-step-image">
+          <div class="philosophy-icon">
 
-              <img
-                src="game-aim.png"
-                alt="LUNKI aiming a shot"
-              >
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path
+                d="M16 26h32c6 0 10 5 9 11l-2 12c-1 6-8 8-12 4l-7-7h-8l-7 7c-4 4-11 2-12-4L7 37c-1-6 3-11 9-11Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+              <path
+                d="M22 33v10M17 38h10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <circle cx="43" cy="35" r="2.5" fill="currentColor"/>
+              <circle cx="48" cy="40" r="2.5" fill="currentColor"/>
+            </svg>
 
-            </div>
+          </div>
 
+          <h3>
+            FUN FIRST
+          </h3>
 
-            <div class="game-step-content">
+          <p>
+            The game must be enjoyable<br>
+            even without any knowledge<br>
+            of LUNC.
+          </p>
 
-              <span class="game-step-number">
-                01
-              </span>
-
-              <h3 data-i18n="gameAimTitle">
-                AIM
-              </h3>
-
-              <p data-i18n="gameAimText">
-                Choose your trajectory, use the environment
-                and prepare your shot.
-              </p>
-
-            </div>
-
-          </article>
-
-
-
-          <!-- IMPACT -->
-
-          <article class="game-step">
-
-            <div class="game-step-image">
-
-              <img
-                src="game-impact.png"
-                alt="LUNKI creating a chain reaction"
-              >
-
-            </div>
-
-
-            <div class="game-step-content">
-
-              <span class="game-step-number">
-                02
-              </span>
-
-              <h3 data-i18n="gameImpactTitle">
-                IMPACT
-              </h3>
-
-              <p data-i18n="gameImpactText">
-                Use physics, timing and chain reactions
-                to defeat the DUSTERS.
-              </p>
-
-            </div>
-
-          </article>
+        </article>
 
 
 
-          <!-- REBUILD -->
+        <!-- EASY TO LEARN -->
 
-          <article class="game-step">
+        <article class="philosophy-card">
 
-            <div class="game-step-image">
+          <div class="philosophy-icon">
 
-              <img
-                src="game-rebuild.png"
-                alt="LUNKI overlooking a rebuilt world"
-              >
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path
+                d="M32 53C18 48 11 38 15 22c12 1 20 7 21 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <path
+                d="M32 53c1-17 9-28 23-34"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+            </svg>
 
-            </div>
+          </div>
+
+          <h3>
+            EASY TO LEARN
+          </h3>
+
+          <p>
+            The first levels teach the<br>
+            core mechanics naturally.
+          </p>
+
+        </article>
 
 
-            <div class="game-step-content">
 
-              <span class="game-step-number">
-                03
-              </span>
+        <!-- HARD TO MASTER -->
 
-              <h3 data-i18n="gameRebuildTitle">
-                REBUILD
-              </h3>
+        <article class="philosophy-card">
 
-              <p data-i18n="gameRebuildText">
-                Complete levels, restore the world
-                and unlock new areas.
-              </p>
+          <div class="philosophy-icon">
 
-            </div>
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="12" y="35" width="9" height="17" rx="1" fill="currentColor"/>
+              <rect x="27" y="25" width="9" height="27" rx="1" fill="currentColor"/>
+              <rect x="42" y="14" width="9" height="38" rx="1" fill="currentColor"/>
+            </svg>
 
-          </article>
+          </div>
+
+          <h3>
+            HARD TO MASTER
+          </h3>
+
+          <p>
+            Advanced players are rewarded<br>
+            for precision, planning and<br>
+            experimentation.
+          </p>
+
+        </article>
 
 
-        </div>
+
+        <!-- A POSITIVE IMPACT -->
+
+        <article class="philosophy-card">
+
+          <div class="philosophy-icon">
+
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+
+              <circle
+                cx="23"
+                cy="21"
+                r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+
+              <circle
+                cx="43"
+                cy="21"
+                r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+
+              <circle
+                cx="33"
+                cy="13"
+                r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+
+              <path
+                d="M10 49c1-9 7-14 14-14s13 5 14 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M29 49c1-9 7-14 14-14s11 5 12 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+
+            </svg>
+
+          </div>
+
+          <h3>
+            A POSITIVE IMPACT
+          </h3>
+
+          <p>
+            A game designed for entertainment<br>
+            with a transparent mission<br>
+            supporting LUNC burns.
+          </p>
+
+        </article>
 
       </div>
 
@@ -329,390 +382,1362 @@
 
 
 
-    <!-- =====================================================
-         WORLDS & PROGRESSION
-    ====================================================== -->
+    <!-- =======================================================
+         SECTION 02 — THE CORE GAMEPLAY LOOP
+    ======================================================== -->
 
-    <section class="game-section worlds-section">
+    <section
+      class="game-section gameplay-loop-section"
+      id="gameplay-loop"
+    >
 
-      <div class="section-inner">
+      <div class="game-section-header">
 
+        <div class="game-section-title">
 
-        <div class="section-heading game-heading">
+          <span class="section-number">
+            02
+          </span>
 
-          <p
-            class="eyebrow"
-            data-i18n="worldsEyebrow"
-          >
-            WORLDS & PROGRESSION
-          </p>
-
-          <h2 data-i18n="worldsTitle">
-            From ruins to a brighter tomorrow.
+          <h2>
+            THE CORE GAMEPLAY LOOP
           </h2>
 
-          <p
-            class="section-intro"
-            data-i18n="worldsText"
-          >
-            Explore different worlds, each with its own
-            environment, challenges and DUSTERS.
-          </p>
+        </div>
+
+        <span class="section-signature">
+          EVERY SHOT MATTERS.
+        </span>
+
+      </div>
+
+
+      <div class="gameplay-loop">
+
+        <!-- AIM -->
+
+        <div class="loop-step">
+
+          <div class="loop-icon">
+
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+
+              <circle
+                cx="32"
+                cy="32"
+                r="19"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              />
+
+              <circle
+                cx="32"
+                cy="32"
+                r="9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              />
+
+              <circle
+                cx="32"
+                cy="32"
+                r="3"
+                fill="currentColor"
+              />
+
+              <path
+                d="M32 5v9M32 50v9M5 32h9M50 32h9"
+                stroke="currentColor"
+                stroke-width="3"
+              />
+
+            </svg>
+
+          </div>
+
+          <span>AIM</span>
 
         </div>
 
 
+        <span class="loop-arrow">›</span>
 
-        <div class="world-grid">
 
+        <!-- SHOOT -->
 
-          <!-- WORLD 1 -->
+        <div class="loop-step">
 
-          <article class="world-card world-active">
+          <div class="loop-icon">
 
-            <div class="world-image">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
 
-              <img
-                src="world-1.png"
-                alt="World 1 — Terra Classic Ruins"
-              >
+              <path
+                d="M18 46 45 19"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="5"
+                stroke-linecap="round"
+              />
 
-            </div>
+              <path
+                d="m42 17 5 1 1 5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
 
-            <div class="world-info">
+              <circle
+                cx="17"
+                cy="47"
+                r="6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+              />
 
-              <span
-                class="world-number"
-                data-i18n="world1"
-              >
-                WORLD 1
-              </span>
+            </svg>
 
-              <h3 data-i18n="world1Title">
-                Terra Classic Ruins
-              </h3>
+          </div>
 
-            </div>
+          <span>SHOOT</span>
 
-          </article>
+        </div>
 
 
+        <span class="loop-arrow">›</span>
 
-          <!-- WORLD 2 -->
 
-          <article class="world-card world-locked">
+        <!-- PHYSICS -->
 
-            <div class="world-image">
+        <div class="loop-step">
 
-              <img
-                src="world-2.png"
-                alt="World 2"
-              >
+          <div class="loop-icon">
 
-              <span class="world-lock">
-                🔒
-              </span>
+            <svg viewBox="0 0 64 64" aria-hidden="true">
 
-            </div>
+              <circle
+                cx="32"
+                cy="32"
+                r="8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              />
 
-            <div class="world-info">
+              <ellipse
+                cx="32"
+                cy="32"
+                rx="25"
+                ry="11"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              />
 
-              <span
-                class="world-number"
-                data-i18n="world2"
-              >
-                WORLD 2
-              </span>
+              <circle
+                cx="53"
+                cy="28"
+                r="3"
+                fill="currentColor"
+              />
 
-              <h3 data-i18n="world2Title">
-                Frozen Wastes
-              </h3>
+            </svg>
 
-            </div>
+          </div>
 
-          </article>
+          <span>PHYSICS</span>
 
+        </div>
 
 
-          <!-- WORLD 3 -->
+        <span class="loop-arrow">›</span>
 
-          <article class="world-card world-locked">
 
-            <div class="world-image">
+        <!-- IMPACT -->
 
-              <img
-                src="world-3.png"
-                alt="World 3"
-              >
+        <div class="loop-step loop-step-highlight">
 
-              <span class="world-lock">
-                🔒
-              </span>
+          <div class="loop-icon">
 
-            </div>
+            <svg viewBox="0 0 64 64" aria-hidden="true">
 
-            <div class="world-info">
+              <path
+                d="M32 5v13M32 46v13M5 32h13M46 32h13M13 13l9 9M42 42l9 9M51 13l-9 9M22 42l-9 9"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
 
-              <span
-                class="world-number"
-                data-i18n="world3"
-              >
-                WORLD 3
-              </span>
+              <path
+                d="m32 18 5 9 10 2-7 7 2 10-10-5-10 5 2-10-7-7 10-2Z"
+                fill="currentColor"
+              />
 
-              <h3 data-i18n="world3Title">
-                Toxic Zones
-              </h3>
+            </svg>
 
-            </div>
+          </div>
 
-          </article>
+          <span>IMPACT</span>
 
+        </div>
 
 
-          <!-- WORLD 4 -->
+        <span class="loop-arrow">›</span>
 
-          <article class="world-card world-locked">
 
-            <div class="world-image">
+        <!-- REWARD -->
 
-              <img
-                src="world-4.png"
-                alt="World 4"
-              >
+        <div class="loop-step loop-step-highlight">
 
-              <span class="world-lock">
-                🔒
-              </span>
+          <div class="loop-icon">
 
-            </div>
+            <svg viewBox="0 0 64 64" aria-hidden="true">
 
-            <div class="world-info">
+              <path
+                d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linejoin="round"
+              />
 
-              <span
-                class="world-number"
-                data-i18n="world4"
-              >
-                WORLD 4
-              </span>
+            </svg>
 
-              <h3 data-i18n="world4Title">
-                Sky Islands
-              </h3>
+          </div>
 
-            </div>
+          <span>REWARD</span>
 
-          </article>
+        </div>
 
 
+        <span class="loop-arrow">›</span>
 
-          <!-- WORLD 5 -->
 
-          <article class="world-card world-locked">
+        <!-- PROGRESSION -->
 
-            <div class="world-image">
+        <div class="loop-step">
 
-              <img
-                src="world-5.png"
-                alt="World 5"
-              >
+          <div class="loop-icon">
 
-              <span class="world-lock">
-                🔒
-              </span>
+            <svg viewBox="0 0 64 64" aria-hidden="true">
 
-            </div>
+              <rect
+                x="10"
+                y="38"
+                width="9"
+                height="16"
+                fill="currentColor"
+              />
 
-            <div class="world-info">
+              <rect
+                x="27"
+                y="27"
+                width="9"
+                height="27"
+                fill="currentColor"
+              />
 
-              <span
-                class="world-number"
-                data-i18n="world5"
-              >
-                WORLD 5
-              </span>
+              <rect
+                x="44"
+                y="14"
+                width="9"
+                height="40"
+                fill="currentColor"
+              />
 
-              <h3 data-i18n="world5Title">
-                ???
-              </h3>
+            </svg>
 
-            </div>
+          </div>
 
-          </article>
+          <span>PROGRESSION</span>
 
+        </div>
+
+
+        <span class="loop-arrow">›</span>
+
+
+        <!-- ONE MORE LEVEL -->
+
+        <div class="loop-step">
+
+          <div class="loop-icon">
+
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+
+              <path
+                d="M50 25A20 20 0 0 0 14 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="m13 12 1 10 10-1"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M14 39a20 20 0 0 0 36 5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="m51 52-1-10-10 1"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linejoin="round"
+              />
+
+            </svg>
+
+          </div>
+
+          <span>
+            ONE MORE<br>
+            LEVEL
+          </span>
 
         </div>
 
       </div>
 
+
+      <p class="loop-statement">
+        Every action creates a consequence.
+      </p>
+
     </section>
 
 
 
-    <!-- =====================================================
-         KEY FEATURES
-    ====================================================== -->
+    <!-- =======================================================
+         SECTION 03 — PHYSICS IS THE GAME
+    ======================================================== -->
 
-    <section class="game-section features-section">
+    <section
+      class="game-section physics-section"
+      id="physics"
+    >
 
-      <div class="section-inner">
+      <div class="game-section-header">
 
+        <div class="game-section-title">
 
-        <div class="section-heading game-heading">
+          <span class="section-number">
+            03
+          </span>
 
-          <p
-            class="eyebrow"
-            data-i18n="featuresEyebrow"
-          >
-            KEY FEATURES
-          </p>
-
-          <h2 data-i18n="featuresTitle">
-            More than just a shot.
+          <h2>
+            PHYSICS IS THE GAME
           </h2>
 
         </div>
 
-
-
-        <div class="game-feature-grid">
-
-
-          <article class="game-feature-card">
-
-            <div class="game-feature-icon">
-              ⌾
-            </div>
-
-            <h3 data-i18n="featurePhysicsTitle">
-              PHYSICS-BASED GAMEPLAY
-            </h3>
-
-            <p data-i18n="featurePhysicsText">
-              Realistic and fun mechanics.
-            </p>
-
-          </article>
-
-
-
-          <article class="game-feature-card">
-
-            <div class="game-feature-icon">
-              ◫
-            </div>
-
-            <h3 data-i18n="featureDifficultyTitle">
-              PROGRESSIVE DIFFICULTY
-            </h3>
-
-            <p data-i18n="featureDifficultyText">
-              New challenges at every level.
-            </p>
-
-          </article>
-
-
-
-          <article class="game-feature-card">
-
-            <div class="game-feature-icon">
-              ◇
-            </div>
-
-            <h3 data-i18n="featureUnlockTitle">
-              COLLECT & UNLOCK
-            </h3>
-
-            <p data-i18n="featureUnlockText">
-              Discover new worlds and content.
-            </p>
-
-          </article>
-
-
-
-          <article class="game-feature-card">
-
-            <div class="game-feature-icon">
-              ◉
-            </div>
-
-            <h3 data-i18n="featureImpactTitle">
-              REAL IMPACT
-            </h3>
-
-            <p data-i18n="featureImpactText">
-              Play, support the project and help burn LUNC.
-            </p>
-
-          </article>
-
-
-        </div>
+        <span class="section-signature">
+          REAL PHYSICS. REAL POSSIBILITIES.
+        </span>
 
       </div>
 
-    </section>
+
+      <div class="physics-layout">
 
 
+        <!-- LEFT CONTENT -->
 
-    <!-- =====================================================
-         FINAL CTA
-    ====================================================== -->
+        <div class="physics-intro">
 
-    <section class="game-final">
+          <h3>
+            NO SCRIPTED SOLUTIONS.
+          </h3>
 
-      <img
-        src="game-final.png"
-        alt="LUNKI overlooking a rebuilt world"
-        class="game-final-image"
-      >
-
-
-      <div class="game-final-overlay"></div>
+          <p>
+            Objects have mass. Materials react differently.
+            Gravity matters. Every impact can change
+            the outcome.
+          </p>
 
 
-      <div class="game-final-content">
+          <button
+            type="button"
+            class="mechanics-toggle"
+            id="mechanicsToggle"
+            aria-expanded="false"
+            aria-controls="mechanicsTable"
+          >
+            <span id="mechanicsToggleText">
+              DISCOVER THE MECHANICS
+            </span>
 
-        <p
-          class="eyebrow"
-          data-i18n="finalEyebrow"
+            <span class="toggle-arrow">
+              ›
+            </span>
+
+          </button>
+
+        </div>
+
+
+        <!-- TECHNICAL TABLE -->
+
+        <div
+          class="physics-table-wrapper"
+          id="mechanicsTable"
+          hidden
         >
-          PLAY. REBUILD. BURN.
+
+          <table class="physics-table">
+
+            <tbody>
+
+              <tr>
+                <th>Physics</th>
+                <td>Gravity · Mass · Speed</td>
+              </tr>
+
+              <tr>
+                <th>Materials</th>
+                <td>Friction · Restitution · Resistance</td>
+              </tr>
+
+              <tr>
+                <th>Environment</th>
+                <td>Structures · Terrain · Objects</td>
+              </tr>
+
+              <tr>
+                <th>Enemies</th>
+                <td>Mass · Health · Movement</td>
+              </tr>
+
+              <tr>
+                <th>Feedback</th>
+                <td>Particles · Camera · Sound · Haptics</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         SECTION 04 — LEVEL DESIGN
+    ======================================================== -->
+
+    <section
+      class="game-section level-design-section"
+      id="level-design"
+    >
+
+      <div class="game-section-header">
+
+        <div class="game-section-title">
+
+          <span class="section-number">
+            04
+          </span>
+
+          <h2>
+            LEVEL DESIGN
+          </h2>
+
+        </div>
+
+        <span class="section-signature">
+          SIX WORLDS. A BRIGHTER TOMORROW.
+        </span>
+
+      </div>
+
+
+      <div class="level-design-intro">
+
+        <p>
+          Explore six unique worlds, each with its own atmosphere,
+          mechanics and objectives.
         </p>
 
-
-        <h2 data-i18n="finalTitle">
-          Same game. A brighter tomorrow.
-        </h2>
-
-
-        <p data-i18n="finalText">
-          Follow the project and be ready for launch.
+        <p>
+          From the ruins of a fallen world to a new civilization,
+          each world brings new challenges and introduces new
+          gameplay elements. Progress through the worlds and
+          unlock new areas, tools and possibilities.
         </p>
 
+      </div>
 
-        <a
-          href="index.html#download"
-          class="game-primary-button"
-          data-i18n="finalCta"
-        >
-          FOLLOW THE PROJECT
-        </a>
+
+      <div class="world-grid">
+
+
+        <!-- WORLD 1 -->
+
+        <article class="world-card">
+
+          <div class="world-image">
+
+            <img
+              src="world-01-the-ruins.png"
+              alt="The Ruins — World 1"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="world-content">
+
+            <span class="world-number">
+              01
+            </span>
+
+            <h3>
+              THE RUINS
+            </h3>
+
+            <p>
+              Explore. Learn.<br>
+              Simple structures.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- WORLD 2 -->
+
+        <article class="world-card">
+
+          <div class="world-image">
+
+            <img
+              src="world-02-the-collapse.png"
+              alt="The Collapse — World 2"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="world-content">
+
+            <span class="world-number">
+              02
+            </span>
+
+            <h3>
+              THE COLLAPSE
+            </h3>
+
+            <p>
+              Survive.<br>
+              Unstable environments.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- WORLD 3 -->
+
+        <article class="world-card">
+
+          <div class="world-image">
+
+            <img
+              src="world-03-the-rebuilders.png"
+              alt="The Rebuilders — World 3"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="world-content">
+
+            <span class="world-number">
+              03
+            </span>
+
+            <h3>
+              THE REBUILDERS
+            </h3>
+
+            <p>
+              Reconstruct.<br>
+              Dynamic mechanisms.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- WORLD 4 -->
+
+        <article class="world-card">
+
+          <div class="world-image">
+
+            <img
+              src="world-04-cosmos.png"
+              alt="Cosmos — World 4"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="world-content">
+
+            <span class="world-number">
+              04
+            </span>
+
+            <h3>
+              COSMOS
+            </h3>
+
+            <p>
+              Go further.<br>
+              New physics.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- WORLD 5 -->
+
+        <article class="world-card">
+
+          <div class="world-image">
+
+            <img
+              src="world-05-the-bridge.png"
+              alt="The Bridge — World 5"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="world-content">
+
+            <span class="world-number">
+              05
+            </span>
+
+            <h3>
+              THE BRIDGE
+            </h3>
+
+            <p>
+              Connect.<br>
+              Complex structures.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- WORLD 6 -->
+
+        <article class="world-card">
+
+          <div class="world-image">
+
+            <img
+              src="world-06-the-new-dawn.png"
+              alt="The New Dawn — World 6"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="world-content">
+
+            <span class="world-number">
+              06
+            </span>
+
+            <h3>
+              THE NEW DAWN
+            </h3>
+
+            <p>
+              Build a brighter world.<br>
+              Ultimate challenges.
+            </p>
+
+          </div>
+
+        </article>
 
       </div>
 
     </section>
+
+
+
+    <!-- =======================================================
+         SECTION 05 — MASTERY
+    ======================================================== -->
+
+    <section
+      class="game-section mastery-section"
+      id="mastery"
+    >
+
+      <div class="game-section-header">
+
+        <div class="game-section-title">
+
+          <span class="section-number">
+            05
+          </span>
+
+          <h2>
+            MASTERY
+          </h2>
+
+        </div>
+
+        <span class="section-signature">
+          THREE WAYS TO COMPLETE A LEVEL.
+        </span>
+
+      </div>
+
+
+      <div class="mastery-layout">
+
+
+        <div class="mastery-cards">
+
+
+          <!-- COMPLETE -->
+
+          <article class="mastery-card">
+
+            <div class="mastery-stars">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path
+                  d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+            </div>
+
+            <h3>
+              COMPLETE
+            </h3>
+
+            <p>
+              Finish the level.
+            </p>
+
+          </article>
+
+
+
+          <!-- MASTER -->
+
+          <article class="mastery-card">
+
+            <div class="mastery-stars">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path
+                  d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path
+                  d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+            </div>
+
+            <h3>
+              MASTER
+            </h3>
+
+            <p>
+              Destroy the DUSTER<br>
+              with one projectile.
+            </p>
+
+          </article>
+
+
+
+          <!-- PERFECT -->
+
+          <article class="mastery-card">
+
+            <div class="mastery-stars">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path
+                  d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path
+                  d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path
+                  d="m32 7 7 16 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+            </div>
+
+            <h3>
+              PERFECT
+            </h3>
+
+            <p>
+              Complete bonus objectives<br>
+              (e.g. destroy all crates).
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <blockquote class="mastery-quote">
+
+          <span class="quote-mark">
+            “
+          </span>
+
+          <p>
+            The best shot isn’t always<br>
+            aimed directly at the enemy.
+          </p>
+
+          <span class="quote-mark quote-mark-end">
+            ”
+          </span>
+
+        </blockquote>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         SECTION 06 — LUMEN
+    ======================================================== -->
+
+    <section
+      class="game-section lumen-section"
+      id="lumen"
+    >
+
+      <div class="game-section-header">
+
+        <div class="game-section-title">
+
+          <span class="section-number">
+            06
+          </span>
+
+          <h2>
+            LUMEN
+          </h2>
+
+        </div>
+
+        <span class="section-signature">
+          A VIRTUAL CURRENCY FOR GAMEPLAY.
+        </span>
+
+      </div>
+
+
+      <div class="lumen-layout">
+
+
+        <!-- CRYSTAL -->
+
+        <div class="lumen-visual">
+
+          <img
+            src="lumen-crystal.png"
+            alt="LUMEN crystal"
+          >
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <div class="lumen-description">
+
+          <h3>
+            LUMEN
+          </h3>
+
+          <strong>
+            PLAY. COLLECT. CUSTOMIZE.
+          </strong>
+
+          <p>
+            LUMEN are a virtual currency earned
+            through gameplay. They are used to unlock
+            cosmetics, decorations and progression content.
+          </p>
+
+        </div>
+
+
+        <!-- CAN / CANNOT -->
+
+        <div class="lumen-rules">
+
+
+          <!-- CAN -->
+
+          <div class="lumen-rule lumen-can">
+
+            <h3>
+
+              <span class="rule-status">
+                ✓
+              </span>
+
+              CAN
+
+            </h3>
+
+            <ul>
+
+              <li>
+                Earn through gameplay
+              </li>
+
+              <li>
+                Unlock cosmetics
+              </li>
+
+              <li>
+                Unlock decorations
+              </li>
+
+              <li>
+                Support progression
+              </li>
+
+              <li>
+                Reward engagement
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- CANNOT -->
+
+          <div class="lumen-rule lumen-cannot">
+
+            <h3>
+
+              <span class="rule-status">
+                ×
+              </span>
+
+              CANNOT
+
+            </h3>
+
+            <ul>
+
+              <li>
+                Have monetary value
+              </li>
+
+              <li>
+                Be converted to LUNC
+              </li>
+
+              <li>
+                Be withdrawn
+              </li>
+
+              <li>
+                Be transferred
+              </li>
+
+              <li>
+                Create pay-to-win
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         SECTION 07 — THE MISSION
+    ======================================================== -->
+
+    <section
+      class="game-section mission-section"
+      id="mission"
+    >
+
+      <div class="game-section-header">
+
+        <div class="game-section-title">
+
+          <span class="section-number">
+            07
+          </span>
+
+          <h2>
+            THE MISSION
+          </h2>
+
+        </div>
+
+        <span class="section-signature">
+          PLAY → REVENUE → BURN → BRIGHTER TOMORROW.
+        </span>
+
+      </div>
+
+
+      <div class="mission-layout">
+
+
+        <!-- MISSION TEXT -->
+
+        <div class="mission-content">
+
+          <h3>
+            A GAME WITH A REAL PURPOSE.
+          </h3>
+
+          <p>
+            The game generates revenue through multiple sources
+            (e.g. ads).
+          </p>
+
+          <p>
+            Eligible project revenue can be allocated to buy LUNC
+            and support burns.
+          </p>
+
+          <p>
+            Burn transactions are published and publicly verifiable.
+          </p>
+
+        </div>
+
+
+        <!-- MISSION FLOW -->
+
+        <div class="mission-flow">
+
+
+          <!-- PLAYERS -->
+
+          <div class="mission-step">
+
+            <div class="mission-icon">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+
+                <path
+                  d="M16 27h32c5 0 9 4 9 9l-2 12c-1 6-8 8-12 4l-7-7h-8l-7 7c-4 4-11 2-12-4L7 36c0-5 4-9 9-9Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+
+                <path
+                  d="M21 34v10M16 39h10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <circle
+                  cx="43"
+                  cy="36"
+                  r="2.5"
+                  fill="currentColor"
+                />
+
+                <circle
+                  cx="48"
+                  cy="41"
+                  r="2.5"
+                  fill="currentColor"
+                />
+
+              </svg>
+
+            </div>
+
+            <span>
+              PLAYERS
+            </span>
+
+          </div>
+
+
+          <span class="mission-arrow">
+            ›
+          </span>
+
+
+          <!-- REVENUE -->
+
+          <div class="mission-step">
+
+            <div class="mission-icon">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+
+                <rect
+                  x="10"
+                  y="38"
+                  width="9"
+                  height="16"
+                  fill="currentColor"
+                />
+
+                <rect
+                  x="27"
+                  y="27"
+                  width="9"
+                  height="27"
+                  fill="currentColor"
+                />
+
+                <rect
+                  x="44"
+                  y="14"
+                  width="9"
+                  height="40"
+                  fill="currentColor"
+                />
+
+              </svg>
+
+            </div>
+
+            <span>
+              REVENUE
+            </span>
+
+          </div>
+
+
+          <span class="mission-arrow">
+            ›
+          </span>
+
+
+          <!-- BUY LUNC -->
+
+          <div class="mission-step">
+
+            <div class="mission-icon">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="21"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+
+                <path
+                  d="M22 37c5 5 15 5 20 0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  d="M21 28c5-6 13-8 22-3"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <span>
+              BUY LUNC
+            </span>
+
+          </div>
+
+
+          <span class="mission-arrow">
+            ›
+          </span>
+
+
+          <!-- BURN -->
+
+          <div class="mission-step">
+
+            <div class="mission-icon">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+
+                <path
+                  d="M32 57c12-5 18-13 18-24 0-9-5-17-12-25 0 9-4 13-9 16 0-10-4-16-8-20-2 10-12 18-12 31 0 10 9 19 23 22Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linejoin="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <span>
+              BURN
+            </span>
+
+          </div>
+
+
+          <span class="mission-arrow">
+            ›
+          </span>
+
+
+          <!-- PUBLIC PROOF -->
+
+          <div class="mission-step">
+
+            <div class="mission-icon">
+
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+
+                <rect
+                  x="10"
+                  y="7"
+                  width="37"
+                  height="48"
+                  rx="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+
+                <path
+                  d="M19 20h18M19 29h18M19 38h10"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+
+                <circle
+                  cx="45"
+                  cy="45"
+                  r="9"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+
+                <path
+                  d="m51 51 7 7"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <span>
+              PUBLIC PROOF
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
 
 
   </main>
 
 
 
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
+  <!-- =========================================================
+       FOOTER — OFFICIAL SITE FOOTER
+  ========================================================== -->
 
   <footer class="site-footer">
 
@@ -729,7 +1754,6 @@
           class="footer-logo"
         >
 
-
         <div class="footer-brand-text">
 
           <strong>
@@ -740,9 +1764,10 @@
             PLAY. REBUILD. BURN.
           </span>
 
-          <p data-i18n="footerMission">
-            A physics-driven adventure built around play,
-            rebuilding and transparent LUNC burns.
+          <p>
+            Une aventure basée sur la physique autour du
+            jeu, de la reconstruction et de burns LUNC
+            transparents.
           </p>
 
         </div>
@@ -750,37 +1775,23 @@
       </div>
 
 
-
       <!-- LINKS -->
 
-      <nav
-        class="footer-links"
-        aria-label="Footer navigation"
-      >
+      <nav class="footer-links">
 
-        <a
-          href="#privacy"
-          data-i18n="footerPrivacy"
-        >
-          Privacy
+        <a href="#">
+          Confidentialité
         </a>
 
-        <a
-          href="#terms"
-          data-i18n="footerTerms"
-        >
-          Terms
+        <a href="#">
+          Conditions
         </a>
 
-        <a
-          href="#contact"
-          data-i18n="footerContact"
-        >
+        <a href="contact.html">
           Contact
         </a>
 
       </nav>
-
 
 
       <!-- RIGHT -->
@@ -788,91 +1799,80 @@
       <div class="footer-right">
 
 
+        <!-- SOCIALS -->
+
         <div class="footer-socials">
 
-
-          <!-- X -->
-
           <a
-            href="#"
-            aria-label="X"
+            href="https://x.com/LuncBurnGame"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="X"
           >
-
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-
-              <path d="M5 4L19 20"></path>
-              <path d="M19 4L5 20"></path>
-
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5 4 19 20M19 4 5 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
             </svg>
-
           </a>
 
 
-
-          <!-- YOUTUBE -->
-
           <a
-            href="#"
-            aria-label="YouTube"
+            href="https://www.youtube.com/@LuncBurnGame"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="YouTube"
           >
-
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect
                 x="3"
                 y="6"
                 width="18"
                 height="12"
                 rx="3"
-              ></rect>
-
-              <path d="M10 9L16 12L10 15Z"></path>
-
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="m10 9 5 3-5 3Z"
+                fill="currentColor"
+              />
             </svg>
-
           </a>
-
 
         </div>
 
 
+        <!-- LANGUAGE -->
 
-        <select
-          class="language-select footer-language"
-          data-lang-select
-          aria-label="Language"
-        >
+        <div class="footer-language">
 
-          <option value="EN">EN</option>
-          <option value="FR">FR</option>
-          <option value="ES">ES</option>
-          <option value="DE">DE</option>
-          <option value="PT">PT</option>
+          <select
+            class="language-select"
+            data-lang-select
+            aria-label="Language"
+          >
+            <option value="EN">EN</option>
+            <option value="FR">FR</option>
+            <option value="ES">ES</option>
+            <option value="DE">DE</option>
+            <option value="PT">PT</option>
+          </select>
 
-        </select>
+        </div>
 
 
+        <!-- COPYRIGHT -->
 
-        <span
-          class="footer-copyright"
-          data-i18n="footerCopyright"
-        >
-          © 2026 LUNC Burn Game. All rights reserved.
-        </span>
-
+        <div class="footer-copyright">
+          © 2026 LUNC Burn Game. Tous droits réservés.
+        </div>
 
       </div>
-
 
     </div>
 
@@ -880,11 +1880,58 @@
 
 
 
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
+  <!-- =========================================================
+       GAME PAGE JAVASCRIPT
+  ========================================================== -->
 
-  <script src="js/site.js?v=42"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const toggle = document.getElementById("mechanicsToggle");
+      const table = document.getElementById("mechanicsTable");
+      const toggleText = document.getElementById("mechanicsToggleText");
+
+      if (!toggle || !table || !toggleText) {
+        return;
+      }
+
+
+      toggle.addEventListener("click", function () {
+
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+        toggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+
+        if (isOpen) {
+
+          table.hidden = true;
+
+          toggleText.textContent =
+            "DISCOVER THE MECHANICS";
+
+        } else {
+
+          table.hidden = false;
+
+          toggleText.textContent =
+            "HIDE THE MECHANICS";
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+
+  <!-- Existing multilingual site system -->
+  <script src="js/site.js"></script>
 
 </body>
 
