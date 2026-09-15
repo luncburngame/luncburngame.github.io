@@ -1,1753 +1,1640 @@
 /* =========================================================
-   LUNC BURN GAME — THE GAME PAGE
-   game.css
-   Final responsive stylesheet
-   ---------------------------------------------------------
-   Design reference:
-   - Deep navy / space background
-   - Luna gold primary accent
-   - Cool blue secondary accent
-   - Functional green / alert red
-   - Cinematic editorial / game-document feel
-   - Mobile first
-   ========================================================= */
+   LUNC BURN GAME — GAME PAGE
+   Responsive stylesheet built for the exact game.html markup.
+   This file is scoped to the GAME page content and does not
+   redefine the official site header/footer.
+========================================================= */
 
-/* =========================================================
-   01. VARIABLES / RESET
-   ========================================================= */
+/* ---------------------------------------------------------
+   01. PAGE FOUNDATION
+--------------------------------------------------------- */
 
-:root {
-  --game-bg: #03111d;
-  --game-bg-2: #061a2a;
-  --game-panel: rgba(5, 24, 38, 0.78);
-  --game-panel-solid: #071b2b;
-  --game-panel-soft: rgba(8, 30, 46, 0.56);
-
-  --game-gold: #f6c84b;
-  --game-gold-strong: #ffd45a;
-  --game-gold-soft: rgba(246, 200, 75, 0.16);
-
-  --game-blue: #1599d4;
-  --game-blue-bright: #27b8ee;
-  --game-blue-soft: rgba(21, 153, 212, 0.18);
-
-  --game-green: #3fe39b;
-  --game-red: #ff4d57;
-
-  --game-white: #f5f7fa;
-  --game-text: #dce5ec;
-  --game-muted: #91a4b4;
-  --game-line: rgba(35, 156, 211, 0.42);
-  --game-line-soft: rgba(105, 168, 201, 0.18);
-
-  --game-max: 1180px;
-  --game-radius: 8px;
-
-  --game-shadow:
-    0 18px 50px rgba(0, 0, 0, 0.28);
-  --game-glow:
-    0 0 24px rgba(246, 200, 75, 0.18);
-
-  --game-section-space: clamp(48px, 6vw, 86px);
-}
-
-.game-page,
-body.game-page {
-  background:
-    radial-gradient(circle at 50% 0%, rgba(15, 78, 112, 0.14), transparent 38%),
-    var(--game-bg);
-  color: var(--game-text);
-}
-
-body.game-page {
+html,
+body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
+.game-page,
 .game-page *,
-body.game-page * {
+.game-page *::before,
+.game-page *::after {
   box-sizing: border-box;
 }
 
-.game-page img,
-body.game-page img {
+.game-page {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #eaf2f8;
+  background: #061827;
+  overflow: hidden;
+}
+
+.game-page img {
+  display: block;
   max-width: 100%;
 }
 
-.game-page a,
-body.game-page a {
-  color: inherit;
+.game-page button,
+.game-page input,
+.game-page select,
+.game-page textarea {
+  font: inherit;
 }
 
-/* =========================================================
-   02. PAGE SHELL
-   ========================================================= */
-
-.game-page main,
-body.game-page main {
+.game-section {
+  position: relative;
   width: 100%;
+  max-width: 100%;
+  padding: 76px clamp(20px, 5vw, 80px) 82px;
+  background: #081d2d;
   overflow: hidden;
 }
 
-.game-container,
-.game-inner,
-.game-section-inner,
-body.game-page .section-inner {
-  width: min(calc(100% - 40px), var(--game-max));
-  margin-inline: auto;
+.game-section:nth-of-type(even) {
+  background: #071a2a;
 }
 
-.game-section,
-.game-page section {
+.game-section + .game-section {
+  border-top: 1px solid rgba(53, 173, 226, 0.05);
+}
+
+/* ---------------------------------------------------------
+   02. COVER / HERO
+--------------------------------------------------------- */
+
+.game-cover {
   position: relative;
-  padding-block: var(--game-section-space);
-}
-
-.game-section + .game-section,
-.game-page section + .game-page section {
-  border-top: 1px solid rgba(20, 120, 165, 0.10);
-}
-
-.game-section-header,
-.game-page .section-heading {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 28px;
-}
-
-.game-section-header::after,
-.game-page .section-heading::after {
-  content: "";
-  flex: 1 1 auto;
-  height: 1px;
-  min-width: 30px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(26, 155, 211, 0.60),
-      rgba(26, 155, 211, 0.08)
-    );
-}
-
-.game-eyebrow,
-.game-page .eyebrow {
-  margin: 0 0 8px;
-  color: var(--game-gold);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
-.game-section-title,
-.game-page h2 {
-  margin: 0;
-  color: var(--game-white);
-  font-size: clamp(22px, 2.3vw, 34px);
-  line-height: 1.05;
-  font-weight: 700;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-}
-
-.game-section-note,
-.game-page .section-note,
-.game-page .section-signature {
-  margin: 0;
-  color: var(--game-blue-bright);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.19em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-/* Numbered section marker */
-
-.game-section-number,
-.game-page .section-number {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--game-gold);
-  font-size: clamp(23px, 2.7vw, 34px);
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  text-shadow: 0 0 18px rgba(246, 200, 75, 0.18);
-}
-
-.game-section-number::after,
-.game-page .section-number::after {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--game-gold), var(--game-blue));
-}
-
-/* =========================================================
-   03. SHARED HEADER — KEEP HOMEPAGE TEMPLATE
-   ========================================================= */
-
-body.game-page .site-header {
-  position: relative;
-  z-index: 20;
-}
-
-body.game-page .brand-logo,
-.game-page .brand-logo {
-  display: block;
-  width: auto;
-  height: 42px;
-  max-width: 180px;
-  object-fit: contain;
-}
-
-body.game-page .nav-wrap {
-  min-height: 64px;
-}
-
-body.game-page .main-nav a {
-  white-space: nowrap;
-}
-
-body.game-page .main-nav a[href="game.html"],
-body.game-page .main-nav a[href$="/game.html"] {
-  color: var(--game-gold);
-}
-
-body.game-page .language-select {
-  min-height: 38px;
-}
-
-/* Prevent long translations from destroying the header */
-
-@media (max-width: 820px) {
-  body.game-page .main-nav {
-    gap: 14px;
-  }
-
-  body.game-page .main-nav a {
-    font-size: 11px;
-  }
-
-  body.game-page .nav-actions .btn-small {
-    white-space: nowrap;
-  }
-}
-
-/* =========================================================
-   04. COVER / HERO
-   ========================================================= */
-
-.game-cover,
-.game-hero,
-.game-page .game-hero,
-.game-page .cover-section {
-  position: relative;
-  isolation: isolate;
-  min-height: 390px;
-  display: grid;
-  align-items: center;
+  width: 100%;
+  min-height: 600px;
+  background: #061522;
   overflow: hidden;
-  background: #03101b;
 }
 
-.game-cover::after,
-.game-hero::after,
-.game-page .game-hero::after,
-.game-page .cover-section::after {
+.game-cover-image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.game-cover-image::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
   background:
     linear-gradient(
       90deg,
-      rgba(3, 17, 29, 0.97) 0%,
-      rgba(3, 17, 29, 0.82) 28%,
-      rgba(3, 17, 29, 0.22) 64%,
-      rgba(3, 17, 29, 0.35) 100%
+      rgba(3, 15, 26, 0.92) 0%,
+      rgba(3, 15, 26, 0.72) 35%,
+      rgba(3, 15, 26, 0.16) 72%,
+      rgba(3, 15, 26, 0.20) 100%
     ),
     linear-gradient(
-      180deg,
-      rgba(3, 17, 29, 0.12),
-      rgba(3, 17, 29, 0.62)
+      0deg,
+      rgba(3, 15, 26, 0.78) 0%,
+      transparent 48%,
+      rgba(3, 15, 26, 0.10) 100%
     );
+  pointer-events: none;
 }
 
-.game-cover-image,
-.game-hero-image,
-.game-page .cover-image,
-.game-page .game-hero img {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
+.game-cover-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.game-cover-content,
-.game-hero-content,
-.game-page .cover-content {
-  position: relative;
-  width: min(calc(100% - 40px), var(--game-max));
-  margin-inline: auto;
-  padding-block: 54px;
+.game-cover-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: clamp(24px, 7vw, 110px);
+  width: min(680px, calc(100% - 48px));
+  transform: translateY(-42%);
 }
 
-.game-cover-title,
-.game-hero h1,
-.game-page .cover-title {
-  max-width: 600px;
-  margin: 0;
-  color: var(--game-white);
-  font-size: clamp(48px, 6.5vw, 86px);
-  line-height: 0.94;
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  text-transform: uppercase;
-  text-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+.game-cover-content h1 {
+  margin: 0 0 22px;
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: #f1f5f8;
 }
 
-.game-cover-title span,
-.game-hero h1 span,
-.game-page .cover-title span {
-  color: var(--game-gold);
-  text-shadow:
-    0 0 22px rgba(246, 200, 75, 0.20),
-    0 8px 32px rgba(0, 0, 0, 0.40);
-}
-
-.game-cover-subtitle,
-.game-hero .cover-subtitle,
-.game-page .cover-subtitle {
-  margin-top: 12px;
-  color: var(--game-white);
-  font-size: clamp(14px, 1.7vw, 21px);
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.game-cover-description,
-.game-hero .cover-description,
-.game-page .cover-description {
-  max-width: 500px;
-  margin: 14px 0 0;
-  color: var(--game-text);
-  font-size: 14px;
-  line-height: 1.65;
-}
-
-.game-version,
-.game-cover .version,
-.game-page .version {
-  display: inline-flex;
-  margin-top: 22px;
-  padding: 9px 13px;
-  border: 1px solid rgba(246, 200, 75, 0.75);
-  border-radius: 4px;
-  color: var(--game-white);
-  background: rgba(4, 18, 30, 0.55);
-  font-size: 10px;
-  font-weight: 700;
+.game-cover-subtitle {
+  margin: 0 0 22px;
+  font-size: clamp(13px, 1.25vw, 18px);
+  line-height: 1.4;
+  font-weight: 500;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
+  color: #f1f5f8;
 }
 
-/* =========================================================
-   05. DESIGN PHILOSOPHY
-   ========================================================= */
-
-.philosophy-grid,
-.game-philosophy-grid,
-.design-philosophy-grid,
-.game-page .philosophy-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+.game-cover-description {
+  max-width: 600px;
+  margin: 0 0 28px;
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 1.65;
+  color: rgba(232, 241, 247, 0.84);
 }
 
-.philosophy-card,
-.game-philosophy-card,
-.design-philosophy-card,
-.game-page .philosophy-card {
+.game-version {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid #e4c34b;
+  border-radius: 4px;
+  color: #f0d35d;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+}
+
+.game-cover-signature {
+  position: absolute;
+  z-index: 2;
+  right: clamp(24px, 6vw, 90px);
+  bottom: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 460px;
+  color: rgba(231, 239, 245, 0.88);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+
+.game-cover-signature span + span::before {
+  content: "";
+}
+
+/* ---------------------------------------------------------
+   03. SECTION HEADERS
+--------------------------------------------------------- */
+
+.game-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 54px;
+}
+
+.game-section-title {
   min-width: 0;
-  padding: 18px 14px 16px;
-  text-align: center;
-  border: 1px solid rgba(22, 129, 177, 0.17);
-  border-radius: var(--game-radius);
+}
+
+.section-number {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 2px;
+  color: #f0cf4b;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.section-number::after {
+  content: "";
+  width: 58px;
+  height: 3px;
+  background: linear-gradient(90deg, #f0cf4b, #38a8d8);
+}
+
+.game-section-title h2 {
+  position: relative;
+  margin: 0;
+  padding: 0 0 16px;
+  color: #f0f5f8;
+  font-size: clamp(28px, 3vw, 48px);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.game-section-title h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(100%, 500px);
+  height: 1px;
   background: linear-gradient(
-    180deg,
-    rgba(8, 36, 53, 0.50),
-    rgba(4, 22, 35, 0.26)
+    90deg,
+    rgba(35, 137, 181, 0.65),
+    rgba(35, 137, 181, 0.18)
   );
 }
 
-.philosophy-icon,
-.game-philosophy-icon,
-.design-philosophy-icon {
-  display: grid;
-  place-items: center;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 11px;
-  color: var(--game-gold);
+.section-signature {
+  flex: 0 1 auto;
+  max-width: 420px;
+  padding-bottom: 18px;
+  color: #43b7ed;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-align: right;
 }
 
-.philosophy-icon svg,
-.game-philosophy-icon svg,
-.design-philosophy-icon svg {
-  width: 34px;
-  height: 34px;
-  display: block;
+/* ---------------------------------------------------------
+   04. DESIGN PHILOSOPHY
+--------------------------------------------------------- */
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.philosophy-card {
+  min-width: 0;
+  min-height: 270px;
+  padding: 36px 24px 30px;
+  border: 1px solid rgba(39, 132, 174, 0.28);
+  border-radius: 7px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(11, 38, 57, 0.92),
+      rgba(6, 25, 40, 0.88)
+    );
+  text-align: center;
+}
+
+.philosophy-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  margin-bottom: 18px;
+  color: #f0cf4b;
+}
+
+.philosophy-icon svg {
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  max-height: 42px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  overflow: visible;
 }
 
-.philosophy-card h3,
-.game-philosophy-card h3,
-.design-philosophy-card h3 {
-  margin: 0 0 7px;
-  color: var(--game-white);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.philosophy-icon svg rect,
+.philosophy-icon svg circle {
+  vector-effect: non-scaling-stroke;
 }
 
-.philosophy-card p,
-.game-philosophy-card p,
-.design-philosophy-card p {
+.philosophy-card h3 {
+  margin: 0 0 14px;
+  color: #f0f4f7;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.philosophy-card p {
   margin: 0;
-  color: var(--game-muted);
-  font-size: 10px;
-  line-height: 1.55;
+  color: rgba(194, 210, 221, 0.72);
+  font-size: 12px;
+  line-height: 1.65;
 }
 
-/* =========================================================
-   06. CORE GAMEPLAY LOOP
-   ========================================================= */
+/* ---------------------------------------------------------
+   05. CORE GAMEPLAY LOOP
+--------------------------------------------------------- */
 
-.gameplay-loop,
-.core-gameplay-loop,
-.game-loop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
+.gameplay-loop {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr);
+  align-items: stretch;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.gameplay-step,
-.loop-step,
-.core-loop-step {
-  position: relative;
-  flex: 1 1 0;
+.loop-step {
   min-width: 0;
-  min-height: 74px;
+  min-height: 150px;
+  padding: 24px 12px;
+  border: 1px solid rgba(39, 132, 174, 0.45);
+  background: linear-gradient(
+    150deg,
+    rgba(10, 36, 55, 0.96),
+    rgba(7, 26, 42, 0.96)
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 50%,
+    calc(100% - 12px) 100%,
+    0 100%,
+    12px 50%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7px;
-  padding: 10px 8px;
-  border: 1px solid rgba(30, 146, 202, 0.55);
-  background:
-    linear-gradient(135deg, rgba(8, 43, 63, 0.72), rgba(4, 22, 37, 0.88));
+  text-align: center;
+}
+
+.loop-step:first-child {
   clip-path: polygon(
-    8% 0,
-    100% 0,
-    92% 100%,
+    0 0,
+    calc(100% - 12px) 0,
+    100% 50%,
+    calc(100% - 12px) 100%,
     0 100%
   );
 }
 
-.gameplay-step.is-highlight,
-.loop-step.is-highlight,
-.core-loop-step.is-highlight,
-.gameplay-step:nth-child(4),
-.gameplay-step:nth-child(5) {
-  border-color: rgba(246, 200, 75, 0.80);
-  background:
-    linear-gradient(135deg, rgba(82, 61, 19, 0.50), rgba(11, 35, 46, 0.88));
+.loop-step:last-child {
+  clip-path: polygon(
+    12px 0,
+    100% 0,
+    100% 100%,
+    12px 100%,
+    0 50%
+  );
 }
 
-.gameplay-step-icon,
-.loop-step-icon,
-.core-loop-icon {
-  width: 26px;
-  height: 26px;
-  display: grid;
-  place-items: center;
-  color: #dcebf4;
+.loop-step-highlight {
+  background: linear-gradient(
+    150deg,
+    rgba(31, 42, 31, 0.96),
+    rgba(13, 34, 39, 0.96)
+  );
 }
 
-.gameplay-step:nth-child(4) .gameplay-step-icon,
-.gameplay-step:nth-child(5) .gameplay-step-icon,
-.loop-step.is-highlight .loop-step-icon {
-  color: var(--game-gold);
+.loop-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 12px;
+  color: #8bbbd0;
 }
 
-.gameplay-step-icon svg,
-.loop-step-icon svg,
-.core-loop-icon svg {
-  width: 100%;
-  height: 100%;
-  display: block;
+.loop-step-highlight .loop-icon {
+  color: #f0cf4b;
+}
+
+.loop-icon svg {
+  width: 34px;
+  height: 34px;
+  max-width: 34px;
+  max-height: 34px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  overflow: visible;
 }
 
-.gameplay-step-label,
-.loop-step-label,
-.core-loop-label {
-  color: var(--game-white);
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: 0.10em;
-  text-align: center;
-  text-transform: uppercase;
+.loop-icon svg [fill="currentColor"] {
+  fill: currentColor;
 }
 
-.gameplay-arrow,
-.loop-arrow,
-.core-loop-arrow {
-  flex: 0 0 auto;
-  color: var(--game-gold);
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.gameplay-loop-caption,
-.core-loop-caption,
-.game-loop-caption {
-  margin: 14px 0 0;
-  color: var(--game-text);
+.loop-step > span:last-child {
+  color: #e9f0f4;
   font-size: 11px;
-  text-align: center;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
-/* =========================================================
-   07. PHYSICS IS THE GAME
-   ========================================================= */
+.loop-arrow {
+  align-self: center;
+  color: #f0cf4b;
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 5px;
+}
 
-.physics-layout,
-.physics-grid,
-.game-page .physics-layout {
+.loop-statement {
+  width: 100%;
+  max-width: 1400px;
+  margin: 28px auto 0;
+  color: rgba(213, 225, 232, 0.78);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   06. PHYSICS
+--------------------------------------------------------- */
+
+.physics-layout {
   display: grid;
-  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.35fr);
-  gap: 28px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 34px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.physics-copy h3,
-.physics-intro h3,
-.game-page .physics-copy h3 {
-  margin: 0 0 10px;
-  color: var(--game-white);
-  font-size: 17px;
-  line-height: 1.15;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.physics-intro {
+  min-width: 0;
 }
 
-.physics-copy p,
-.physics-intro p,
-.game-page .physics-copy p {
-  max-width: 460px;
-  margin: 0;
-  color: var(--game-text);
-  font-size: 12px;
-  line-height: 1.7;
+.physics-intro h3 {
+  margin: 0 0 18px;
+  color: #f0f4f7;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.physics-button,
-.physics-toggle,
-.game-page .physics-toggle {
+.physics-intro p {
+  max-width: 760px;
+  margin: 0 0 26px;
+  color: rgba(206, 221, 230, 0.82);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.mechanics-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  min-height: 40px;
-  padding: 0 17px;
-  border: 1px solid var(--game-gold);
-  border-radius: 4px;
+  gap: 12px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid #e0c34c;
+  border-radius: 3px;
+  outline: none;
   background: transparent;
-  color: var(--game-white);
-  font: inherit;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  color: #f0cf4b;
   cursor: pointer;
-  transition:
-    background 180ms ease,
-    color 180ms ease,
-    box-shadow 180ms ease,
-    transform 180ms ease;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.physics-button:hover,
-.physics-toggle:hover {
-  background: var(--game-gold);
-  color: #071522;
-  box-shadow: var(--game-glow);
+.mechanics-toggle:hover,
+.mechanics-toggle:focus-visible {
+  background: rgba(240, 207, 75, 0.08);
 }
 
-.physics-button:active,
-.physics-toggle:active {
-  transform: translateY(1px);
+.toggle-arrow {
+  font-size: 18px;
+  line-height: 0.8;
 }
 
-/* Mechanics panel is hidden until the validated button is used */
+.physics-table-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2px;
+  overflow: hidden;
+  border: 1px solid rgba(39, 132, 174, 0.42);
+  border-radius: 6px;
+  background: rgba(5, 23, 37, 0.78);
+}
 
-.physics-mechanics,
-.mechanics-table-wrap,
-.game-page .physics-mechanics {
+.physics-table-wrapper[hidden] {
   display: none;
 }
 
-.physics-mechanics.is-visible,
-.physics-mechanics[data-open="true"],
-.mechanics-table-wrap.is-visible,
-.mechanics-table-wrap[data-open="true"] {
-  display: block;
-}
-
-.physics-table,
-.mechanics-table,
-.game-page table {
+.physics-table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
-  border: 1px solid rgba(24, 133, 181, 0.48);
-  border-radius: 5px;
-  background: rgba(4, 23, 37, 0.45);
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .physics-table th,
-.physics-table td,
-.mechanics-table th,
-.mechanics-table td,
-.game-page table th,
-.game-page table td {
-  padding: 9px 12px;
-  border-bottom: 1px solid rgba(34, 126, 168, 0.18);
+.physics-table td {
+  padding: 17px 20px;
+  border-bottom: 1px solid rgba(45, 116, 146, 0.22);
   text-align: left;
-  font-size: 10px;
-  line-height: 1.35;
+  vertical-align: middle;
 }
 
 .physics-table tr:last-child th,
-.physics-table tr:last-child td,
-.mechanics-table tr:last-child th,
-.mechanics-table tr:last-child td,
-.game-page table tr:last-child th,
-.game-page table tr:last-child td {
+.physics-table tr:last-child td {
   border-bottom: 0;
 }
 
-.physics-table th,
-.mechanics-table th,
-.game-page table th {
-  width: 31%;
-  color: var(--game-white);
-  font-weight: 700;
-}
-
-.physics-table td,
-.mechanics-table td,
-.game-page table td {
-  color: var(--game-muted);
-}
-
-.physics-table-wrap,
-.physics-visual {
-  min-width: 0;
-}
-
-/* If the final validated version uses a permanent table instead of toggle,
-   this keeps it visually correct. */
-
-.physics-layout > .physics-table,
-.physics-grid > .physics-table {
-  display: table;
-}
-
-/* =========================================================
-   08. LEVEL DESIGN / SIX WORLDS
-   ========================================================= */
-
-.level-design-intro,
-.worlds-intro,
-.game-page .worlds-intro {
-  max-width: 900px;
-  margin: -4px 0 18px;
-  color: var(--game-text);
+.physics-table th {
+  width: 25%;
+  color: #f0cf4b;
   font-size: 11px;
-  line-height: 1.65;
-}
-
-.worlds-grid,
-.level-worlds,
-.world-grid,
-.game-page .worlds-grid {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 9px;
-}
-
-.world-card,
-.level-world-card,
-.world,
-.game-page .world-card {
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid rgba(28, 137, 184, 0.42);
-  border-radius: 5px;
-  background: linear-gradient(
-    180deg,
-    rgba(7, 34, 51, 0.90),
-    rgba(3, 20, 32, 0.94)
-  );
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
-}
-
-.world-card-image,
-.level-world-image,
-.world-image,
-.game-page .world-card img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1.62 / 1;
-  object-fit: cover;
-  object-position: center;
-}
-
-.world-card-content,
-.level-world-content,
-.game-page .world-card > div:not(.world-card-image) {
-  padding: 9px 9px 11px;
-}
-
-.world-number,
-.level-world-number {
-  display: block;
-  margin-bottom: 2px;
-  color: var(--game-gold);
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.world-card h3,
-.level-world-card h3,
-.world h3 {
-  margin: 0;
-  color: var(--game-white);
-  font-size: 10px;
-  line-height: 1.15;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.world-card p,
-.level-world-card p,
-.world p {
-  margin: 6px 0 0;
-  color: var(--game-muted);
-  font-size: 9px;
-  line-height: 1.45;
+.physics-table td {
+  color: rgba(211, 225, 233, 0.78);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
-/* No mastery stars inside World cards */
+/* ---------------------------------------------------------
+   07. LEVEL DESIGN
+--------------------------------------------------------- */
 
-.world-card .stars,
-.world-card .world-stars,
-.level-world-card .stars,
-.level-world-card .world-stars {
-  display: none;
+.level-design-intro {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 34px;
 }
 
-/* =========================================================
-   09. MASTERY — STARS ONLY
-   ========================================================= */
+.level-design-intro p {
+  max-width: 1100px;
+  margin: 0;
+  color: rgba(209, 223, 231, 0.82);
+  font-size: 14px;
+  line-height: 1.7;
+}
 
-.mastery-layout,
-.mastery-grid-wrap,
-.game-page .mastery-layout {
+.level-design-intro p + p {
+  margin-top: 12px;
+}
+
+.world-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.75fr);
-  gap: 30px;
-  align-items: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.mastery-grid,
-.mastery-cards,
-.game-page .mastery-grid {
+.world-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(39, 132, 174, 0.45);
+  border-radius: 7px;
+  background: linear-gradient(
+    150deg,
+    rgba(7, 29, 44, 0.98),
+    rgba(5, 23, 37, 0.98)
+  );
+}
+
+.world-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #061522;
+}
+
+.world-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.world-content {
+  min-height: 142px;
+  padding: 22px 18px 24px;
+}
+
+.world-number {
+  display: block;
+  margin-bottom: 7px;
+  color: #f0cf4b;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.world-content h3 {
+  margin: 0 0 11px;
+  color: #eef4f7;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.world-content p {
+  margin: 0;
+  color: rgba(191, 210, 220, 0.70);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* ---------------------------------------------------------
+   08. MASTERY
+--------------------------------------------------------- */
+
+.mastery-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.8fr);
+  gap: clamp(30px, 5vw, 80px);
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mastery-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+  min-width: 0;
 }
 
-.mastery-card,
-.mastery-option,
-.game-page .mastery-card {
-  min-height: 112px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 12px;
-  border: 1px solid rgba(23, 139, 190, 0.48);
-  border-radius: 5px;
-  background: rgba(6, 30, 46, 0.68);
+.mastery-card {
+  min-width: 0;
+  min-height: 180px;
+  padding: 28px 18px;
+  border: 1px solid rgba(39, 132, 174, 0.45);
+  border-radius: 7px;
+  background: linear-gradient(
+    150deg,
+    rgba(10, 35, 53, 0.96),
+    rgba(6, 25, 40, 0.96)
+  );
   text-align: center;
 }
 
-.mastery-stars,
-.mastery-icon,
-.game-page .mastery-stars {
+.mastery-stars {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  min-height: 25px;
-  margin-bottom: 8px;
-  color: var(--game-gold);
+  min-height: 40px;
+  margin-bottom: 16px;
+  color: #f0cf4b;
 }
 
-.mastery-stars svg,
-.mastery-icon svg,
-.game-page .mastery-stars svg {
-  width: 18px;
-  height: 18px;
+.mastery-stars svg {
+  width: 25px;
+  height: 25px;
+  max-width: 25px;
+  max-height: 25px;
   fill: currentColor;
-  stroke: none;
 }
 
-.mastery-stars .star,
-.mastery-icon .star {
-  color: var(--game-gold);
-  font-size: 20px;
-  line-height: 1;
+.mastery-card h3 {
+  margin: 0 0 11px;
+  color: #edf3f6;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
 
-.mastery-card h3,
-.mastery-option h3 {
+.mastery-card p {
   margin: 0;
-  color: var(--game-white);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  color: rgba(192, 209, 219, 0.72);
+  font-size: 12px;
+  line-height: 1.6;
 }
 
-.mastery-card p,
-.mastery-option p {
-  margin: 7px 0 0;
-  color: var(--game-muted);
-  font-size: 9px;
-  line-height: 1.45;
-}
-
-.mastery-quote,
-.mastery-callout,
-.game-page .mastery-quote {
+.mastery-quote {
   position: relative;
-  padding: 10px 10px 10px 30px;
-  color: var(--game-white);
-  font-size: clamp(14px, 1.55vw, 18px);
-  line-height: 1.45;
-  font-weight: 500;
-}
-
-.mastery-quote::before,
-.mastery-quote::after {
-  position: absolute;
-  color: var(--game-gold);
-  font-size: 42px;
-  line-height: 1;
-  font-weight: 800;
-}
-
-.mastery-quote::before {
-  content: "“";
-  left: 0;
-  top: -4px;
-}
-
-.mastery-quote::after {
-  content: "”";
-  right: 0;
-  bottom: -15px;
-}
-
-/* =========================================================
-   10. LUMEN
-   ========================================================= */
-
-.lumen-layout,
-.lumen-grid,
-.game-page .lumen-layout {
-  display: grid;
-  grid-template-columns: minmax(190px, 0.72fr) minmax(260px, 1.2fr) minmax(310px, 1.55fr);
-  gap: 20px;
+  display: flex;
   align-items: center;
-}
-
-.lumen-art,
-.lumen-visual,
-.game-page .lumen-art {
-  display: grid;
-  place-items: center;
-  min-height: 190px;
-}
-
-.lumen-art img,
-.lumen-visual img,
-.game-page .lumen-art img {
-  display: block;
-  width: min(100%, 220px);
-  height: auto;
-  object-fit: contain;
-  filter:
-    drop-shadow(0 0 20px rgba(33, 165, 238, 0.22))
-    drop-shadow(0 0 14px rgba(246, 200, 75, 0.16));
-}
-
-.lumen-copy h3,
-.lumen-content h3 {
+  justify-content: center;
+  min-width: 0;
+  min-height: 180px;
   margin: 0;
-  color: var(--game-gold);
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  padding: 42px 34px;
+  color: #eaf1f5;
 }
 
-.lumen-tagline {
-  margin: 5px 0 8px;
-  color: var(--game-white);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.lumen-copy p,
-.lumen-content p {
+.mastery-quote p {
+  max-width: 360px;
   margin: 0;
-  color: var(--game-text);
-  font-size: 10px;
+  font-size: clamp(17px, 1.7vw, 23px);
   line-height: 1.55;
+  text-align: center;
 }
 
-.lumen-rules,
-.lumen-can-cannot,
-.game-page .lumen-rules {
+.quote-mark {
+  position: absolute;
+  color: #f0cf4b;
+  font-family: Georgia, serif;
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.mastery-quote > .quote-mark:first-child {
+  top: 4px;
+  left: 6px;
+}
+
+.quote-mark-end {
+  right: 8px;
+  bottom: 0;
+}
+
+/* ---------------------------------------------------------
+   09. LUMEN
+--------------------------------------------------------- */
+
+.lumen-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1.25fr);
+  grid-template-areas:
+    "visual description"
+    "rules rules";
+  gap: 28px clamp(30px, 6vw, 90px);
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.lumen-visual {
+  grid-area: visual;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.lumen-visual img {
+  width: min(280px, 100%);
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(49, 145, 226, 0.18));
+}
+
+.lumen-description {
+  grid-area: description;
+  min-width: 0;
+}
+
+.lumen-description h3 {
+  margin: 0 0 12px;
+  color: #f0cf4b;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.lumen-description strong {
+  display: block;
+  margin-bottom: 18px;
+  color: #edf4f7;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.lumen-description p {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(206, 221, 230, 0.82);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.lumen-rules {
+  grid-area: rules;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border: 1px solid rgba(29, 136, 181, 0.42);
-  border-radius: 5px;
-  overflow: hidden;
-  background: rgba(4, 23, 36, 0.58);
+  gap: 12px;
+  width: 100%;
 }
 
-.lumen-rule-column {
+.lumen-rule {
   min-width: 0;
-  padding: 13px 14px;
+  padding: 22px 26px 24px;
+  border: 1px solid rgba(39, 132, 174, 0.40);
+  border-radius: 6px;
+  background: rgba(5, 25, 40, 0.72);
 }
 
-.lumen-rule-column + .lumen-rule-column {
-  border-left: 1px solid rgba(29, 136, 181, 0.24);
+.lumen-rule h3 {
+  margin: 0 0 15px;
+  color: #eaf1f5;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
-.lumen-rule-column.can h4,
-.lumen-can h4 {
-  color: var(--game-green);
+.rule-status {
+  display: inline-block;
+  margin-right: 5px;
 }
 
-.lumen-rule-column.cannot h4,
-.lumen-cannot h4 {
-  color: var(--game-red);
+.lumen-can .rule-status {
+  color: #55d8a1;
 }
 
-.lumen-rule-column h4,
-.lumen-can h4,
-.lumen-cannot h4 {
-  margin: 0 0 7px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.lumen-cannot .rule-status {
+  color: #d66d78;
 }
 
-.lumen-rule-column ul,
-.lumen-can ul,
-.lumen-cannot ul {
-  display: grid;
-  gap: 4px;
+.lumen-rule ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.lumen-rule-column li,
-.lumen-can li,
-.lumen-cannot li {
+.lumen-rule li {
   position: relative;
+  margin: 0 0 8px;
   padding-left: 17px;
-  color: var(--game-text);
-  font-size: 9px;
-  line-height: 1.4;
+  color: rgba(196, 213, 222, 0.76);
+  font-size: 12px;
+  line-height: 1.45;
 }
 
-.lumen-rule-column.can li::before,
+.lumen-rule li:last-child {
+  margin-bottom: 0;
+}
+
 .lumen-can li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--game-green);
-  font-weight: 800;
+  color: #55d8a1;
 }
 
-.lumen-rule-column.cannot li::before,
 .lumen-cannot li::before {
   content: "×";
   position: absolute;
   left: 0;
-  color: var(--game-red);
-  font-weight: 800;
+  color: #d66d78;
 }
 
-/* =========================================================
-   11. THE MISSION
-   ========================================================= */
+/* ---------------------------------------------------------
+   10. MISSION
+--------------------------------------------------------- */
 
-.mission-layout,
-.mission-grid,
-.game-page .mission-layout {
+.mission-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.4fr);
-  gap: 30px;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.5fr);
+  gap: clamp(40px, 7vw, 110px);
   align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.mission-copy h3,
+.mission-content {
+  min-width: 0;
+}
+
 .mission-content h3 {
-  margin: 0 0 10px;
-  color: var(--game-white);
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: #f0f4f7;
+  font-size: clamp(21px, 2vw, 29px);
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.mission-copy p,
 .mission-content p {
-  margin: 0;
-  color: var(--game-text);
-  font-size: 11px;
-  line-height: 1.65;
+  margin: 0 0 12px;
+  color: rgba(204, 220, 229, 0.80);
+  font-size: 13px;
+  line-height: 1.7;
 }
 
-.mission-flow,
-.burn-flow,
-.game-page .mission-flow {
+.mission-content p:last-child {
+  margin-bottom: 0;
+}
+
+.mission-flow {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 5px;
-  align-items: start;
+  grid-template-columns:
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr);
+  align-items: center;
+  min-width: 0;
 }
 
-.mission-step,
-.burn-step {
-  position: relative;
+.mission-step {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
-  min-width: 0;
+  justify-content: center;
+  gap: 12px;
   text-align: center;
 }
 
-.mission-step:not(:last-child)::after,
-.burn-step:not(:last-child)::after {
-  content: "›";
-  position: absolute;
-  right: -6px;
-  top: 17px;
-  color: var(--game-gold);
-  font-size: 20px;
-  font-weight: 700;
+.mission-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  color: #8dbdd0;
 }
 
-.mission-step-icon,
-.burn-step-icon {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(246, 200, 75, 0.62);
-  border-radius: 7px;
-  color: var(--game-gold);
-  background: rgba(6, 31, 47, 0.72);
-  box-shadow: 0 0 18px rgba(246, 200, 75, 0.07);
-}
-
-.mission-step-icon svg,
-.burn-step-icon svg {
-  width: 23px;
-  height: 23px;
-  display: block;
+.mission-icon svg {
+  width: 38px;
+  height: 38px;
+  max-width: 38px;
+  max-height: 38px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.mission-step-label,
-.burn-step-label {
-  color: var(--game-white);
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-/* =========================================================
-   12. SHARED SVG PROTECTION
-   ---------------------------------------------------------
-   Prevents the historical "huge black pictogram" bug.
-   ========================================================= */
-
-.game-page .feature-icon svg,
-.game-page .philosophy-icon svg,
-.game-page .gameplay-step svg,
-.game-page .loop-step svg,
-.game-page .physics-icon svg,
-.game-page .mission-step-icon svg,
-.game-page .burn-step-icon svg,
-.game-page .mastery-icon svg,
-.game-page .mastery-stars svg,
-.game-page .lumen-icon svg {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.game-page svg {
   overflow: visible;
 }
 
-.game-page .icon,
-.game-page .pictogram {
-  display: inline-grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  color: var(--game-gold);
+.mission-icon svg [fill="currentColor"] {
+  fill: currentColor;
 }
 
-.game-page .icon svg,
-.game-page .pictogram svg {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
+.mission-step span:last-child {
+  color: #e7eff3;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
-/* =========================================================
-   13. FOOTER — SAME OFFICIAL TEMPLATE
-   ========================================================= */
-
-body.game-page .site-footer {
-  margin-top: 26px;
+.mission-arrow {
+  color: #f0cf4b;
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 4px;
 }
 
-body.game-page .footer-logo {
-  display: block;
-  width: auto;
-  height: 62px;
-  max-width: 190px;
-  object-fit: contain;
+/* ---------------------------------------------------------
+   11. DESKTOP / LARGE SCREENS
+--------------------------------------------------------- */
+
+@media (min-width: 1200px) {
+  .game-section {
+    padding-left: max(40px, calc((100vw - 1520px) / 2));
+    padding-right: max(40px, calc((100vw - 1520px) / 2));
+  }
 }
 
-body.game-page .footer-socials svg {
-  width: 20px;
-  height: 20px;
-}
-
-body.game-page .footer-socials a {
-  display: grid;
-  place-items: center;
-}
-
-/* =========================================================
-   14. BUTTONS / FOCUS
-   ========================================================= */
-
-.game-page button,
-.game-page a,
-body.game-page button,
-body.game-page a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.game-page a:focus-visible,
-.game-page button:focus-visible,
-.game-page select:focus-visible,
-body.game-page a:focus-visible,
-body.game-page button:focus-visible,
-body.game-page select:focus-visible {
-  outline: 2px solid var(--game-gold);
-  outline-offset: 3px;
-}
-
-/* =========================================================
-   15. TABLET
-   ========================================================= */
+/* ---------------------------------------------------------
+   12. TABLET
+--------------------------------------------------------- */
 
 @media (max-width: 1050px) {
-  .game-container,
-  .game-inner,
-  .game-section-inner,
-  body.game-page .section-inner {
-    width: min(calc(100% - 32px), 940px);
+  .philosophy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .worlds-grid,
-  .level-worlds,
-  .world-grid,
-  .game-page .worlds-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .world-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lumen-layout,
-  .lumen-grid,
-  .game-page .lumen-layout {
-    grid-template-columns: 180px minmax(220px, 1fr);
-  }
-
-  .lumen-rules,
-  .lumen-can-cannot,
-  .game-page .lumen-rules {
-    grid-column: 1 / -1;
-  }
-
-  .mission-layout,
-  .mission-grid,
-  .game-page .mission-layout {
+  .mastery-layout {
     grid-template-columns: 1fr;
+  }
+
+  .mastery-quote {
+    min-height: 160px;
+  }
+
+  .lumen-layout {
+    grid-template-columns: minmax(190px, 0.45fr) minmax(0, 1fr);
+    gap: 24px 40px;
+  }
+
+  .mission-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .mission-content {
+    max-width: 900px;
   }
 }
 
-/* =========================================================
-   16. MOBILE
-   ========================================================= */
+/* ---------------------------------------------------------
+   13. MOBILE — <= 760px
+--------------------------------------------------------- */
 
 @media (max-width: 760px) {
-  :root {
-    --game-section-space: 46px;
+
+  .game-section {
+    padding: 54px 16px 58px;
   }
 
-  .game-container,
-  .game-inner,
-  .game-section-inner,
-  body.game-page .section-inner {
-    width: min(calc(100% - 24px), 680px);
+  /* COVER */
+
+  .game-cover {
+    min-height: 720px;
   }
 
-  /* Header: preserve official template, prevent overflow */
-
-  body.game-page .nav-wrap {
-    min-height: 58px;
+  .game-cover-image {
+    height: 380px;
   }
 
-  body.game-page .brand-logo,
-  .game-page .brand-logo {
-    height: 34px;
-    max-width: 135px;
+  .game-cover-image::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(3, 15, 26, 0.18) 0%,
+        rgba(3, 15, 26, 0.20) 25%,
+        rgba(3, 15, 26, 0.82) 78%,
+        rgba(3, 15, 26, 0.98) 100%
+      );
   }
 
-  body.game-page .main-nav {
-    gap: 10px;
-    overflow-x: auto;
-    scrollbar-width: none;
+  .game-cover-image img {
+    object-position: center top;
   }
 
-  body.game-page .main-nav::-webkit-scrollbar {
-    display: none;
+  .game-cover-content {
+    top: 345px;
+    left: 16px;
+    width: calc(100% - 32px);
+    transform: none;
   }
 
-  body.game-page .main-nav a {
-    flex: 0 0 auto;
+  .game-cover-content h1 {
+    margin-bottom: 16px;
+    font-size: 44px;
+  }
+
+  .game-cover-subtitle {
+    margin-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+
+  .game-cover-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .game-version {
+    min-height: 40px;
+    padding: 0 13px;
     font-size: 9px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.12em;
   }
 
-  body.game-page .nav-actions .btn-small {
-    display: none;
+  .game-cover-signature {
+    left: 16px;
+    right: 16px;
+    bottom: 28px;
+    max-width: none;
+    justify-content: flex-start;
+    color: rgba(228, 237, 243, 0.78);
+    font-size: 10px;
+    text-align: left;
   }
 
-  body.game-page .language-select {
-    min-width: 52px;
-    padding-inline: 7px;
+  /* HEADERS */
+
+  .game-section-header {
+    display: block;
+    margin-bottom: 30px;
   }
 
-  /* Section headers */
-
-  .game-section-header,
-  .game-page .section-heading {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: end;
-    gap: 9px;
-    margin-bottom: 22px;
+  .section-number {
+    font-size: 14px;
   }
 
-  .game-section-header::after,
-  .game-page .section-heading::after {
-    min-width: 0;
+  .section-number::after {
+    width: 48px;
+    height: 2px;
   }
 
-  .game-section-note,
-  .game-page .section-note,
-  .game-page .section-signature {
-    grid-column: 2;
-    justify-self: end;
-    white-space: normal;
-    text-align: right;
+  .game-section-title h2 {
+    padding-bottom: 13px;
+    font-size: 30px;
+    line-height: 1.05;
+  }
+
+  .section-signature {
+    display: block;
+    max-width: 100%;
+    padding-top: 13px;
+    padding-bottom: 0;
     font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.17em;
+    text-align: left;
   }
 
-  /* Cover */
+  /* PHILOSOPHY */
 
-  .game-cover,
-  .game-hero,
-  .game-page .game-hero,
-  .game-page .cover-section {
-    min-height: 390px;
+  .philosophy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
-  .game-cover-content,
-  .game-hero-content,
-  .game-page .cover-content {
-    width: min(calc(100% - 24px), 680px);
-    padding-block: 44px;
+  .philosophy-card {
+    min-height: 215px;
+    padding: 24px 10px 20px;
   }
 
-  .game-cover-title,
-  .game-hero h1,
-  .game-page .cover-title {
-    max-width: 95%;
-    font-size: clamp(43px, 14vw, 70px);
+  .philosophy-icon {
+    height: 42px;
+    margin-bottom: 12px;
   }
 
-  .game-cover-subtitle,
-  .game-hero .cover-subtitle,
-  .game-page .cover-subtitle {
-    font-size: 11px;
-    letter-spacing: 0.09em;
+  .philosophy-icon svg {
+    width: 34px;
+    height: 34px;
+    max-width: 34px;
+    max-height: 34px;
   }
 
-  .game-cover-description,
-  .game-hero .cover-description,
-  .game-page .cover-description {
-    max-width: 330px;
-    font-size: 11px;
+  .philosophy-card h3 {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .philosophy-card p {
+    font-size: 9px;
     line-height: 1.55;
   }
 
-  /* Philosophy */
+  /* GAMEPLAY LOOP
+     Six steps + final step become three rows without
+     any horizontal page overflow. */
 
-  .philosophy-grid,
-  .game-philosophy-grid,
-  .design-philosophy-grid,
-  .game-page .philosophy-grid {
+  .gameplay-loop {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .loop-step {
+    min-width: 0;
+    min-height: 104px;
+    padding: 13px 5px;
+    clip-path: none;
+    border-radius: 3px;
+  }
+
+  .loop-step:first-child,
+  .loop-step:last-child {
+    clip-path: none;
+  }
+
+  .loop-icon {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 7px;
+  }
+
+  .loop-icon svg {
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .loop-step > span:last-child {
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+  }
+
+  .loop-arrow {
+    display: none;
+  }
+
+  .loop-statement {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  /* PHYSICS */
+
+  .physics-layout {
+    gap: 24px;
+  }
+
+  .physics-intro h3 {
+    margin-bottom: 14px;
+    font-size: 21px;
+  }
+
+  .physics-intro p {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .mechanics-toggle {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 9px;
+  }
+
+  .physics-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .physics-table {
+    min-width: 560px;
+  }
+
+  .physics-table th,
+  .physics-table td {
+    padding: 13px 14px;
+  }
+
+  .physics-table th {
+    width: 28%;
+    font-size: 9px;
+  }
+
+  .physics-table td {
+    font-size: 10px;
+  }
+
+  /* LEVEL DESIGN */
+
+  .level-design-intro {
+    margin-bottom: 24px;
+  }
+
+  .level-design-intro p {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .world-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .world-content {
+    min-height: 112px;
+    padding: 15px 11px 17px;
+  }
+
+  .world-number {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+
+  .world-content h3 {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+
+  .world-content p {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  /* MASTERY */
+
+  .mastery-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .mastery-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 9px;
   }
 
-  .philosophy-card,
-  .game-philosophy-card,
-  .design-philosophy-card {
-    padding: 13px 9px;
+  .mastery-card {
+    min-height: 145px;
+    padding: 19px 9px;
   }
 
-  .philosophy-icon,
-  .game-philosophy-icon,
-  .design-philosophy-icon {
-    width: 38px;
-    height: 38px;
-    margin-bottom: 7px;
+  .mastery-card:last-child {
+    grid-column: 1 / -1;
   }
 
-  .philosophy-icon svg,
-  .game-philosophy-icon svg,
-  .design-philosophy-icon svg {
-    width: 27px;
-    height: 27px;
+  .mastery-stars {
+    min-height: 30px;
+    margin-bottom: 11px;
+    gap: 3px;
   }
 
-  .philosophy-card h3,
-  .game-philosophy-card h3,
-  .design-philosophy-card h3 {
+  .mastery-stars svg {
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  .mastery-card h3 {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+
+  .mastery-card p {
     font-size: 9px;
+    line-height: 1.5;
   }
 
-  .philosophy-card p,
-  .game-philosophy-card p,
-  .design-philosophy-card p {
-    font-size: 8px;
-    line-height: 1.45;
+  .mastery-quote {
+    min-height: 185px;
+    padding: 42px 36px;
   }
 
-  /* Gameplay loop */
-
-  .gameplay-loop,
-  .core-gameplay-loop,
-  .game-loop {
-    gap: 2px;
+  .mastery-quote p {
+    max-width: 300px;
+    font-size: 17px;
+    line-height: 1.5;
   }
 
-  .gameplay-step,
-  .loop-step,
-  .core-loop-step {
-    min-height: 63px;
-    padding: 7px 3px;
+  .quote-mark {
+    font-size: 52px;
   }
 
-  .gameplay-step-icon,
-  .loop-step-icon,
-  .core-loop-icon {
-    width: 21px;
-    height: 21px;
+  /* LUMEN */
+
+  .lumen-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "visual"
+      "description"
+      "rules";
+    gap: 26px;
   }
 
-  .gameplay-step-label,
-  .loop-step-label,
-  .core-loop-label {
-    font-size: 6.5px;
-    letter-spacing: 0.06em;
+  .lumen-visual {
+    justify-content: center;
   }
 
-  .gameplay-arrow,
-  .loop-arrow,
-  .core-loop-arrow {
+  .lumen-visual img {
+    width: min(210px, 58vw);
+    max-height: 210px;
+  }
+
+  .lumen-description {
+    text-align: left;
+  }
+
+  .lumen-description h3 {
+    margin-bottom: 9px;
+    font-size: 20px;
+  }
+
+  .lumen-description strong {
+    margin-bottom: 14px;
     font-size: 11px;
   }
 
-  .gameplay-loop-caption,
-  .core-loop-caption,
-  .game-loop-caption {
-    font-size: 9px;
-    margin-top: 10px;
+  .lumen-description p {
+    font-size: 12px;
+    line-height: 1.65;
   }
 
-  /* Physics */
-
-  .physics-layout,
-  .physics-grid,
-  .game-page .physics-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .physics-copy p,
-  .physics-intro p {
-    max-width: none;
-  }
-
-  .physics-table th,
-  .physics-table td,
-  .mechanics-table th,
-  .mechanics-table td,
-  .game-page table th,
-  .game-page table td {
-    padding: 8px 9px;
-    font-size: 8.5px;
-  }
-
-  /* Worlds */
-
-  .worlds-grid,
-  .level-worlds,
-  .world-grid,
-  .game-page .worlds-grid {
+  .lumen-rules {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
   }
 
-  .world-card h3,
-  .level-world-card h3,
-  .world h3 {
+  .lumen-rule {
+    padding: 17px 12px 18px;
+  }
+
+  .lumen-rule h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .lumen-rule li {
+    margin-bottom: 7px;
+    padding-left: 13px;
     font-size: 9px;
+    line-height: 1.45;
   }
 
-  .world-card p,
-  .level-world-card p,
-  .world p {
-    font-size: 8px;
+  /* MISSION */
+
+  .mission-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
-  /* Mastery */
-
-  .mastery-layout,
-  .mastery-grid-wrap,
-  .game-page .mastery-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .mission-content h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
   }
 
-  .mastery-grid,
-  .mastery-cards,
-  .game-page .mastery-grid {
-    gap: 8px;
+  .mission-content p {
+    margin-bottom: 9px;
+    font-size: 11px;
+    line-height: 1.6;
   }
 
-  .mastery-card,
-  .mastery-option,
-  .game-page .mastery-card {
-    min-height: 105px;
-    padding: 12px 7px;
+  .mission-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
   }
 
-  .mastery-card p,
-  .mastery-option p {
-    font-size: 8px;
+  .mission-step {
+    gap: 7px;
+    padding: 8px 0;
   }
 
-  .mastery-quote,
-  .mastery-callout,
-  .game-page .mastery-quote {
-    padding-left: 26px;
-    padding-right: 16px;
+  .mission-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .mission-icon svg {
+    width: 29px;
+    height: 29px;
+    max-width: 29px;
+    max-height: 29px;
+  }
+
+  .mission-step span:last-child {
+    font-size: 10px;
+  }
+
+  .mission-arrow {
+    transform: rotate(90deg);
+    height: 18px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+
+/* ---------------------------------------------------------
+   14. SMALL PHONES — <= 430px
+--------------------------------------------------------- */
+
+@media (max-width: 430px) {
+
+  .game-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .game-cover {
+    min-height: 680px;
+  }
+
+  .game-cover-image {
+    height: 350px;
+  }
+
+  .game-cover-content {
+    top: 318px;
+    left: 12px;
+    width: calc(100% - 24px);
+  }
+
+  .game-cover-content h1 {
+    font-size: 39px;
+  }
+
+  .game-cover-description {
+    max-width: 350px;
     font-size: 13px;
   }
 
-  /* Lumen */
-
-  .lumen-layout,
-  .lumen-grid,
-  .game-page .lumen-layout {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  .game-cover-signature {
+    left: 12px;
+    right: 12px;
+    bottom: 24px;
   }
 
-  .lumen-art,
-  .lumen-visual,
-  .game-page .lumen-art {
-    min-height: 150px;
+  .game-section-header {
+    margin-bottom: 25px;
   }
 
-  .lumen-art img,
-  .lumen-visual img,
-  .game-page .lumen-art img {
-    width: min(58vw, 190px);
+  .game-section-title h2 {
+    font-size: 27px;
   }
 
-  .lumen-rules,
-  .lumen-can-cannot,
-  .game-page .lumen-rules {
-    grid-template-columns: 1fr;
-  }
-
-  .lumen-rule-column + .lumen-rule-column {
-    border-left: 0;
-    border-top: 1px solid rgba(29, 136, 181, 0.24);
-  }
-
-  /* Mission */
-
-  .mission-flow,
-  .burn-flow,
-  .game-page .mission-flow {
-    gap: 2px;
-  }
-
-  .mission-step:not(:last-child)::after,
-  .burn-step:not(:last-child)::after {
-    right: -5px;
-    top: 14px;
-    font-size: 15px;
-  }
-
-  .mission-step-icon,
-  .burn-step-icon {
-    width: 37px;
-    height: 37px;
-  }
-
-  .mission-step-icon svg,
-  .burn-step-icon svg {
-    width: 19px;
-    height: 19px;
-  }
-
-  .mission-step-label,
-  .burn-step-label {
-    font-size: 6.5px;
-  }
-
-  /* Footer */
-
-  body.game-page .site-footer {
-    margin-top: 38px;
-  }
-
-  body.game-page .footer-logo {
-    height: 52px;
-    max-width: 150px;
-  }
-}
-
-/* =========================================================
-   17. SMALL PHONES
-   ========================================================= */
-
-@media (max-width: 430px) {
-  .game-container,
-  .game-inner,
-  .game-section-inner,
-  body.game-page .section-inner {
-    width: calc(100% - 18px);
-  }
-
-  body.game-page .brand-logo,
-  .game-page .brand-logo {
-    height: 30px;
-    max-width: 120px;
-  }
-
-  body.game-page .main-nav {
+  .philosophy-grid {
     gap: 8px;
   }
 
-  body.game-page .main-nav a {
+  .philosophy-card {
+    min-height: 205px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .philosophy-card h3 {
+    font-size: 9px;
+  }
+
+  .philosophy-card p {
     font-size: 8px;
   }
 
-  body.game-page .nav-wrap {
-    gap: 8px;
-  }
-
-  .game-cover-title,
-  .game-hero h1,
-  .game-page .cover-title {
-    font-size: 41px;
-  }
-
-  .philosophy-grid,
-  .game-philosophy-grid,
-  .design-philosophy-grid,
-  .game-page .philosophy-grid {
+  .gameplay-loop {
     gap: 6px;
   }
 
-  .philosophy-card,
-  .game-philosophy-card,
-  .design-philosophy-card {
-    padding: 11px 6px;
+  .loop-step {
+    min-height: 96px;
   }
 
-  .gameplay-step,
-  .loop-step,
-  .core-loop-step {
-    min-height: 58px;
+  .loop-step > span:last-child {
+    font-size: 7px;
   }
 
-  .gameplay-step-label,
-  .loop-step-label,
-  .core-loop-label {
-    font-size: 6px;
+  .world-grid {
+    gap: 8px;
   }
 
-  .worlds-grid,
-  .level-worlds,
-  .world-grid,
-  .game-page .worlds-grid {
-    grid-template-columns: 1fr 1fr;
+  .world-content {
+    min-height: 105px;
+    padding: 13px 9px 15px;
   }
 
-  .mastery-grid,
-  .mastery-cards,
-  .game-page .mastery-grid {
+  .world-content h3 {
+    font-size: 9px;
+  }
+
+  .world-content p {
+    font-size: 8px;
+  }
+
+  .mastery-card {
+    min-height: 138px;
+  }
+
+  .lumen-rules {
     grid-template-columns: 1fr;
   }
 
-  .mastery-card,
-  .mastery-option,
-  .game-page .mastery-card {
-    min-height: 94px;
+  .lumen-rule {
+    padding: 17px 14px;
   }
 
-  .lumen-copy h3,
-  .lumen-content h3 {
-    font-size: 18px;
-  }
-
-  .mission-step-icon,
-  .burn-step-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .mission-step-label,
-  .burn-step-label {
-    font-size: 5.5px;
+  .lumen-rule li {
+    font-size: 10px;
   }
 }
 
-/* =========================================================
-   18. ACCESSIBILITY / MOTION
-   ========================================================= */
+/* ---------------------------------------------------------
+   15. ACCESSIBILITY / MOTION
+--------------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
   .game-page *,
-  body.game-page * {
+  .game-page *::before,
+  .game-page *::after {
     scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    transition: none !important;
+    animation: none !important;
   }
 }
 
-/* =========================================================
-   19. PRINT
-   ========================================================= */
+/* ---------------------------------------------------------
+   16. PRINT
+--------------------------------------------------------- */
 
 @media print {
-  body.game-page {
-    background: #fff;
-    color: #111;
+  html,
+  body {
+    overflow: visible;
   }
 
-  body.game-page .site-header,
-  body.game-page .site-footer {
-    display: none;
+  .game-page {
+    background: white;
+    color: black;
   }
 
-  .game-page section,
-  body.game-page section {
+  .game-cover,
+  .game-section {
     break-inside: avoid;
+  }
+
+  .physics-table-wrapper[hidden] {
+    display: block !important;
   }
 }
