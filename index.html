@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LUNC Burn Game — PLAY. REBUILD. BURN. A physics-driven adventure.">
+
+  <meta
+    name="description"
+    content="LUNC Burn Game — PLAY. REBUILD. BURN. A physics-driven adventure."
+  >
 
   <title>LUNC Burn Game — PLAY. REBUILD. BURN.</title>
 
   <link rel="stylesheet" href="css/site.css">
 </head>
 
+
 <body>
 
-  <!-- =========================
+  <!-- =========================================================
        NAVIGATION
-  ========================== -->
+  ========================================================== -->
 
   <header class="site-header">
+
     <div class="nav-wrap">
 
-<a href="index.html" class="brand">
-  <img
-    src="lunc-burn-game-logo.png"
-    alt="LUNC Burn Game"
-    class="brand-logo"
-  >
-</a>
+      <a href="index.html" class="brand">
+        <img
+          src="lunc-burn-game-logo.png"
+          alt="LUNC Burn Game"
+          class="brand-logo"
+        >
+      </a>
+
 
       <nav class="main-nav">
-        <a href="game.html" data-i18n="navGame">Game</a>
-        <a href="#lunki" data-i18n="navLunki">Lunki</a>
-        <a href="#dusters" data-i18n="navDusters">Dusters</a>
-        <a href="#burns" data-i18n="navBurns">Burns</a>
-        <a href="#roadmap" data-i18n="navRoadmap">Roadmap</a>
+
+        <a href="#game" data-i18n="navGame">
+          Game
+        </a>
+
+        <a href="#lunki" data-i18n="navLunki">
+          Lunki
+        </a>
+
+        <a href="#dusters" data-i18n="navDusters">
+          Dusters
+        </a>
+
+        <a href="#burns" data-i18n="navBurns">
+          Burns
+        </a>
+
+        <a href="#roadmap" data-i18n="navRoadmap">
+          Roadmap
+        </a>
+
       </nav>
+
 
       <div class="nav-actions">
 
-        <select class="language-select" data-lang-select aria-label="Language">
+        <select
+          class="language-select"
+          data-lang-select
+          aria-label="Language"
+        >
           <option value="EN">EN</option>
           <option value="FR">FR</option>
           <option value="ES">ES</option>
@@ -45,60 +74,92 @@
           <option value="PT">PT</option>
         </select>
 
-        <a href="#download" class="btn btn-small" data-i18n="navDownload">Coming Soon</a>
+
+        <a
+          href="#download"
+          class="btn btn-small"
+          data-i18n="navDownload"
+        >
+          Coming Soon
+        </a>
 
       </div>
 
     </div>
+
   </header>
+
 
 
   <main>
 
-    <!-- =========================
+
+    <!-- =========================================================
          HERO
-    ========================== -->
+    ========================================================== -->
 
     <section class="hero">
 
       <div class="hero-background">
+
         <div class="stars"></div>
+
         <div class="planet"></div>
+
       </div>
+
 
       <div class="hero-content">
 
-        <p class="eyebrow" data-i18n="heroEyebrow">
+        <p
+          class="eyebrow"
+          data-i18n="heroEyebrow"
+        >
           A physics-driven adventure
         </p>
+
 
         <h1 data-i18n="heroTitle">
           PLAY. REBUILD. BURN.
         </h1>
 
-        <p class="hero-description" data-i18n="heroText">
+
+        <p
+          class="hero-description"
+          data-i18n="heroText"
+        >
           Explore the ruins of a broken world, master the physics,
           defeat the DUSTERS and rebuild what was lost.
         </p>
 
-        <a href="#game" class="btn btn-primary" data-i18n="heroCta">
+
+        <!-- MAIN GAME CTA -->
+        <a
+          href="game.html"
+          class="btn btn-primary"
+          data-i18n="heroCta"
+        >
           EXPLORE THE GAME
         </a>
 
       </div>
 
-      <!-- Temporary visual until LUNKI artwork is integrated -->
+
       <div class="hero-orb">
+
         <div class="orb-ring"></div>
+
         <div class="orb-core"></div>
+
       </div>
 
     </section>
 
 
-    <!-- =========================
+
+    <!-- =========================================================
          MISSION
-    ========================== -->
+    ========================================================== -->
 
     <section class="section mission">
 
@@ -106,9 +167,13 @@
 
         <div class="section-heading">
 
-          <p class="eyebrow" data-i18n="missionEyebrow">
+          <p
+            class="eyebrow"
+            data-i18n="missionEyebrow"
+          >
             THE MISSION
           </p>
+
 
           <h2 data-i18n="missionTitle">
             A game with a purpose.
@@ -116,7 +181,11 @@
 
         </div>
 
-        <p class="section-lead" data-i18n="missionText">
+
+        <p
+          class="section-lead"
+          data-i18n="missionText"
+        >
           LUNC Burn Game combines fun, physics and progression with
           a transparent mission: eligible project revenue is used
           to support LUNC burns.
@@ -127,25 +196,35 @@
     </section>
 
 
-    <!-- =========================
-         GAME
-    ========================== -->
 
-    <section class="section game-section" id="game">
+    <!-- =========================================================
+         THE GAME
+    ========================================================== -->
+
+    <section
+      class="section game-section"
+      id="game"
+    >
 
       <div class="section-inner">
 
+
         <div class="section-heading">
 
-          <p class="eyebrow" data-i18n="gameEyebrow">
+          <p
+            class="eyebrow"
+            data-i18n="gameEyebrow"
+          >
             THE GAME
           </p>
+
 
           <h2 data-i18n="gameTitle">
             Simple to learn. Hard to master.
           </h2>
 
         </div>
+
 
 
         <!-- CINEMATIC GAMEPLAY IMAGE -->
@@ -158,6 +237,7 @@
           >
 
         </div>
+
 
 
         <!-- GAME FEATURES -->
@@ -173,38 +253,54 @@
               01
             </div>
 
+
             <div class="feature-content">
 
               <div class="feature-icon">
 
-                <svg viewBox="0 0 64 64" aria-hidden="true">
+                <svg
+                  viewBox="0 0 64 64"
+                  aria-hidden="true"
+                >
 
-                  <circle cx="32" cy="32" r="19"></circle>
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="19"
+                  ></circle>
 
-                  <circle cx="32" cy="32" r="10"></circle>
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="10"
+                  ></circle>
 
-                  <circle cx="32" cy="32" r="3"></circle>
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="3"
+                  ></circle>
 
                   <line
                     x1="42"
                     y1="42"
                     x2="55"
-                    y2="55">
-                  </line>
+                    y2="55"
+                  ></line>
 
                   <line
                     x1="47"
                     y1="55"
                     x2="55"
-                    y2="55">
-                  </line>
+                    y2="55"
+                  ></line>
 
                   <line
                     x1="55"
                     y1="55"
                     x2="55"
-                    y2="47">
-                  </line>
+                    y2="47"
+                  ></line>
 
                 </svg>
 
@@ -228,6 +324,7 @@
           </article>
 
 
+
           <!-- IMPACT -->
 
           <article class="feature-card">
@@ -236,29 +333,35 @@
               02
             </div>
 
+
             <div class="feature-content">
 
               <div class="feature-icon">
 
-                <svg viewBox="0 0 64 64" aria-hidden="true">
+                <svg
+                  viewBox="0 0 64 64"
+                  aria-hidden="true"
+                >
 
                   <path
-                    d="M32 4
-                       L37 24
-                       L58 16
-                       L42 31
-                       L60 40
-                       L39 38
-                       L43 60
-                       L30 42
-                       L18 58
-                       L22 38
-                       L4 42
-                       L20 30
-                       L7 17
-                       L26 24
-                       Z">
-                  </path>
+                    d="
+                      M32 4
+                      L37 24
+                      L58 16
+                      L42 31
+                      L60 40
+                      L39 38
+                      L43 60
+                      L30 42
+                      L18 58
+                      L22 38
+                      L4 42
+                      L20 30
+                      L7 17
+                      L26 24
+                      Z
+                    "
+                  ></path>
 
                 </svg>
 
@@ -283,6 +386,7 @@
           </article>
 
 
+
           <!-- REBUILD -->
 
           <article class="feature-card">
@@ -291,11 +395,15 @@
               03
             </div>
 
+
             <div class="feature-content">
 
               <div class="feature-icon">
 
-                <svg viewBox="0 0 64 64" aria-hidden="true">
+                <svg
+                  viewBox="0 0 64 64"
+                  aria-hidden="true"
+                >
 
                   <path d="M32 6 L47 15 L32 24 L17 15 Z"></path>
 
@@ -336,32 +444,25 @@
 
         </div>
 
-
-        <!-- LINK TO THE DEDICATED GAME PAGE -->
-
-        <div class="game-section-cta">
-
-          <a href="game.html" class="btn btn-secondary" data-i18n="heroCta">
-            EXPLORE THE GAME
-          </a>
-
-        </div>
-
-
       </div>
 
     </section>
 
 
-    <!-- =========================
-         LUNKI
-    ========================== -->
 
-    <section class="section lunki-section" id="lunki">
+    <!-- =========================================================
+         LUNKI
+    ========================================================== -->
+
+    <section
+      class="section lunki-section"
+      id="lunki"
+    >
 
       <div class="section-inner">
 
         <div class="lunki-layout">
+
 
           <div class="lunki-visual">
 
@@ -377,15 +478,21 @@
           </div>
 
 
+
           <div class="lunki-content">
 
-            <p class="eyebrow" data-i18n="lunkiEyebrow">
+            <p
+              class="eyebrow"
+              data-i18n="lunkiEyebrow"
+            >
               MEET LUNKI
             </p>
+
 
             <h2 data-i18n="lunkiTitle">
               The Explorer
             </h2>
+
 
             <p data-i18n="lunkiText">
               Curious, brave and determined. LUNKI explores the ruins
@@ -394,6 +501,7 @@
 
           </div>
 
+
         </div>
 
       </div>
@@ -401,19 +509,28 @@
     </section>
 
 
-    <!-- =========================
-         DUSTERS
-    ========================== -->
 
-    <section id="dusters" class="section dusters-section">
+    <!-- =========================================================
+         DUSTERS
+    ========================================================== -->
+
+    <section
+      id="dusters"
+      class="section dusters-section"
+    >
 
       <div class="section-inner">
 
+
         <div class="section-heading">
 
-          <p class="eyebrow" data-i18n="dustersEyebrow">
+          <p
+            class="eyebrow"
+            data-i18n="dustersEyebrow"
+          >
             THE DUSTERS
           </p>
+
 
           <h2 data-i18n="dustersTitle">
             Not everything wants to be rebuilt.
@@ -422,7 +539,11 @@
         </div>
 
 
+
         <div class="duster-grid">
+
+
+          <!-- DUSTER BASIC -->
 
           <article class="duster-card">
 
@@ -432,9 +553,13 @@
               class="duster-image"
             >
 
+
             <div class="duster-info">
 
-              <span class="duster-icon">01</span>
+              <span class="duster-icon">
+                01
+              </span>
+
 
               <div class="duster-name-row">
 
@@ -451,9 +576,12 @@
 
               </div>
 
+
               <div class="duster-description">
 
-                <span class="duster-role">⌾</span>
+                <span class="duster-role">
+                  ⌾
+                </span>
 
                 <p data-i18n="basicDesc">
                   Standard enemy. Present in large numbers.
@@ -466,6 +594,9 @@
           </article>
 
 
+
+          <!-- DUSTER SHIELD -->
+
           <article class="duster-card">
 
             <img
@@ -474,9 +605,13 @@
               class="duster-image"
             >
 
+
             <div class="duster-info">
 
-              <span class="duster-icon">02</span>
+              <span class="duster-icon">
+                02
+              </span>
+
 
               <div class="duster-name-row">
 
@@ -493,9 +628,12 @@
 
               </div>
 
+
               <div class="duster-description">
 
-                <span class="duster-role">◈</span>
+                <span class="duster-role">
+                  ◈
+                </span>
 
                 <p data-i18n="shieldDesc">
                   Protects other DUSTERS and absorbs most attacks.
@@ -508,6 +646,9 @@
           </article>
 
 
+
+          <!-- DUSTER HEAVY -->
+
           <article class="duster-card">
 
             <img
@@ -516,9 +657,13 @@
               class="duster-image"
             >
 
+
             <div class="duster-info">
 
-              <span class="duster-icon">03</span>
+              <span class="duster-icon">
+                03
+              </span>
+
 
               <div class="duster-name-row">
 
@@ -535,9 +680,12 @@
 
               </div>
 
+
               <div class="duster-description">
 
-                <span class="duster-role">◆</span>
+                <span class="duster-role">
+                  ◆
+                </span>
 
                 <p data-i18n="heavyDesc">
                   Armored and extremely resistant. Deals massive damage.
@@ -550,6 +698,9 @@
           </article>
 
 
+
+          <!-- DUSTER FLYER -->
+
           <article class="duster-card">
 
             <img
@@ -558,9 +709,13 @@
               class="duster-image"
             >
 
+
             <div class="duster-info">
 
-              <span class="duster-icon">04</span>
+              <span class="duster-icon">
+                04
+              </span>
+
 
               <div class="duster-name-row">
 
@@ -577,9 +732,12 @@
 
               </div>
 
+
               <div class="duster-description">
 
-                <span class="duster-role">≋</span>
+                <span class="duster-role">
+                  ≋
+                </span>
 
                 <p data-i18n="flyerDesc">
                   Fast aerial enemy. Difficult to reach and predict.
@@ -592,6 +750,9 @@
           </article>
 
 
+
+          <!-- DUSTER COMMANDER -->
+
           <article class="duster-card duster-card-commander">
 
             <img
@@ -600,9 +761,13 @@
               class="duster-image"
             >
 
+
             <div class="duster-info">
 
-              <span class="duster-icon">05</span>
+              <span class="duster-icon">
+                05
+              </span>
+
 
               <div class="duster-name-row">
 
@@ -619,12 +784,16 @@
 
               </div>
 
+
               <div class="duster-description">
 
-                <span class="duster-role">◆</span>
+                <span class="duster-role">
+                  ◆
+                </span>
 
                 <p data-i18n="commanderDesc">
-                  Leads other DUSTERS. More powerful, more strategic, more dangerous.
+                  Leads other DUSTERS. More powerful, more strategic,
+                  more dangerous.
                 </p>
 
               </div>
@@ -633,6 +802,7 @@
 
           </article>
 
+
         </div>
 
       </div>
@@ -640,19 +810,28 @@
     </section>
 
 
-    <!-- =========================
-         BURNS
-    ========================== -->
 
-    <section class="section burns-section" id="burns">
+    <!-- =========================================================
+         BURNS
+    ========================================================== -->
+
+    <section
+      class="section burns-section"
+      id="burns"
+    >
 
       <div class="section-inner">
 
+
         <div class="section-heading">
 
-          <p class="eyebrow" data-i18n="burnsEyebrow">
+          <p
+            class="eyebrow"
+            data-i18n="burnsEyebrow"
+          >
             BURN TRANSPARENCY
           </p>
+
 
           <h2 data-i18n="burnsTitle">
             Every burn should be verifiable.
@@ -661,11 +840,15 @@
         </div>
 
 
+
         <div class="burn-stats">
+
 
           <div class="burn-stat">
 
-            <strong>0</strong>
+            <strong>
+              0
+            </strong>
 
             <span data-i18n="burned">
               LUNC BURNED
@@ -676,7 +859,9 @@
 
           <div class="burn-stat">
 
-            <strong>0</strong>
+            <strong>
+              0
+            </strong>
 
             <span data-i18n="tx">
               VERIFIED TRANSACTIONS
@@ -687,7 +872,9 @@
 
           <div class="burn-stat">
 
-            <strong>0</strong>
+            <strong>
+              0
+            </strong>
 
             <span data-i18n="reserve">
               BURN RESERVE
@@ -695,7 +882,9 @@
 
           </div>
 
+
         </div>
+
 
 
         <a
@@ -711,25 +900,36 @@
     </section>
 
 
-    <!-- =========================
-         ROADMAP
-    ========================== -->
 
-    <section class="section roadmap-section" id="roadmap">
+    <!-- =========================================================
+         ROADMAP
+    ========================================================== -->
+
+    <section
+      class="section roadmap-section"
+      id="roadmap"
+    >
 
       <div class="section-inner">
 
+
         <div class="roadmap-intro">
+
 
           <div class="roadmap-intro-text">
 
-            <p class="eyebrow" data-i18n="roadmapEyebrow">
+            <p
+              class="eyebrow"
+              data-i18n="roadmapEyebrow"
+            >
               ROADMAP
             </p>
+
 
             <h2 data-i18n="roadmapTitle">
               Step by step towards a brighter future.
             </h2>
+
 
             <p class="roadmap-lead">
               Each milestone brings us closer to our goal:
@@ -739,15 +939,26 @@
           </div>
 
 
+
           <div class="roadmap-motto">
 
-            <span>Play.</span>
-            <span>Rebuild.</span>
-            <span>Burn.</span>
+            <span>
+              Play.
+            </span>
+
+            <span>
+              Rebuild.
+            </span>
+
+            <span>
+              Burn.
+            </span>
 
           </div>
 
+
         </div>
+
 
 
         <div class="roadmap-timeline">
@@ -772,6 +983,7 @@
                 01
               </div>
 
+
               <div class="roadmap-card-content">
 
                 <div class="roadmap-card-top">
@@ -787,6 +999,7 @@
                     </span>
 
                   </div>
+
 
                   <div class="roadmap-status roadmap-status-completed">
                     COMPLETED
@@ -822,6 +1035,7 @@
           </article>
 
 
+
           <!-- PHASE 02 -->
 
           <article class="roadmap-phase roadmap-phase-active">
@@ -841,6 +1055,7 @@
                 02
               </div>
 
+
               <div class="roadmap-card-content">
 
                 <div class="roadmap-card-top">
@@ -856,6 +1071,7 @@
                     </span>
 
                   </div>
+
 
                   <div class="roadmap-status roadmap-status-active">
                     EN COURS
@@ -891,6 +1107,7 @@
           </article>
 
 
+
           <!-- PHASE 03 -->
 
           <article class="roadmap-phase roadmap-phase-future">
@@ -910,6 +1127,7 @@
                 03
               </div>
 
+
               <div class="roadmap-card-content">
 
                 <div class="roadmap-card-top">
@@ -925,6 +1143,7 @@
                     </span>
 
                   </div>
+
 
                   <div class="roadmap-status">
                     À VENIR
@@ -960,6 +1179,7 @@
           </article>
 
 
+
           <!-- PHASE 04 -->
 
           <article class="roadmap-phase roadmap-phase-future">
@@ -979,6 +1199,7 @@
                 04
               </div>
 
+
               <div class="roadmap-card-content">
 
                 <div class="roadmap-card-top">
@@ -994,6 +1215,7 @@
                     </span>
 
                   </div>
+
 
                   <div class="roadmap-status">
                     À VENIR
@@ -1036,21 +1258,31 @@
     </section>
 
 
-    <!-- =========================
-         DOWNLOAD
-    ========================== -->
 
-    <section class="download-section" id="download">
+    <!-- =========================================================
+         DOWNLOAD
+    ========================================================== -->
+
+    <section
+      class="download-section"
+      id="download"
+    >
 
       <div class="download-inner">
 
-        <p class="eyebrow" data-i18n="downloadEyebrow">
+
+        <p
+          class="eyebrow"
+          data-i18n="downloadEyebrow"
+        >
           COMING SOON
         </p>
+
 
         <h2 data-i18n="downloadTitle">
           Your move.
         </h2>
+
 
         <p data-i18n="downloadText">
           The game is being built step by step. Follow the project
@@ -1058,7 +1290,9 @@
         </p>
 
 
+
         <div class="platforms">
+
 
           <div class="platform-card">
 
@@ -1098,7 +1332,9 @@
 
           </div>
 
+
         </div>
+
 
 
         <a
@@ -1113,16 +1349,19 @@
 
     </section>
 
+
   </main>
 
 
-  <!-- =========================
+
+  <!-- =========================================================
        FOOTER
-  ========================== -->
+  ========================================================== -->
 
   <footer class="site-footer">
 
     <div class="footer-inner">
+
 
       <!-- BRAND -->
 
@@ -1133,6 +1372,7 @@
           alt="LUNC Burn Game"
           class="footer-logo"
         >
+
 
         <div class="footer-brand-text">
 
@@ -1154,6 +1394,7 @@
       </div>
 
 
+
       <!-- LINKS -->
 
       <nav
@@ -1168,12 +1409,14 @@
           Privacy
         </a>
 
+
         <a
           href="#terms"
           data-i18n="footerTerms"
         >
           Terms
         </a>
+
 
         <a
           href="contact.html"
@@ -1185,13 +1428,16 @@
       </nav>
 
 
+
       <!-- RIGHT SIDE -->
 
       <div class="footer-right">
 
+
         <!-- SOCIALS -->
 
         <div class="footer-socials">
+
 
           <!-- X -->
 
@@ -1216,6 +1462,7 @@
           </a>
 
 
+
           <!-- YOUTUBE -->
 
           <a
@@ -1236,8 +1483,7 @@
                 width="18"
                 height="12"
                 rx="3"
-              >
-              </rect>
+              ></rect>
 
               <path d="M10 9L16 12L10 15Z"></path>
 
@@ -1245,7 +1491,9 @@
 
           </a>
 
+
         </div>
+
 
 
         <!-- LANGUAGE -->
@@ -1265,6 +1513,7 @@
         </select>
 
 
+
         <!-- COPYRIGHT -->
 
         <span
@@ -1274,6 +1523,7 @@
           © 2026 LUNC Burn Game. All rights reserved.
         </span>
 
+
       </div>
 
     </div>
@@ -1281,7 +1531,13 @@
   </footer>
 
 
-  <script src="js/site.js?v=44"></script>
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script src="js/site.js?v=4"></script>
 
 </body>
+
 </html>
