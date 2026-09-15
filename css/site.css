@@ -2562,12 +2562,3 @@ select {
     transform: none;
   }
 }
-
-/* =========================================================
-   GAME SECTION CTA — SPACING
-========================================================= */
-
-.game-section-cta {
-  margin-top: 48px;
-  text-align: center;
-}
